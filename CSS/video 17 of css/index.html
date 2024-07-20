@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selecters</title>
+
+    <!-- element selectars -->
+    <style>
+        div{
+            /* background-color: red; */
+        }
+
+        /* class selector */
+    .red{
+        background-color: aqua;
+    }
+        
+    /* id selector */
+    #green{
+        background-color: green;
+    }
+
+
+    /* child selector */
+    div > p{
+        color: blue;
+        background-color: brown;
+    }
+
+    /* Descendant selecter */
+
+    div p {
+        color: blue;
+        background-color: brown;
+    }
+
+    /* universal selector */
+    /* it is used for maintain space */
+    * {
+        margin:0;
+        padding: 0;
+    }
+
+    /* pseudo selector */
+    a:visited{
+        color:rgb(0, 0, 0) ;
+    }
+
+    a:link{
+        color: rgb(80, 80, 80);
+    }
+
+    a:active{
+        background-color: red;
+    }
+
+    a:hover{
+        background-color: rgb(182, 182, 122);
+    }
+
+    p:first child{
+        background-color: rgb(29, 0, 0);
+    }
+
+    </style>
+
+</head>
+<body>
+    <main class="one">
+       <p>i am first</p>
+       <p>i am second</p>
+    </main>
+
+
+    <div class="red">
+        iam a div
+
+        <article>
+        <p> iam a paragraph on div</p>
+    </article>
+
+    </div>
+
+    <div id="green">
+        iam another div
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.Facebook.com">Go to Facebook</a>
+        <a href="https://chat.openai.com/">Go to ChatGPT</a>
+    </div>
+</body>
+</html>

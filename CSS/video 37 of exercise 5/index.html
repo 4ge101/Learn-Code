@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primarycolor: #083a11;
+            --secondarycolor: #16511f;
+            --backcolor: #61996b;
+            --textcolor: #dafee0;
+        }
+
+        ::selection {
+            background-color: var(--primarycolor);
+            color: white;
+        }
+
+        body {
+            background-color: var(--backcolor);
+        }
+
+        .navbar {
+            background-color: var(--primarycolor);
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            margin: 8px;
+            padding: 8px;
+            gap: 30px;
+            margin-left: 55em;
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links li:hover {
+            background-color: var(--secondarycolor);
+            border-radius: 10px;
+        }
+
+        .container1 {
+            height: 60vh;
+            width: 40vw;
+            border: 2px solid black;
+            margin: 50px;
+
+        }
+
+        .container2 {
+            height: 60vh;
+            width: 40vw;
+            border: 2px solid black;
+            margin: 50px;
+            position: relative;
+            left: 39em;
+            bottom: 27em;
+        }
+
+        .container2 img {
+            width: 40vw;
+            height: 60vh;
+        }
+
+        .container1 img {
+            width: 40vw;
+            height: 60vh;
+        }
+
+        .about-page {
+            width: 60vw;
+            height: 50vh;
+            border: 2px solid black;
+            position: relative;
+            left: 15em;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: var(--textcolor);
+            position: relative;
+            top: 6em;
+        }
+
+        .about-page p {
+            position: relative;
+            top: 8em;
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 2em;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+
+        }
+
+        .container {
+            background-color: var(--secondarycolor);
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: auto;
+            background-color: black;
+            padding: 60px 10%;
+            position: relative;
+            top: 16em;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer-col {
+            width: 25%;
+        }
+
+        .footer-col h4 {
+            position: relative;
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 22px;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            background-color: aqua;
+            height: 2px;
+            width: 40px;
+        }
+
+        .footer ul li:not(:last-child){
+            margin-bottom: 8px;
+        }
+
+        .footer ul li a{
+            display: block;
+            font-size: 19px;
+            text-transform: capitalize;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+
+        .footer ul li a:hover{
+            color: white;
+            padding-left: 8px;
+        }
+
+        .links a{
+            display: inline-block;
+            height: 44px;
+            width: 44px;
+            color: white;
+            background-color: steelblue;
+            margin: 0 8px 8px 0;
+            text-align: center;
+            line-height: 44px;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+
+        .links a:hover{
+            color: var(--primarycolor);
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">About Us</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+            <li>
+                <a href="">Service</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="container1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzFw1AHuQRVnVCCjnFXCo6hBCygjkwdYwRjjxn2qzWBA&s"
+                alt="image">
+        </div>
+        <div class="container2">
+            <img src="https://y20india.in/wp-content/uploads/2024/04/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg"
+                alt="image">
+        </div>
+    </div>
+
+    <div class="about-page">
+        <p>
+            Welcome to our page we provide you bwtter web side on cheaper rent also we make a school website
+        </p>
+    </div>
+    <div class="icon">
+        <i class="fa-brands fa-github"></i>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-col">
+            <h4>Conatct US</h4>
+            <ul>
+                <li><a href="">Nepal</a></li>
+                <li><a href="">Biratanagar</a></li>
+                <li><a href="">+912 635491</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Products</h4>
+            <ul>
+                <li><a href="">Teams</a></li>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Talent</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>About US</h4>
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Events</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Follow US</h4>
+            <div class="links">
+                <a href=""><i class="fab fa-github"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-telegram"></i></a>
+                <a href=""><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

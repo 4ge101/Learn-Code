@@ -1,0 +1,94 @@
+.bg{
+    background-color:#909497;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+       .hello{
+        
+        text-align: center;
+        color: #1C2833;
+        text-decoration: underline;
+        font-style: italic;
+        text-decoration-thickness: 3px;
+        
+    }
+
+
+    .hell{
+        text-align: center;
+        color: #97574A;
+        text-decoration: underline;
+        
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        text-decoration-thickness: 2px;
+        
+    }
+
+
+    .hell input[type="text"] {
+        border-radius: 2px;
+        font-style: italic;
+        color: rgb(0, 0, 0);
+        font-weight: 600px;
+    }
+
+    #Name3{
+border-radius: 2px;
+}
+
+
+.hell2{
+    text-align: center;
+    /* text-indent: 280px; */
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 600px;
+    color: #4E4745;
+    text-decoration-thickness: 2px;
+
+}
+
+
+
+ .sami{
+    text-align: center;
+} 
+
+.sami textarea{
+    border-radius: 4px
+}
+
+
+.sami input[type="button"] {
+width: 200px;
+height:40px;
+background-color: rgb(38, 0, 255);/* Green background */
+border: none; /* Remove border */
+border-radius: 12px;  /*to give roundness*/
+color: white; /* White text */
+text-align:center ; /* Center text */
+text-decoration: none;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;/*It make cursuor when we go our arrow*/
+}
+
+.food{
+    text-align: center;
+    color: rgb(45, 78, 92);
+    border-radius: 14px;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    
+}
+
+.country{
+    text-align: center;
+}

@@ -1,0 +1,80 @@
+.container {
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+
+}
+
+label {
+    font-size: 20px;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 17px;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 17px;
+}
+
+input[type=submit]:hover {
+    background: rgb(21, 223, 162);
+    color: white;
+    border: none;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+}
+
+input[type=reset]:hover {
+    background: rgb(21, 223, 162);
+    color: white;
+    border: none;
+}
+
+input[type=reset] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

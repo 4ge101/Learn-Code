@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-bar</title>
+</head>
+<style>
+    :root {
+        --color: gray;
+        --seccolor: white;
+        --color2: rgb(41, 40, 40);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        place-content: end;
+        background-color: var(--color);
+        /*this is variable of root element*/
+        border: 2px solid black;
+        border-radius: 8px;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--seccolor);
+    }
+
+    nav ul li a:hover {
+        background-color: var(--color2);
+        padding: 12px;
+        border-radius: 25px;
+    }
+
+    .text {
+        margin: 30px;
+        color: var(--color);
+    }
+</style>
+
+<body>
+    <nav class="navbar-container">
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid ea perspiciatis veritatis cum consequatur
+            amet exercitationem voluptatem facilis sint, maxime delectus odio doloribus eum similique explicabo
+            repudiandae quibusdam laboriosam deleniti tempore. Dignissimos hic voluptatibus voluptates tempora provident
+            quod eos magni, iure sunt? Libero recusandae, sed, explicabo officiis obcaecati assumenda doloribus ratione
+            distinctio incidunt nostrum unde blanditiis ipsum fugiat. Animi dolores vitae odit doloribus minus ea
+            veniam, distinctio quod nisi dolor fugiat, laborum libero similique molestias reiciendis ipsum sit illum,
+            ducimus dicta consectetur modi. Sapiente quod perferendis facere accusantium enim. Rem doloribus, veritatis,
+            quibusdam officiis, dolore quam dicta commodi expedita numquam laborum impedit! Facilis ullam est
+            perspiciatis eligendi in omnis voluptatem architecto nulla, recusandae dolor quod, temporibus dolorum neque
+            quis quaerat excepturi provident eaque pariatur praesentium vero! Voluptatibus voluptatum, quam reiciendis,
+            iusto natus ea placeat doloremque repellendus aperiam officia a ullam omnis. Eius velit totam tempore
+            eligendi quo a harum, exercitationem quae fuga sint aperiam nulla. Quidem facere nam ad, et inventore iste
+            laborum blanditiis non atque quibusdam cumque odit deserunt dicta molestias quaerat sapiente quia reiciendis
+            similique in sequi commodi nobis temporibus corrupti necessitatibus. Incidunt animi quam dolorum mollitia
+            ducimus similique porro! Minima voluptate, quasi aliquid accusamus nemo ullam beatae maxime reiciendis dicta
+            error in dolorem incidunt ipsa quam ipsam nisi quae accusantium doloribus. Soluta praesentium natus nam
+            quis, repellendus repudiandae saepe.
+        </p>
+    </div>
+</body>
+
+</html>

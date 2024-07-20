@@ -1,0 +1,75 @@
+.head{
+    color: #2E4053;
+    text-decoration: underline;
+    text-align: center;
+    font-style: italic;
+    text-decoration-thickness: 2px;  
+}
+
+.form{
+    color: #2E4053;
+    font-style: italic;
+    /* border-radius: 35px; */  
+    /* border: 1px solid black; */
+    padding-top: 8px;
+    text-align: center;
+   
+}
+
+.main-form{
+    border: 3px solid black;
+    width: 350px;
+    margin-left:500px;
+    border-radius: 4px;
+    background-color: rgb(14, 194, 226);
+   
+}
+
+
+.form input[type=text]{
+    border-radius: 5px;
+    text-align: center;
+    font-style: italic;
+
+}
+
+.form input[type=email]{
+    border-radius: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+.form input[type=password]{
+    border-radius: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.button1 input[type=submit] {
+    color: #ffffff;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #000000;
+    margin: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    height: 30px;
+    width: 200px;
+}
+
+.button2{
+    color: #1F1F25;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #7B7D7D;
+    margin: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    height: 30px;
+    width: 200px;
+
+}
+

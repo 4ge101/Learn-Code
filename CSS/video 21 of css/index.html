@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* the specificity of this selectar is 1 */
+        h1{
+            color: pink;
+        }
+
+         /* the specificity of this selectar is 1 + 10 = 11 */
+    h1.yellow{
+        color: yellow;
+    }
+
+
+     /* the specificity of this selectar is 10 */
+    .cpurple{
+        color: purple;
+    }
+
+
+       /* the specificity of this selectar is 10 */
+       .cred{
+        color: red;
+    }
+
+    /* this is an example of attrubites selectar. The specifity of this seleter is 10 */
+     [data-X="a"] {
+        color: maroon;
+    } 
+    </style>
+</head>
+<body>
+    <div>
+        <h1"class="yellow cred cpurple" data-X="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>

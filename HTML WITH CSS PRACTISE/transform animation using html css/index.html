@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in CSS</title>
+</head>
+<style>
+    .main-container {
+        display: grid;
+        row-gap: 2em;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8 {
+        box-shadow: 2px 2px 2px 1px black;
+        width: 15vw;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: beige;
+    }
+
+    .small-box1,
+    .small-box2,
+    .small-box3,
+    .small-box4,
+    .small-box5,
+    .small-box6,
+    .small-box7,
+    .small-box8 {
+        box-shadow: 2px 2px 2px 1px black;
+        width: 15vw;
+        height: 30vh;
+        z-index: 100;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .container2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .small-box1:hover {
+        transform: translateX(20%);
+        background-color: #07311b;
+        transition: 0.3s;
+    }
+
+    .small-box2:hover {
+        transform: rotateX(40deg);
+        background-color: #07311b;
+        transition: 0.3s;
+    }
+
+    .small-box3:hover {
+        transform: scaleX(1.2);
+        background-color: #07311b;
+        transition: 0.3s;
+    }
+
+    .small-box4:hover {
+        transform: skewX(15deg);
+        background-color: #07311b;
+        transition: 0.3s;
+    }
+
+    .small-box5:hover {
+        transform: translateY(20%);
+        background-color: #07311b;
+        transition: 0.3s;
+    }
+
+    .small-box6:hover {
+        transform: rotateY(40deg);
+        background-color: #07311b;
+        transition: 0.3s;
+    }
+
+    .small-box7:hover {
+        transform: scaleY(1.2);
+        background-color: #07311b;
+        transition: 0.3s;
+    }
+
+    .small-box8:hover {
+        transform: skewY(15deg);
+        background-color: #07311b;
+        transition: 0.3s;
+    }
+
+    @media screen and (max-width: 360px){
+    
+    }
+</style>
+
+<body>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="box1">
+                <div class="small-box1"></div>
+            </div>
+            <div class="box2">
+                <div class="small-box2"></div>
+            </div>
+            <div class="box3">
+                <div class="small-box3"></div>
+            </div>
+            <div class="box4">
+                <div class="small-box4"></div>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="box5">
+                <div class="small-box5"></div>
+            </div>
+            <div class="box6">
+                <div class="small-box6"></div>
+            </div>
+            <div class="box7">
+                <div class="small-box7"></div>
+            </div>
+            <div class="box8">
+                <div class="small-box8"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

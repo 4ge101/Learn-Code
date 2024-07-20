@@ -1,0 +1,142 @@
+/* variables */
+:root {
+    --color: #172d54;
+    --seccolor: #1f4789;
+    --primcolor: #16181d;
+    --whitecolor: white;
+}
+
+.container {
+    display: flex;
+    font-size: 14px;
+    height: 100vh;
+    background: rgb(212, 205, 205);
+}
+
+.navbar {
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #172d54;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link,
+.drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background: #172d54;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+}
+
+.nav-link:hover {
+    background-color: black;
+    color: #fff;
+    border-radius: 0.5em;
+}
+
+.services:hover .drop-down {
+    display: block;
+}
+
+.services a {
+    display: flex;
+}
+
+.dropdown-icon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+    bottom: 6px;
+}
+
+.services:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /* Styling for the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    gap: 20px; /* Gap between the links */
+}
+
+/* Styling for the links */
+.underline {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    font-size: 18px;
+}
+
+/* Create the animated underline effect */
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
