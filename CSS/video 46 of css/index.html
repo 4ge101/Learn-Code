@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+</head>
+
+<style>
+    .container {
+        background-color: rgba(1, 70, 1, 0.795);
+        height: 80vh;
+        width: 30vw;
+    }
+
+    .box {
+        width: 34px;
+        height: 35px;
+        background: rgb(2, 175, 255);
+        animation-name: Sami;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes Sami{
+        from{
+
+        }
+
+        to{
+            transform: translateX(1000px);
+        }
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+
+</body>
+
+</html>
