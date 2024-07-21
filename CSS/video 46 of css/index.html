@@ -17,19 +17,45 @@
     .box {
         width: 34px;
         height: 35px;
-        background: rgb(2, 175, 255);
-        animation-name: Sami;
+        /* animation-name: Sami;
         animation-duration: 1s;
         animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0,1.02,.79,-0.09);
+        animation-delay: 1s;
+        animation-direction: reverse;
+        animation-play-state: paused; */
+        /* to know how to combine all animation property in one we use this property */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: Sami 3s ease-in-out 2s 1,
+                   Sami2 3s ease-in-out 1s 5;
     }
 
-    @keyframes Sami{
-        from{
-
+    @keyframes Sami {
+        from {
+            background-color: red;
         }
 
-        to{
+        to {
+            background-color: blue;
             transform: translateX(1000px);
+        }
+    }
+
+    @keyframes Sami2{
+        0%{
+            transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(200deg);
+        }
+        50%{
+            transform: rotate(210deg);
+        }
+        80%{
+            transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(320deg);
         }
     }
 </style>
