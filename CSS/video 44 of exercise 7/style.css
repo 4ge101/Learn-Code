@@ -81,13 +81,3 @@ nav {
 .logo2 img {
     width: 200px;
 }
-
-.logo2 {
-    display: grid;
-    grid-template-areas:
-        "logo";
-    position: relative;
-    top: 7em;
-    left: 10em;
-
-}

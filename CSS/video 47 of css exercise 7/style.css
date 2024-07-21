@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* making navigation bar */
+.logo img {
+    width: 164px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.right ul li span {
+    padding: 0 5px;
+}
+
+/* making center to the heading */
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin: 70px;
+    font-family: sans-serif;
+}
+
+section span img {
+    margin: 0 23px;
+    width: 14%;
+}
+
+.first span {
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* this is second paragraph from top */
+.second-paragraph {
+    font-size: 24px;
+    width: 77vw;
+    text-align: center;
+}
+
+/* desgining button of "downlaod mac or linux" */
+.btn {
+    padding: 16px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    background: #00b6d1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 12px 0px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.green {
+    background-color: #5cb85c;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.second {
+    max-width: 70%;
+    margin: auto;
+}
+
+.item {
+    padding: 23px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.item-lang {
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+/* this is for image width */
+.downalod :nth-child(1) {
+    width: 7%;
+}
+
+.downalod :nth-child(2) {
+    font-size: 23px;
+}
+
+.downalod {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 1145px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
