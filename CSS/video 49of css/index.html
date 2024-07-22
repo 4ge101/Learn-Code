@@ -7,8 +7,8 @@
     <title>CSS Object-fit & Object-cover</title>
     <style>
         .container {
-            width: 688px;
-            height: 634px;
+            width: 488px;
+            height: 434px;
             border: 2px solid black;
             background-color: azure;
         }
@@ -16,7 +16,10 @@
         img {
             width: 488px;
             height: 434px;
-            object-fit: cover;
+            object-fit: fill;
+            /* object-fit: cover; */
+            object-position: bottom right;
+            /* object-fit: contain; */
         }
     </style>
 </head>
