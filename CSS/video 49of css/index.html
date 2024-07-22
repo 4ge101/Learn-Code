@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Object-fit & Object-cover</title>
+    <style>
+        .container {
+            width: 688px;
+            height: 634px;
+            border: 2px solid black;
+            background-color: azure;
+        }
+
+        img {
+            width: 488px;
+            height: 434px;
+            object-fit: cover;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <img src="https://t4.ftcdn.net/jpg/07/46/12/49/240_F_746124948_s6ug7qYH1e8CEHIfhExvlwTPzvvi5P4z.jpg"
+            alt="iamge">
+    </div>
+
 </body>
+
 </html>
