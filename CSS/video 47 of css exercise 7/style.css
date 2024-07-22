@@ -141,3 +141,52 @@ section span img {
         grid-template-columns: 1fr;
     }
 }
+
+/* started to desgin the footer of the website */
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-col ul li {
+    list-style: none;
+    padding: 2px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-col h4 {
+    position: relative;
+    left: 40px;
+}
+
+/* responsive for mobile */
+@media (max-width: 360px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* responsive for tablet */
+@media (min-width: 361px) and (max-width: 915px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-col h4 {
+        position: relative;
+        left: 33px;
+        font-size: 16px;
+    }
+}
