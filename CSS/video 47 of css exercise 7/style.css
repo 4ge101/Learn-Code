@@ -178,8 +178,117 @@ section span img {
     margin: 0;
 }
 
+/* desgning form in footer */
+form {
+    max-width: 17.5%;
+    font-size: 16px;
+    position: absolute;
+    margin: 55px 0;
+    padding: 0 39px;
+}
+
+input[type=email] {
+    padding: 10px 16px;
+    border-radius: 7px;
+    border: 1px solid #22242626;
+}
+
+.sub-btn {
+    width: 90%;
+    padding: 10px 25px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+    border: #00b6d1;
+    background-color: #00b6d1;
+}
+
 /* responsive for mobile */
 @media (max-width: 360px) {
+    .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        margin: 25px;
+        font-family: sans-serif;
+    }
+
+    section span img {
+        margin: 0px 24px;
+        width: 34%;
+    }
+
+    .first span {
+        font-size: 31px;
+        text-align: center;
+    }
+
+    .second-paragraph {
+        font-size: 16px;
+        width: 77vw;
+        text-align: center;
+    }
+
+    .downalod {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-family: sans-serif;
+        position: relative;
+        right: 3em;
+    }
+
+    .downalod :nth-child(1) {
+        width: 25%;
+    }
+
+    .small {
+        font-size: 10px;
+        position: absolute;
+        right: -10em;
+        top: 36px;
+    }
+
+    .item {
+        padding: 50px;
+    }
+
+    .second {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .downalod :nth-child(2) {
+        font-size: 18px;
+    }
+
+    /* desgning form input button */
+    .sub-btn {
+        width: 20em;
+        padding: 10px 25px;
+        margin: 10px -25px;
+        cursor: pointer;
+        border-radius: 7px;
+        font-weight: bold;
+        color: white;
+        border: #00b6d1;
+        background-color: #00b6d1;
+        font-size: 16px;
+    }
+
+    input[type="email"] {
+        padding: 10px 25px;
+        border-radius: 7px;
+        border: 1px solid #22242626;
+        width: 20em;
+        margin: 0 -25px;
+    }
+
+    /* responsive footer of the website */
     .row {
         display: grid;
         grid-template-columns: 1fr;
@@ -223,4 +332,36 @@ section span img {
         right: 43px;
         margin: 0;
     }
+
+    .downalod :nth-child(1) {
+        width: 10%;
+    }
+
+    .sub-btn {
+        width: 23em;
+        padding: 10px 25px;
+        margin: 10px 0;
+        cursor: pointer;
+        border-radius: 7px;
+        font-weight: bold;
+        color: white;
+        border: #00b6d1;
+        background-color: #00b6d1;
+        font-size: 16px;
+      }
+
+      input[type="email"] {
+        padding: 10px 16px;
+        border-radius: 7px;
+        border: 1px solid #22242626;
+        width: 25em;
+      }
+
+      form {
+        max-width: 17.5%;
+        font-size: 16px;
+        position: absolute;
+        margin: 56px -10px;
+        padding: 0 39px;
+      }
 }
