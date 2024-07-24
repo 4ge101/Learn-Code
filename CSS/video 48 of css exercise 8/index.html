@@ -7,37 +7,41 @@
     <title>Bounceing ball using css animation</title>
     <style>
         .container {
-            height: 50vh;
-            width: 60vw;
-            background: blue;
-            display: flex;
-            align-items: end;
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: blue;
         }
 
         .box {
-            height: 8vh;
-            width: 4vw;
+            height: 111px;
+            width: 111px;
+            position: absolute;
             background: red;
             border-radius: 50%;
-            /* transition: 0.3s; */
-            animation: ball 10s ease-in-out 1s infinite forwards;
+            bottom: 0;
+            left: 0;
+            animation: animateX 3s linear infinite,
+                animateY 1s ease-out infinite alternate;
         }
 
-        @keyframes ball {
-            0%{
-                transform: translate(0%);
+        @keyframes animateX {
+            from {
+                left: 0;
             }
 
-            10%{
-                transform: translateX(50%);
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes animateY {
+            from {
+                bottom: 0;
             }
 
-            11%{
-                transform: translateY(-500%);
-            }
-
-            12%{
-                transform: translateX(100%);
+            to {
+                bottom: 100%;
             }
         }
     </style>
