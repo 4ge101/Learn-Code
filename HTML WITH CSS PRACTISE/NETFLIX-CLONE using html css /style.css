@@ -10,10 +10,13 @@
 :root {
     --background-color: #e50914;
     --color: #fff;
+    --faq-color: #2d2d2d;
+    --color-black: black;
+    --footer-color: rgba(255, 255, 255, 0.7);
 }
 
 body {
-    background-color: black;
+    background-color: var(--color-black);
 }
 
 .main {
@@ -31,7 +34,7 @@ body {
     opacity: 0.69;
     position: absolute;
     top: 0;
-    background: black;
+    background: var(--color-black);
 }
 
 nav {
@@ -40,7 +43,7 @@ nav {
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    height: 62px;
+    height: 100px;
 }
 
 nav img {
@@ -57,12 +60,12 @@ nav button {
 
 .head {
     font-family: 'Martel Sans', sans-serif;
-    height: calc(100% - 62px);
+    height: calc(100% - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
+    color: var(--color);
     position: relative;
     gap: 23px;
     padding: 0 30px;
@@ -92,13 +95,15 @@ nav button {
 .separation {
     height: 7px;
     background-color: #232323;
+    position: relative;
+    z-index: 20;
 }
 
-/* desging buttons */
+/* designing buttons */
 .btn {
     padding: 3px 8px;
     font-weight: 500;
-    background-color: white;
+    background-color: var(--color);
     border: 1px solid var(--background-color);
     cursor: pointer;
     border-radius: 4px;
@@ -108,17 +113,25 @@ nav button {
     background-color: var(--background-color);
     color: var(--color);
     padding: 10px 24px;
-    font-size: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-red span img {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 14px;
 }
 
 .main input {
     padding: 14px 100px 14px 14px;
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 17px;
     border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.7);
-    color: white;
+    color: var(--color);
     border: 1px solid rgba(236, 226, 226, 0.4);
+    width: 40%;
 }
 
 .btn-red-sm {
@@ -133,3 +146,311 @@ nav button {
     justify-content: center;
     gap: 16px;
 }
+
+/* making second row  */
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: var(--color);
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+
+.section-img {
+    position: relative;
+}
+
+.section-img img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.section-img video {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.first>div :first-child {
+    font-size: 45px;
+    font-weight: bolder;
+    padding: 0 0 15px;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.third>div :nth-child(2) {
+    max-width: 35vw;
+    padding: 0px 265px 0 0;
+}
+
+.third {
+    padding: 75px 0 75px 0;
+}
+
+/* designing Frequently Asked Questions (faq) */
+
+.faq {
+    background-color: var(--color-black);
+    color: var(--color);
+    padding: 34px;
+}
+
+.faq-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--faq-color);
+    padding: 24px;
+    max-width: 70vw;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq-box:hover {
+    background-color: #414141;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* designing last form in bottom */
+.bottom {
+    text-align: center;
+}
+
+.bottom span {
+    color: white;
+    font-size: 20px;
+}
+
+.bottom input {
+    padding: 14px 0 14px 24px;
+    font-size: 17px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: var(--color);
+    border: 1px solid rgba(236, 226, 226, 0.4);
+    width: 31%;
+}
+
+.head-buttons2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 18px;
+}
+
+/* designing footer of the website */
+footer {
+    color: white;
+    max-width: 76vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 16px 0;
+    font-size: 14px;
+    color: var(--footer-color);
+    text-decoration: underline;
+}
+
+/* (.footer) is class */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer ul li {
+    list-style: none;
+    padding: 8px;
+}
+
+.footer a {
+    color: var(--footer-color);
+}
+
+.column {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+select {
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(236, 226, 226, 0.4);
+    padding: 5px 22px;
+    color: var(--color);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .head> :nth-child(1) {
+        font-size: 28px;
+    }
+
+    .head> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .head> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    nav {
+        max-width: 90vw;
+    }
+
+    nav img {
+        width: 105px;
+    }
+
+    .head-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .main input {
+        padding: 14px 130px 14px 14px;
+        font-size: 17px;
+    }
+
+    .btn-red {
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+
+    .faq h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        max-width: 90vw;
+    }
+
+    .footer {
+        align-items: center;
+    }
+
+    .first>div :first-child {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .first>div :nth-child(2) {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        margin: 16px 0 0;
+    }
+
+    .section-img img,
+    .section-img video {
+        width: 100%;
+    }
+
+    .third {
+        padding: 10px 0 10px 0;
+      }
+
+      .fourth > div :first-child {
+        font-size: 25px;
+        text-align: center;
+      }
+}
+
+/* @media (min-width: 230px) and (max-width: 600px) {
+    .head> :nth-child(1) {
+        font-size: 28px;
+    }
+
+    .head> :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .head> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    nav img {
+        width: 105px;
+    }
+
+    .main input {
+        padding: 9px 145px 14px 14px;
+    }
+
+    .head-buttons {
+        display: block;
+    }
+
+    .btn-red {
+        padding: 10px 10px;
+        font-size: 19px;
+        margin: 15px auto;
+    }
+
+    .first>div :first-child {
+        font-size: 28px !important;
+    }
+
+    .first>div :nth-child(2) {
+        font-size: 18px !important;
+        font-weight: 400;
+        margin: 16px 0 0;
+    }
+
+    .section-img img {
+        width: 100% !important;
+    }
+
+    .section-img video {
+        width: 100% !important;
+    }
+
+    .second div span {
+        text-align: center;
+    }
+} */
