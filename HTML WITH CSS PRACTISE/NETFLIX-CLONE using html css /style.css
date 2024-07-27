@@ -314,14 +314,6 @@ select {
     border-radius: 4px;
 }
 
-/* responsive */
-@media screen and (max-width: 1200px) {
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
-}
 
 @media screen and (max-width: 1200px) {
     .head> :nth-child(1) {
@@ -393,64 +385,54 @@ select {
 
     .third {
         padding: 10px 0 10px 0;
-      }
+    }
 
-      .fourth > div :first-child {
+    .fourth>div :first-child {
         font-size: 25px;
         text-align: center;
-      }
+    }
+
+    .first {
+        flex-direction: column-reverse;
+    }
+
+    .bottom span {
+        font-size: 19px;
+    }
+
+    .faq-box {
+        font-size: 17px;
+    }
+
+    .head-buttons2 {
+        flex-wrap: wrap;
+        padding: 15px 0 50px 0;
+    }
+
+    .bottom input {
+        width: 75%;
+    }
+
+    .last-btn {
+        font-size: 16px;
+        margin: 0 0 0 15px;
+    }
+    
+    .third>div :nth-child(2) {
+        max-width: 100vw;
+        padding: 0;
+    }
 }
 
-/* @media (min-width: 230px) and (max-width: 600px) {
-    .head> :nth-child(1) {
-        font-size: 28px;
+/* responsive */
+@media screen and (max-width: 1200px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
     }
 
-    .head> :nth-child(2) {
-        font-size: 16px;
+    footer {
+        padding: 18px;
     }
-
-    .head> :nth-child(3) {
-        font-size: 18px;
-    }
-
-    nav img {
-        width: 105px;
-    }
-
-    .main input {
-        padding: 9px 145px 14px 14px;
-    }
-
-    .head-buttons {
-        display: block;
-    }
-
-    .btn-red {
-        padding: 10px 10px;
-        font-size: 19px;
-        margin: 15px auto;
-    }
-
-    .first>div :first-child {
-        font-size: 28px !important;
-    }
-
-    .first>div :nth-child(2) {
-        font-size: 18px !important;
-        font-weight: 400;
-        margin: 16px 0 0;
-    }
-
-    .section-img img {
-        width: 100% !important;
-    }
-
-    .section-img video {
-        width: 100% !important;
-    }
-
-    .second div span {
-        text-align: center;
-    }
-} */
+}
