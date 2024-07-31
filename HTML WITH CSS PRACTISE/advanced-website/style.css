@@ -1,0 +1,918 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --color-black: black;
+    --regular-color: white;
+    --footer-color: #6B7280;
+}
+
+/* body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+} */
+
+body {
+    background: #101116;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 944px;
+    height: 44px;
+    padding: 12px 12px 12px 16px;
+    border-radius: 24px;
+    border: 0.5px solid #575757;
+    background: #111215;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    display: flex;
+    gap: 4px;
+}
+
+.logo span {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: var(--regular-color);
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #828792;
+}
+
+.btn .btn-gray {
+    color: #B6B6B8;
+    padding: 8px 24px;
+    border-radius: 30px;
+    border: 1px solid #6F7276;
+    font-size: 16px;
+    background: none;
+    font-weight: 400;
+}
+
+.btn .btn-blue {
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 30px;
+    border: 1px solid #2B59FF;
+    font-size: 16px;
+    background: #2B59FF;
+    font-weight: 400;
+}
+
+.btn {
+    display: flex;
+    gap: 12px;
+}
+
+main {
+    padding: 55px 0;
+    font-family: "c Jakarta Sans", sans-serif;
+}
+
+.bg-green {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+}
+
+.bg-blue {
+    position: absolute;
+    top: 18em;
+    z-index: -1;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding: 40px 0;
+    display: block;
+    text-align: center;
+    width: 550px;
+    max-width: 550px;
+}
+
+.content span {
+    font-size: 72px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #BEC9E5;
+    font-weight: 700;
+}
+
+sup svg {
+    margin: 0 -12px 20px;
+}
+
+.content .black-head {
+    color: var(--color-black);
+}
+
+.articels {
+    color: var(--regular-color);
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: 5px 0 35px 0;
+}
+
+.wrapper-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.wrapper-btn button {
+    padding: 16px 20px;
+    border-radius: 50px;
+    background: #2B59FF;
+    border: 1px solid #2B59FF;
+    color: var(--regular-color);
+    font-size: 21px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 234px;
+    height: 61px;
+    font-family: Poppins;
+}
+
+.wrapper-btn svg {
+    width: 22px;
+    height: 32px;
+}
+
+.section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1140px;
+    height: 715px;
+    border-radius: 16px;
+    border: 1px solid #9F9A9A;
+    background: linear-gradient(184deg, rgba(142, 143, 149, 0.10) -41.76%, #28292D 16.5%, #0C0D12 96.95%);
+    overflow: hidden;
+}
+
+.menu img {
+    width: 305px;
+    height: 723px;
+    border-radius: 16px 0 0 16px;
+}
+
+.chat img {
+    position: relative;
+    bottom: 81%;
+    left: 7%;
+}
+
+.ai img {
+    position: absolute;
+    padding: 70px 42px;
+}
+
+.chat2 {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: relative;
+    bottom: 70%;
+    right: 5%;
+}
+
+.ai2 {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: relative;
+    bottom: 67%;
+    right: 2%;
+}
+
+.chat3 img {
+    position: relative;
+    bottom: 60%;
+    left: 30%;
+}
+
+.ai3 {
+    position: relative;
+    bottom: 68%;
+    left: 29%;
+}
+
+.search-bar {
+    position: relative;
+    bottom: 32%;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.heading h1 {
+    font-family: "Plus Jakarta Sans";
+    font-size: 48px;
+    font-weight: 700;
+    color: #D1D8ED;
+}
+
+.heading svg {
+    width: 54.345px;
+    height: 35.864px;
+}
+
+.heading h1 span {
+    color: #69E6AE;
+}
+
+.small-head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.small-head span {
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-weight: 500;
+    color: #BCBFC3;
+}
+
+.card-box {
+    padding: 128px 0 0 0;
+    background-image: url("");
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 60px 0 0 0;
+}
+
+.card1 {
+    display: flex;
+    width: 392px;
+    height: 455px;
+    padding: 32px;
+    gap: 8px;
+    border-radius: 16px;
+    border: 1px solid #141414;
+    background: #1E1F26;
+    justify-content: center;
+}
+
+.card2 {
+    display: flex;
+    width: 588px;
+    height: 455px;
+    padding: 32px;
+    gap: 8px;
+    border-radius: 16px;
+    border: 1px solid #141414;
+    background: #1E1F26;
+}
+
+.second-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 0 0 0;
+}
+
+.card3 {
+    width: 588px;
+    height: 455px;
+    padding: 32px;
+    gap: 8px;
+    border-radius: 16px;
+    border: 1px solid #141414;
+    background: #1E1F26;
+}
+
+.card4 {
+    width: 392px;
+    height: 455px;
+    padding: 32px;
+    gap: 8px;
+    border-radius: 16px;
+    border: 1px solid #141414;
+    background: #1E1F26;
+}
+
+.card1 h1 {
+    font-family: "Plus Jakarta Sans";
+    font-size: 30px;
+    font-weight: 700;
+    color: #F2F2F7;
+}
+
+.card2 h1 {
+    font-family: "Plus Jakarta Sans";
+    font-size: 30px;
+    font-weight: 700;
+    color: #F2F2F7;
+    width: 150%;
+}
+
+.card1 span {
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    color: #BCBFC3;
+    font-weight: 500;
+}
+
+.card2 span {
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+    color: #BCBFC3;
+    display: flex;
+    gap: 8px;
+}
+
+.small-card-heading2 {
+    width: 200%;
+}
+
+.small-card-heading3 {
+    color: #BCBFC3;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-heading {
+    display: grid;
+    justify-content: center;
+}
+
+.card-heading3 h1 {
+    color: #F2F2F7;
+    font-family: "Plus Jakarta Sans";
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-heading4 h1 {
+    color: #F2F2F7;
+    font-family: "Plus Jakarta Sans";
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-heading4 span {
+    color: #BCBFC3;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-card-img {
+    display: grid;
+    gap: 8px;
+    padding: 15px 0;
+}
+
+.main-card-img4 {
+    position: relative;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.card-img-row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.png-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translateX(120%) translateY(150%);
+    z-index: 11;
+}
+
+.png-wrapper3 {
+    padding: 22px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+}
+
+.png {
+    display: flex;
+    align-items: center;
+}
+
+.png h6 {
+    color: var(--regular-color);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.vector-img img {
+    position: absolute;
+    left: 12px;
+    z-index: -1;
+    top: 4em;
+}
+
+.icon {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    height: 0;
+    position: relative;
+    top: 29em;
+    right: 5em;
+}
+
+.icon .facebook {
+    font-size: 60px;
+    color: #1877F2;
+    background-color: var(--regular-color);
+    border-radius: 100%;
+}
+
+.icon .instagram {
+    font-size: 60px;
+    color: #2000ff;
+}
+
+.icon .reddit {
+    font-size: 60px;
+    background-color: #FF5700;
+    border-radius: 100%;
+    color: var(--regular-color);
+}
+
+.icon .twitter {
+    font-size: 60px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 110px 0 20px;
+    /*padding 110px used to give space from top and we dont need space from left right or bottom*/
+}
+
+.logo-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-head h1 {
+    color: #D1D8ED;
+    font-family: "Plus Jakarta Sans";
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.logo2 {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.main-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.floating-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    width: 86px;
+    height: 20px;
+    margin: auto;
+    border-radius: 16px;
+    background: #0F0D0D;
+}
+
+.floating-tag span {
+    color: #CFCFCF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pricing-head {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing-head h1 {
+    max-width: 75vw;
+    color: #F2F2F7;
+    font-family: "Plus Jakarta Sans";
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.small-pricing-head {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.small-pricing-head span {
+    color: var(--Main-04, #8F9BA7);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.toggle i {
+    font-size: 30px;
+}
+
+.toggle span {
+    color: #2B59FF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pricing-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pricing-card1 {
+    width: 320px;
+    gap: 24px;
+    border-radius: 16px;
+    border: 0.5px solid #FBFCFE;
+    background: #1E1F26;
+}
+
+.pricing1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 32px 0px 32px;
+}
+
+.pricing-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small-pricing1 {
+    color: #175CD3;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pricing1 h1 {
+    color: #DEDEE6;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.96px;
+    height: 30px;
+    position: relative;
+    bottom: 20px;
+}
+
+.small-pricing2 {
+    color: #8F9BA7;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing2 {
+    display: flex;
+    padding: 32px 32px;
+}
+
+.pricing2 span {
+    color: #8F9BA7;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pricing2-box div {
+    display: flex;
+    gap: 6px;
+}
+
+.pricing2-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pricing2-box span {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 258px;
+}
+
+.pricing-started-btn {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pricing-started-btn button {
+    display: flex;
+    width: 234px;
+    height: 61px;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px;
+    background: #2B59FF;
+    color: #F2F2F7;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.trial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0px;
+}
+
+.trial-box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.trial-container h1 {
+    color: #F2F2F7;
+    font-family: "Plus Jakarta Sans";
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+    height: 50px;
+}
+
+.trial-container span {
+    color: #8F9BA7;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.trial-btn {
+    display: flex;
+    gap: 12px;
+}
+
+.trial-learn-btn button {
+    display: flex;
+    width: 234px;
+    height: 61px;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #F2F2F7;
+    color: #12141D;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 500;
+    border: 1px;
+}
+
+.trial-get-btn button {
+    display: flex;
+    width: 234px;
+    height: 61px;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #2B59FF;
+    color: #F2F2F7;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 500;
+    border: 1px;
+}
+
+.last-content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 64px;
+}
+
+.last-container {
+    display: flex;
+    padding: 64px;
+    border-radius: 16px;
+    background: #1E1F26;
+    width: 1088px;
+    height: 200px;
+    flex-direction: column;
+}
+
+.last-head h1 {
+    display: flex;
+    justify-content: center;
+    color: #F2F2F7;
+    font-family: "Plus Jakarta Sans";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.96px;
+}
+
+.last-small-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #8F9BA7;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mail-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mail {
+    display: flex;
+    gap: 16px;
+}
+
+.mail input {
+    padding: 12px 14px;
+    width: 332px;
+    height: 24px;
+    border-radius: 200px;
+    border: #D0D5DD;
+    background: var(--regular-color);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.subscribe-btn {
+    padding: 12px 20px;
+    border-radius: 200px;
+    border: 1px solid #1570EF;
+    background: #2B59FF;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: var(--regular-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.last-content {
+    display: flex;
+    justify-content: center;
+    color: #475467;
+    font-family: poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    right: 50px;
+}
+
+footer{
+    padding: 96px 150px;
+    background: #101116;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content1 {
+    color: #F8F8F8;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.footer-content2 {
+    display: flex;
+    width: 267px;
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 0;
+}
+
+.footer-column li {
+    list-style: none;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: var(--footer-color);
+}
+
+.copy-right span {
+    color: var(--footer-color);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+}
