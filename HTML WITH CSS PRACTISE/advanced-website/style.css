@@ -191,13 +191,34 @@ sup svg {
 
 .chat img {
     position: relative;
-    bottom: 81%;
     left: 7%;
 }
 
 .ai img {
     position: absolute;
-    padding: 70px 42px;
+    z-index: 11;
+    right: 100%;
+}
+
+.chat-wrapper1 {
+    position: absolute;
+    top: 45em;
+    z-index: 1;
+    right: 27em;
+}
+
+.chat-wrapper2 {
+    position: absolute;
+    top: 52em;
+    z-index: 1;
+    right: 9em;
+}
+
+.chat-wrapper3 {
+    position: absolute;
+    top: 60em;
+    z-index: 1;
+    left: 20em;
 }
 
 .chat2 {
@@ -214,11 +235,10 @@ sup svg {
 
 .ai2 {
     display: flex;
-    align-items: end;
-    justify-content: end;
-    position: relative;
-    bottom: 67%;
-    right: 2%;
+    top: 0;
+    left: 97%;
+    z-index: 2;
+    position: absolute;
 }
 
 .chat3 img {
@@ -228,14 +248,18 @@ sup svg {
 }
 
 .ai3 {
-    position: relative;
-    bottom: 68%;
-    left: 29%;
+    position: absolute;
+    bottom: 62%;
+    left: 22%;
+    z-index: 1;
 }
 
 .search-bar {
     position: relative;
-    bottom: 32%;
+    bottom: 16%;
+    display: flex;
+    justify-content: center;
+    left: 10em;
 }
 
 .heading {
@@ -727,7 +751,6 @@ sup svg {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: -0.96px;
-    height: 50px;
 }
 
 .trial-container span {
@@ -868,7 +891,9 @@ sup svg {
     right: 50px;
 }
 
-footer{
+/* -------------------- FOOTER OF THE WEBSITE -------------------- */
+
+footer {
     padding: 96px 150px;
     background: #101116;
 }
@@ -915,4 +940,413 @@ footer{
     font-weight: 500;
     line-height: 20px;
     display: flex;
+}
+
+/* --------------- ANIMATION OF WEBSITE --------------- */
+/* 
+.movedown{
+    z-index: 12;
+    position: absolute;
+    top: 17em;
+    left: 27%;
+    transform: translate(-37%);
+    transform: skew(-10deg);
+    animation: movedown 5s 4;
+    transition: 0.3s;
+}
+
+@keyframes movedown {
+    from{
+        width: 77em;
+        z-index: 12;
+        position: absolute;
+        top: 83px;
+        left: 27%;
+        animation: movedown 5s 1;
+        transform: translate(-37%);
+        transform: skew(-10deg);
+    }
+
+    to {
+        position: absolute;
+        top: 11em;
+        z-index: 1;
+        right: 54em;
+        width: 174px;
+        height: 126px;
+    }
+} */
+/* 
+.autoshow{
+    animation: movedown 2s 1s 1;
+    animation-timeline: scroll();
+}
+
+@keyframes movedown {
+    from{
+        transform: translateY(100px) skew(-10deg);
+    }
+
+    to{
+        transform: skew(0deg);
+        transform: translateY(0) skew(0deg);
+    }
+} */
+
+
+/* .autoshow-animation {
+    animation: autoshowanimation 2s;
+}
+
+@keyframes autoshowanimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+} */
+
+
+/* ---------------- RESPONSIVE DESGIN OF WEBSITE FOR MOBILES --------------- */
+
+@media screen and (max-width: 600px) {
+    .content span {
+        font-size: 48px;
+    }
+
+    sup svg {
+        margin: 0px -12px 8px;
+    }
+
+    .responsive-head {
+        display: flex;
+        justify-content: center;
+    }
+
+    .articels {
+        font-size: 16px;
+    }
+
+    .menu img {
+        width: 123px;
+        height: 682px;
+    }
+
+    .chat-wrapper1 {
+        position: absolute;
+        top: 45em;
+        z-index: 1;
+        right: 21em;
+    }
+
+    .chat img {
+        position: relative;
+        width: 11em;
+        height: 5em;
+        left: 20em;
+        bottom: 3em;
+    }
+
+    .ai img {
+        position: absolute;
+        left: 18em;
+        bottom: 7em;
+    }
+
+    .chat2 img {
+        width: 11em;
+        height: 5em;
+    }
+
+    .chat-wrapper2 {
+        position: absolute;
+        top: 50em;
+        right: 2em;
+    }
+
+    .ai2 {
+        left: 11em;
+        z-index: 2;
+        position: absolute;
+        bottom: 4em;
+    }
+
+    .chat3 img {
+        width: 11em;
+        height: 5em;
+    }
+
+    .chat-wrapper3 {
+        position: absolute;
+        top: 59em;
+        left: 8em;
+    }
+
+    .ai3 {
+        position: absolute;
+        bottom: 68%;
+        left: 11%;
+    }
+
+    .search-bar {
+        position: relative;
+        bottom: 18%;
+        left: 4em;
+    }
+
+    .search-bar img {
+        width: 14em;
+    }
+
+    .container {
+        height: 680px;
+    }
+
+    .bg-blue {
+        position: absolute;
+        top: 18em;
+        z-index: -1;
+        right: 0;
+    }
+
+    .card-box {
+        padding: 100px 0 0 0;
+    }
+
+    .heading h1 {
+        font-size: 31px;
+    }
+
+    .heading svg {
+        width: 36.345px;
+        height: 29.864px;
+    }
+
+    .small-head span {
+        font-size: 14px;
+    }
+
+    .cards {
+        padding: 60px 0 0 0;
+        display: grid;
+        gap: 10px;
+    }
+
+    .card1 h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .card1 span {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card-img img {
+        width: 170px;
+        height: 133px;
+    }
+
+    .card1,
+    .card2 {
+        width: 293px;
+    }
+
+    .card3 {
+        width: 293px;
+        height: 320px;
+    }
+
+    .card4 {
+        width: 293px;
+        height: 415px;
+    }
+
+    .card2 h1 {
+        font-size: 21px;
+        width: 340%;
+    }
+
+    .card2 span {
+        font-size: 13px;
+    }
+
+    .small-card-heading2 {
+        width: 323px;
+    }
+
+    .png-wrapper {
+        position: absolute;
+        right: 20em;
+    }
+
+    .png {
+        position: relative;
+        bottom: 23px;
+    }
+
+    .png h6 {
+        width: 6em;
+    }
+
+    .icon {
+        right: 20em;
+    }
+
+    .second-card-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 0 0;
+        gap: 10px;
+    }
+
+    .card-heading3 h1 {
+        font-size: 22px;
+    }
+
+    .small-card-heading3 {
+        font-size: 12px;
+    }
+
+    .png3 img {
+        width: 330px;
+        padding: 12px 0 0;
+    }
+
+    .card-heading4 h1 {
+        font-size: 25px;
+    }
+
+    .card-heading4 span {
+        font-size: 14px;
+    }
+
+    .main-card-img4 img {
+        width: 340px;
+        padding: 18px 0 0;
+    }
+
+    .logo2 {
+        flex-wrap: wrap;
+    }
+
+    .logo-container {
+        padding: 110px 0 60px;
+    }
+
+    .pricing-head h1 {
+        font-size: 22px;
+    }
+
+    .pricing-head img {
+        width: 16px;
+    }
+
+    .small-pricing-head span {
+        font-size: 16px;
+    }
+
+    .small-pricing-head {
+        gap: 25px;
+        padding: 10px 0 0;
+    }
+
+    .main-card-container {
+        align-items: center;
+    }
+
+    .pricing-container {
+        display: grid;
+        gap: 10px;
+    }
+
+    .trial-container h1 {
+        font-size: 30px;
+    }
+
+    .trial-container span {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .trial-learn-btn button {
+        width: 160px;
+        height: 54px;
+    }
+
+    .trial-get-btn button {
+        width: 179px;
+        height: 54px;
+    }
+
+    .trial-box {
+        gap: 30px;
+    }
+
+    .last-content-wrapper {
+        padding: 15px;
+    }
+
+    .last-container {
+        width: 226px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        padding: 64px 64px 30px;
+    }
+
+    .last-head h1 {
+        font-size: 22px;
+        line-height: 1.5;
+        width: 350px;
+    }
+
+    .last-small-head {
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mail input {
+        width: 300px;
+    }
+
+    .last-content {
+        font-size: 13px;
+        right: 0;
+    }
+
+    footer {
+        padding: 90px 0 40px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content2 {
+        width: 175px;
+    }
+
+    .copy-right span {
+        font-size: 14px;
+        line-height: 80px;
+        justify-content: center;
+    }
+
+    .responsive-footer-column {
+        position: relative;
+        bottom: 40px;
+    }
 }
