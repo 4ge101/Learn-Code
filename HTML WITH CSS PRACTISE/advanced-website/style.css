@@ -59,6 +59,10 @@ nav {
     width: 100%;
 }
 
+.menu-btn{
+    display: none;
+}
+
 .logo {
     display: flex;
     gap: 4px;
@@ -1380,6 +1384,10 @@ footer {
 @media (max-width: 800px) {
     .hide-on-mobile{
         display: none;
+    }
+
+    .menu-btn{
+        display: block;
     }
 
     .navigation a {
