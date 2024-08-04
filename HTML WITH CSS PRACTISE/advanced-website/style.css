@@ -33,33 +33,42 @@ nav {
     font-family: "Poppins", sans-serif;
 }
 
-.sidebar{
+.sidebar {
     position: absolute;
     top: 0;
-    right: 0;
-    height: 100vh;
-    width: 200px;
+    left: 0;
+    height: 30vh;
+    width: 90vw;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.082);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     margin: 0;
 }
 
-.sidebar li{
+.responsive-nav-wrapper {
+    position: absolute;
+    transform: translateX(150%) translateY(25%);
+}
+
+.sidebar li {
     width: 100%;
     padding: 10px 0;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: 25px;
 }
 
-.sidebar a{
+.sidebar a {
     width: 100%;
 }
 
-.menu-btn{
+.menu-btn {
     display: none;
 }
 
@@ -74,7 +83,7 @@ nav {
     color: var(--regular-color);
 }
 
-.unorderd-list{
+.unorderd-list {
     display: flex;
     gap: 32px;
 }
@@ -1041,7 +1050,7 @@ footer {
 
 /* ---------------- RESPONSIVE DESGIN OF WEBSITE FOR MOBILES --------------- */
 
-@media (max-width: 600px)  {
+@media (max-width: 600px) {
     .content span {
         font-size: 48px;
     }
@@ -1382,11 +1391,11 @@ footer {
 /* -----------------  RESPONSIVE NAVIGATION-BAR ----------------- */
 
 @media (max-width: 800px) {
-    .hide-on-mobile{
+    .hide-on-mobile {
         display: none;
     }
 
-    .menu-btn{
+    .menu-btn {
         display: block;
     }
 
