@@ -5,14 +5,16 @@
     --regular-color: white;
     --footer-color: #6B7280;
 }
-
+html{
+    overflow-x: hidden;
+}
 /* body {
     font-family: "Plus Jakarta Sans", sans-serif;
 } */
 
 body {
     background: #101116;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 header {
@@ -1190,16 +1192,16 @@ footer {
 
     .card1,
     .card2 {
-        width: 293px;
+        width: 285px;
     }
 
     .card3 {
-        width: 293px;
+        width: 285px;
         height: 320px;
     }
 
     .card4 {
-        width: 293px;
+        width: 285px;
         height: 415px;
     }
 
@@ -1250,7 +1252,7 @@ footer {
     }
 
     .png3 img {
-        width: 330px;
+        width: 300px;
         padding: 12px 0 0;
     }
 
@@ -1329,7 +1331,7 @@ footer {
     }
 
     .last-container {
-        width: 226px;
+        width: 215px;
         height: auto;
         display: flex;
         align-items: center;
