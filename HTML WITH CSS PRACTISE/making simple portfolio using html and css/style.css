@@ -21,7 +21,48 @@ nav {
     background: rgba(11, 11, 11, 0.5);
 }
 
-.navigation ul {
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.responsive-ul-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 0;
+    transform: translateX(100%);
+}
+
+.menu-btn {
+    display: none;
+}
+
+.unorderd-list {
+    display: flex;
+    gap: 32px;
+}
+
+.unorderd-list {
     display: flex;
     gap: 38px;
 }
@@ -60,4 +101,19 @@ nav {
 
 .content h1 {
     padding: 12px 0;
+}
+
+@media (max-width: 800px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navigation ul li a {
+        font-weight: 900;
+        color: white;
+    }
 }

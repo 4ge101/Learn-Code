@@ -15,11 +15,21 @@
                 <h1>SAMI</h1>
             </div>
             <div class="navigation">
-                <ul>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><img src="assets/cancel-01-stroke-rounded.svg" alt=""></li>
+                <div class="responsive-ul-wrapper">
                     <li><a href="">HOME</a></li>
                     <li><a href="">SKIllS</a></li>
                     <li><a href="">PROJECTS</a></li>
                     <li><a href="">PRICES</a></li>
+                </div>
+                </ul>
+                <ul class="unorderd-list">
+                    <li class="hide-on-mobile"><a href="">HOME</a></li>
+                    <li class="hide-on-mobile"><a href="">SKIllS</a></li>
+                    <li class="hide-on-mobile"><a href="">PROJECTS</a></li>
+                    <li class="hide-on-mobile"><a href="">PRICES</a></li>
+                    <li class="menu-btn" onclick=ShowSidebar()><img src="assets/menu-03-stroke-rounded.svg" alt=""></li>
                 </ul>
             </div>
         </nav>

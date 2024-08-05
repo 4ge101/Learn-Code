@@ -5,9 +5,11 @@
     --regular-color: white;
     --footer-color: #6B7280;
 }
-html{
+
+html {
     overflow-x: hidden;
 }
+
 /* body {
     font-family: "Plus Jakarta Sans", sans-serif;
 } */
@@ -133,7 +135,6 @@ main {
     position: absolute;
     top: 0;
     z-index: -1;
-
 }
 
 .bg-blue {
@@ -1403,5 +1404,14 @@ footer {
 
     .navigation a {
         color: var(--regular-color);
+    }
+
+    .bg-green {
+        position: absolute;
+        top: -170px;
+        z-index: -1;
+        width: 518px;
+        right: 0;
+        height: 1018px;
     }
 }
