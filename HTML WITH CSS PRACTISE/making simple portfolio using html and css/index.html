@@ -9,41 +9,39 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>SAMI</h1>
-            </div>
-            <div class="navigation">
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><img src="assets/cancel-01-stroke-rounded.svg" alt=""></li>
-                <div class="responsive-ul-wrapper">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SKIllS</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">PRICES</a></li>
-                </div>
-                </ul>
-                <ul class="unorderd-list">
-                    <li class="hide-on-mobile"><a href="">HOME</a></li>
-                    <li class="hide-on-mobile"><a href="">SKIllS</a></li>
-                    <li class="hide-on-mobile"><a href="">PROJECTS</a></li>
-                    <li class="hide-on-mobile"><a href="">PRICES</a></li>
-                    <li class="menu-btn" onclick=ShowSidebar()><img src="assets/menu-03-stroke-rounded.svg" alt=""></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <div class="container">
-            <div class="content">
-                <h1>Who Iam?</h1>
-                <span>Hello my name is Ali Sami and Iam a junior webdeveloper from Nepal and Iam a school student in grade 8 .Iam recently learning JavaScript you can dee my image in right side.</span>
-            </div>
-            <div class="box-image"></div>
-        </div>
-    </main>
+    <div class="nav-container">
+        <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="44" height="44"
+                color="#b7b7b7" fill="none">
+                <path
+                    d="M9 22L9.00192 17.9976C9.00236 17.067 9.00258 16.6017 9.15462 16.2347C9.35774 15.7443 9.74746 15.3547 10.2379 15.1519C10.6051 15 11.0704 15 12.001 15V15C12.9319 15 13.3974 15 13.7647 15.152C14.2553 15.355 14.645 15.7447 14.848 16.2353C15 16.6026 15 17.0681 15 17.999V22"
+                    stroke="currentColor" stroke-width="1.5" />
+                <path
+                    d="M7.08848 4.76243L6.08847 5.54298C4.57181 6.72681 3.81348 7.31873 3.40674 8.15333C3 8.98792 3 9.95205 3 11.8803V13.9715C3 17.7562 3 19.6485 4.17157 20.8243C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8243C21 19.6485 21 17.7562 21 13.9715V11.8803C21 9.95205 21 8.98792 20.5933 8.15333C20.1865 7.31873 19.4282 6.72681 17.9115 5.54298L16.9115 4.76243C14.5521 2.92081 13.3724 2 12 2C10.6276 2 9.44787 2.92081 7.08848 4.76243Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg></div>
+        <article class="article">Articles</article>
+        <div class="switch-mode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="44" height="44"
+                color="#bcbcbc" fill="none">
+                <path
+                    d="M21.5 14.0784C20.3003 14.7189 18.9301 15.0821 17.4751 15.0821C12.7491 15.0821 8.91792 11.2509 8.91792 6.52485C8.91792 5.06986 9.28105 3.69968 9.92163 2.5C5.66765 3.49698 2.5 7.31513 2.5 11.8731C2.5 17.1899 6.8101 21.5 12.1269 21.5C16.6849 21.5 20.503 18.3324 21.5 14.0784Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Edu/Exp</a></li>
+        </ul>
+    </nav>
+
+    <div class="tittle-container">
+        <h2>I'm</h2>
+        <h1>Ali Sami</h1>
+        <p>Web Developer from Nepal</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
