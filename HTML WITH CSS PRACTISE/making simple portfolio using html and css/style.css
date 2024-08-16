@@ -52,23 +52,8 @@ ul li a {
     padding: 0 20px;
 }
 
-ul li a::after {
-    content: "";
-    background: blue;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 4px;
-    width: 0;
-    transition: 0.2s;
-}
-
-a:hover:after {
-    width: 100%;
-}
-
 .tittle-container {
-    transform: translate(18%, 20%);
+    transform: translate(18%);
 }
 
 .tittle-container h1,
