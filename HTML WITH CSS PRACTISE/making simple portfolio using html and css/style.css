@@ -19,18 +19,11 @@ body {
 .nav-container {
     display: flex;
     justify-content: space-evenly;
-    padding: 25px 0 55px 0;
-}
-
-.article {
-    font-size: 40px;
-    color: var(--color);
+    align-items: center;
+    padding: 25px 0 28px 0;
 }
 
 nav {
-    border: 2px solid aliceblue;
-    width: 30em;
-    transform: translate(90%);
     border-radius: 10px;
     padding: 7px 0;
 }
@@ -52,8 +45,15 @@ ul li a {
     padding: 0 20px;
 }
 
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
 .tittle-container {
-    transform: translate(18%);
+    transform: translate(12%);
+    padding: 50px 0 0;
 }
 
 .tittle-container h1,
@@ -79,4 +79,115 @@ p {
     text-align: center;
     padding: 6px 0;
     border-radius: 4px;
+}
+
+.circle-container {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.circle-container img {
+    border-radius: 50%;
+}
+
+.curved-line-container {
+    padding: 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.curved-line1 {
+    background: rgb(63, 54, 54);
+    width: 100%;
+    height: 310px;
+    position: absolute;
+    border-radius: 90px 16px 50px 263px;
+    z-index: -1;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me h1 {
+    color: var(--color);
+    font-size: 50px;
+    position: absolute;
+    bottom: 5em;
+}
+
+.skill-1 i {
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    z-index: 99;
+    right: 12px;
+    overflow-y: hidden;
+}
+
+.skill-2 i {
+    font-size: 50px;
+    color: rgb(0, 47, 255);
+    position: absolute;
+    z-index: 99;
+    right: 64px;
+    overflow-y: hidden;
+}
+
+.skill-3 i {
+    font-size: 50px;
+    color: rgb(255, 238, 0);
+    position: absolute;
+    z-index: 99;
+    right: 110px;
+    overflow-y: hidden;
+}
+
+.skill-4 i {
+    font-size: 50px;
+    color: rgb(8, 235, 0);
+    position: absolute;
+    z-index: 99;
+    right: 160px;
+    overflow-y: hidden;
+}
+
+.skill-5 i {
+    font-size: 50px;
+    color:orangered;
+    position: absolute;
+    z-index: 99;
+    right: 230px;
+    overflow-y: hidden;
+}
+
+.skill-6 i {
+    font-size: 50px;
+    color: rgb(87, 90, 87);
+    position: absolute;
+    z-index: 99;
+    right: 280px;
+    overflow-y: hidden;
+}
+
+.skill-7 i {
+    font-size: 50px;
+    color: var(--color);
+    position: absolute;
+    z-index: 99;
+    right: 350px;
+    overflow-y: hidden;
 }
