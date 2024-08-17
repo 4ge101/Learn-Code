@@ -33,12 +33,12 @@ nav ul {
     justify-content: center;
 }
 
-ul li {
+nav ul li {
     list-style: none;
     padding: 20px 0;
 }
 
-ul li a {
+nav ul li a {
     text-decoration: none;
     color: var(--color);
     font-size: 25px;
@@ -89,6 +89,8 @@ p {
 
 .circle-container img {
     border-radius: 50%;
+    position: relative;
+    right: 70px;
 }
 
 .curved-line-container {
@@ -104,7 +106,7 @@ p {
     width: 100%;
     height: 310px;
     position: absolute;
-    border-radius: 90px 16px 50px 263px;
+    border-radius: 89px 550px 50px 550px;
     z-index: -1;
 }
 
@@ -113,6 +115,7 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    z-index: 111;
 }
 
 .about-paragraph {
@@ -136,6 +139,7 @@ p {
     z-index: 99;
     right: 12px;
     overflow-y: hidden;
+    bottom: 1em;
 }
 
 .skill-2 i {
@@ -143,8 +147,9 @@ p {
     color: rgb(0, 47, 255);
     position: absolute;
     z-index: 99;
-    right: 64px;
+    right: 9.5em;
     overflow-y: hidden;
+    bottom: 1em;
 }
 
 .skill-3 i {
@@ -152,8 +157,9 @@ p {
     color: rgb(255, 238, 0);
     position: absolute;
     z-index: 99;
-    right: 110px;
+    right: 4.5em;
     overflow-y: hidden;
+    bottom: 4.5em;
 }
 
 .skill-4 i {
@@ -161,17 +167,19 @@ p {
     color: rgb(8, 235, 0);
     position: absolute;
     z-index: 99;
-    right: 160px;
+    right: 45px;
     overflow-y: hidden;
+    bottom: 3em;
 }
 
 .skill-5 i {
     font-size: 50px;
-    color:orangered;
+    color: orangered;
     position: absolute;
     z-index: 99;
-    right: 230px;
+    right: 225px;
     overflow-y: hidden;
+    padding: 20px 0 0;
 }
 
 .skill-6 i {
@@ -179,8 +187,9 @@ p {
     color: rgb(87, 90, 87);
     position: absolute;
     z-index: 99;
-    right: 280px;
+    right: 8.4em;
     overflow-y: hidden;
+    bottom: -2em;
 }
 
 .skill-7 i {
@@ -188,6 +197,209 @@ p {
     color: var(--color);
     position: absolute;
     z-index: 99;
-    right: 350px;
+    right: 48px;
     overflow-y: hidden;
+    bottom: -2em;
+}
+
+.skill-8 i {
+    font-size: 50px;
+    position: absolute;
+    z-index: 99;
+    right: 8.5em;
+    overflow-y: hidden;
+    bottom: 3em;
+}
+
+/* ----------- MAKING PRICING SECTION ---------- */
+
+.hire-me {
+    color: var(--color);
+    font-size: 50px;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 70px 0 130px;
+}
+
+.pricing-box1 {
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px -1px var(--color);
+    width: 23em;
+    height: 32em;
+}
+
+.pricing-box1 ol {
+    text-align: center;
+    padding: 38px 0 30px;
+}
+
+.pricing-box1 ol li {
+    font-size: 20px;
+}
+
+.pricing-box1 h1 {
+    font-size: 50px;
+}
+
+.pricing-box1 h3 {
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-box2 {
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px -1px var(--color);
+    width: 23em;
+    height: 32em;
+}
+
+.pricing-box2 ol {
+    text-align: center;
+    padding: 38px 0 30px;
+}
+
+.pricing-box2 ol li {
+    font-size: 20px;
+}
+
+.pricing-box2 h1 {
+    font-size: 50px;
+}
+
+.pricing-box2 h3 {
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-box3 {
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px -1px var(--color);
+    width: 23em;
+    height: 32em;
+}
+
+.pricing-box3 ol {
+    text-align: center;
+    padding: 38px 0 30px;
+}
+
+.pricing-box3 ol li {
+    font-size: 20px;
+}
+
+.pricing-box3 h1 {
+    font-size: 50px;
+}
+
+.pricing-box3 h3 {
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy-btn {
+    display: flex;
+    justify-content: center;
+    padding: 52px 0 0;
+}
+
+.buy-btn button {
+    padding: 14px 29px;
+    color: var(--color);
+    background-color: peru;
+    border: 1px solid peru;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buy-btn2 {
+    padding: 17px 0 15px;
+}
+
+.buy-btn:hover {
+    padding: 4px 0;
+    transition: 0.3s;
+}
+
+.pricing-box1,
+.pricing-box2,
+.pricing-box3 {
+    filter: blur(20px);
+}
+
+.pricing-box1:hover,
+.pricing-box2:hover,
+.pricing-box3:hover {
+    filter: blur(0px);
+    transition: 0.3s;
+    transform: rotate3d(1, 1, 0, 38deg);
+}
+
+/* ------------- FOOTER -------------- */
+
+footer {
+    color: var(--color);
+    padding: 50px 0;
+    background: #3c3c3c;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 115%;
+    padding: 30px 0;
+}
+
+.footer li{
+    font-size: 20px;
+    padding: 4px 0;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 22px;
+    width: 81%;
+}
+
+.location {
+    position: relative;
+    right: 75px;
+}
+
+.social-media {
+    position: relative;
+    right: 118px;
+}
+
+.social-media ul li a{
+    text-decoration: none;
+    color: white;
 }
