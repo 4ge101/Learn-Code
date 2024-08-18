@@ -18,9 +18,9 @@ body {
 
 .nav-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
     align-items: center;
-    padding: 25px 0 28px 0;
+    padding: 25px 45px 28px 0px;
 }
 
 nav {
@@ -31,6 +31,10 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
+}
+
+.logo {
+    padding: 0px 44px;
 }
 
 nav ul li {
@@ -130,85 +134,6 @@ p {
     font-size: 50px;
     position: absolute;
     bottom: 5em;
-}
-
-.skill-1 i {
-    font-size: 50px;
-    color: red;
-    position: absolute;
-    z-index: 99;
-    right: 12px;
-    overflow-y: hidden;
-    bottom: 1em;
-}
-
-.skill-2 i {
-    font-size: 50px;
-    color: rgb(0, 47, 255);
-    position: absolute;
-    z-index: 99;
-    right: 9.5em;
-    overflow-y: hidden;
-    bottom: 1em;
-}
-
-.skill-3 i {
-    font-size: 50px;
-    color: rgb(255, 238, 0);
-    position: absolute;
-    z-index: 99;
-    right: 4.5em;
-    overflow-y: hidden;
-    bottom: 4.5em;
-}
-
-.skill-4 i {
-    font-size: 50px;
-    color: rgb(8, 235, 0);
-    position: absolute;
-    z-index: 99;
-    right: 45px;
-    overflow-y: hidden;
-    bottom: 3em;
-}
-
-.skill-5 i {
-    font-size: 50px;
-    color: orangered;
-    position: absolute;
-    z-index: 99;
-    right: 225px;
-    overflow-y: hidden;
-    padding: 20px 0 0;
-}
-
-.skill-6 i {
-    font-size: 50px;
-    color: rgb(87, 90, 87);
-    position: absolute;
-    z-index: 99;
-    right: 8.4em;
-    overflow-y: hidden;
-    bottom: -2em;
-}
-
-.skill-7 i {
-    font-size: 50px;
-    color: var(--color);
-    position: absolute;
-    z-index: 99;
-    right: 48px;
-    overflow-y: hidden;
-    bottom: -2em;
-}
-
-.skill-8 i {
-    font-size: 50px;
-    position: absolute;
-    z-index: 99;
-    right: 8.5em;
-    overflow-y: hidden;
-    bottom: 3em;
 }
 
 /* ----------- MAKING PRICING SECTION ---------- */
@@ -366,7 +291,7 @@ p {
 footer {
     color: var(--color);
     padding: 50px 0;
-    background: #3c3c3c;
+    background: #3f3636;
 }
 
 .footer {
@@ -376,7 +301,7 @@ footer {
     padding: 30px 0;
 }
 
-.footer li{
+.footer li {
     font-size: 20px;
     padding: 4px 0;
 }
@@ -399,7 +324,19 @@ footer {
     right: 118px;
 }
 
-.social-media ul li a{
+.social-media ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--color);
+}
+
+.copy-right {
+    position: absolute;
+    left: 0;
+    transform: translate(185px, 11em);
+}
+
+.skill {
+    color: var(--color);
+    font-size: 50px;
+    text-align: center;
 }
