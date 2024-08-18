@@ -34,7 +34,14 @@ nav ul {
 }
 
 .logo {
-    padding: 0px 44px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    align-items: center;
+    top: 48px;
 }
 
 nav ul li {
@@ -47,6 +54,21 @@ nav ul li a {
     color: var(--color);
     font-size: 25px;
     padding: 0 20px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: var(--color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 .line {
@@ -291,7 +313,7 @@ p {
 footer {
     color: var(--color);
     padding: 50px 0;
-    background: #3f3636;
+    background: #060606;
 }
 
 .footer {
@@ -335,8 +357,86 @@ footer {
     transform: translate(185px, 11em);
 }
 
-.skill {
+.form {
+    display: flex;
+    gap: 13px;
+}
+
+.form-box {
+    position: absolute;
+    right: 0;
+    background: rgba(27, 27, 27, 0.911);
+    width: 30%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transform: translate(-6%, -150%);
+}
+
+.form input {
+    font-size: 17px;
+    padding: 4px 9px;
+    border-radius: 7px;
+    background: var(--color);
+    color: var(--black);
+    border: 1px solid var(--black);
+    position: relative;
+    z-index: 2;
+}
+
+.form button {
+    background-color: peru;
+    border: 1px solid peru;
+    padding: 5px 12px;
+    border-radius: 14px;
+    color: var(--color);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* ---------- SKILLS ---------- */
+
+.skill-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.skill-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.skill-head {
     color: var(--color);
     font-size: 50px;
     text-align: center;
+}
+
+.skill i {
+    font-size: 70px;
+    overflow: hidden;
+}
+
+.skill p {
+    color: var(--color);
+    font-size: 22px;
+}
+
+.skill {
+    width: 16em;
+}
+
+.skill-logo {
+    color: var(--color);
+    display: block;
+    font-size: 28px;
+    padding: 15px 0;
 }
