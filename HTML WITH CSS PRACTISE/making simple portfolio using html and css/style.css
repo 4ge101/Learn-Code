@@ -26,6 +26,7 @@ body {
 nav {
     border-radius: 10px;
     padding: 7px 0;
+    z-index: 999;
 }
 
 nav ul {
@@ -42,6 +43,7 @@ nav ul {
     text-align: center;
     align-items: center;
     top: 48px;
+    font-size: 38px;
 }
 
 nav ul li {
@@ -411,13 +413,18 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    padding: 70px 0;
+    padding: 15px 0 150px;
+}
+
+.skill-section2 {
+    padding: 15px 0 92px;
 }
 
 .skill-head {
     color: var(--color);
     font-size: 50px;
     text-align: center;
+    padding: 90px 0 0;
 }
 
 .skill i {
@@ -439,4 +446,142 @@ footer {
     display: block;
     font-size: 28px;
     padding: 15px 0;
+}
+
+/*---------- TOOLS ------------*/
+
+.tool-head {
+    color: var(--color);
+    font-size: 50px;
+    text-align: center;
+}
+
+.tool i {
+    font-size: 70px;
+    overflow: hidden;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18em;
+    text-align: center;
+}
+
+.tool-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 0 92px;
+}
+
+.tool-logo {
+    color: var(--color);
+    font-size: 28px;
+    padding: 15px 0;
+}
+
+.tool p {
+    font-size: 22px;
+}
+
+/*----------- FRAMEWORKS -----------*/
+
+.frame-work-head {
+    color: var(--color);
+    font-size: 50px;
+    text-align: center;
+}
+
+.frame-work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 235px;
+}
+
+.frame-work {
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.frame-work i {
+    font-size: 70px;
+    overflow: hidden;
+}
+
+.frame-work-logo {
+    color: var(--color);
+    font-size: 28px;
+    padding: 15px 0;
+}
+
+.frame-work p {
+    font-size: 22px;
+}
+
+/*----------- EDU/EXP ( EDUCATION & EXPERIENCE ) -----------*/
+
+.edu-exp-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0;
+}
+
+.edu-exp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0 0;
+}
+
+.edu-exp-line {
+    height: 2px;
+    width: 255px;
+    background: var(--color);
+    position: relative;
+    bottom: 100px;
+}
+
+.edu-exp-line2 {
+    width: 2px;
+    height: 260px;
+    background: var(--color);
+    position: relative;
+    left: -127.5px;
+}
+
+.edu-head {
+    color: var(--color);
+    position: absolute;
+    top: 12em;
+    font-size: 26px;
+}
+
+.edu-date {
+    color: var(--color);
+    position: absolute;
+    font-size: 20px;
+    transform: translate(-230%, -350%);
+}
+
+.edu-description {
+    color: var(--color);
+    font-size: 20px;
+}
+
+.edu-description h3 {
+    position: absolute;
+    transform: translate(-83%, -170%);
+    width: 255px;
+    text-align: center;
+    right: 0px;
 }
