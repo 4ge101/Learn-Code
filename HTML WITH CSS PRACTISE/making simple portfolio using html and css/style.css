@@ -24,7 +24,7 @@ body {
 /*--------------- NAVIGATION MENU ---------------*/
 .nav-toggle {
     position: fixed;
-    top: 50%;
+    top: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
@@ -230,6 +230,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 22px;
 }
 
 .about-me h1 {
@@ -606,6 +607,11 @@ footer {
     font-size: 22px;
 }
 
+.frame-work-head span {
+    background: #8073704a;
+    border-radius: 140px 0 140px 0px;
+}
+
 /*----------- EDU/EXP ( EDUCATION & EXPERIENCE ) -----------*/
 
 .edu-exp-section {
@@ -720,4 +726,164 @@ footer {
     width: 255px;
     text-align: center;
     right: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .circle-container {
+        position: relative;
+        top: 3em;
+    }
+
+    .circle-container img {
+        border-radius: 50%;
+        position: relative;
+        width: 90%;
+        right: 20px;
+    }
+
+    .about-paragraph {
+        text-align: center;
+        width: 84%;
+        font-size: 20px;
+        position: relative;
+    }
+
+    .curved-line1 {
+        background: rgb(63, 54, 54);
+        width: 100%;
+        height: 157px;
+        position: absolute;
+        border-radius: 89px 550px 50px 550px;
+        z-index: -1;
+        top: 116px;
+    }
+
+    .about-me h1 {
+        position: absolute;
+        bottom: 9em;
+    }
+
+    .curved-line-container {
+        padding: 175px 0 0 0;
+    }
+
+    .skill-container {
+        display: grid;
+        padding: 45px 0 0;
+        gap: 2em;
+    }
+
+    .skill p {
+        padding: 0px 0 50px;
+    }
+
+    .pricing-container {
+        display: grid;
+        padding: 9px 5px 140px;
+        gap: 3em;
+    }
+
+    .pricing-box1,
+    .pricing-box2,
+    .pricing-box3 {
+        width: 22em;
+        height: 30em;
+    }
+
+    .footer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-row {
+        font-size: 18px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 16px;
+    }
+
+    .footer li {
+        font-size: 18px;
+        padding: 5px 16px;
+    }
+
+    .location {
+        position: relative;
+        right: 0px;
+    }
+
+    .footer-row h3:nth-child(3) {
+        position: absolute;
+        transform: translateY(10.9em);
+    }
+
+    .social-media {
+        position: relative;
+        right: 0;
+        padding: 100px 0 0px;
+    }
+
+    social-media ul li a {
+        text-decoration: rgb(110, 104, 104);
+    }
+
+    .copy-right {
+        transform: translate(25px, 30em);
+    }
+
+    .form-box {
+        width: 73%;
+        height: 15%;
+        transform: translate(-3%, -164%);
+    }
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tool-container {
+        display: grid;
+        gap: 5em;
+    }
+
+    .frame-work-head span {
+        border-radius: 0 600px 0 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edu-description h3 {
+        position: absolute;
+        transform: translate(20%, -45%);
+        width: 140px;
+        text-align: center;
+        left: 8em;
+    }
+
+    .edu-description2 h3 {
+        position: absolute;
+        transform: translate(-95%, -50%);
+        width: 160px;
+        text-align: center;
+        left: 18em;
+        font-size: 20px;
+    }
+
+    .edu-date {
+        transform: translate(-90%, -170%);
+    }
+
+    .edu-date2 {
+        transform: translate(-90%, -170%);
+    }
+
+    .edu-exp-container2 {
+        padding: 0 0 75px;
+    }
 }
