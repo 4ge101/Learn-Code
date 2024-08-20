@@ -6,6 +6,11 @@
     overflow-x: hidden;
 }
 
+::selection {
+    background: rgba(13, 194, 226, 0.959);
+    color: white;
+}
+
 :root {
     --color: white;
     --black: black;
@@ -16,68 +21,143 @@ body {
     font-family: "Stylish", serif;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 25px 45px 28px 0px;
-}
-
-nav {
-    border-radius: 10px;
-    padding: 7px 0;
+/*--------------- NAVIGATION MENU ---------------*/
+.nav-toggle {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #111;
+    cursor: pointer;
     z-index: 999;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
+.nav-toggle span {
     position: absolute;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 4px;
+    background: #f5f5f5;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-toggle span:nth-child(1) {
+    top: 30%;
+}
+
+.nav-toggle span:nth-child(3) {
+    top: 70%;
+}
+
+body.activeNav .nav-toggle span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+body.activeNav .nav-toggle span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+body.activeNav .nav-toggle span:nth-child(2) {
+    display: none;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
     right: 0;
-    text-align: center;
-    align-items: center;
-    top: 48px;
-    font-size: 38px;
-}
-
-nav ul li {
-    list-style: none;
-    padding: 20px 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--color);
-    font-size: 25px;
-    padding: 0 20px;
-    position: relative;
-}
-
-nav ul li a::after {
-    content: "";
-    display: block;
-    height: 2px;
     width: 0;
-    background: var(--color);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    height: 0;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    overflow: hidden;
+    border-radius: 0 0 0 100%;
+    transition: width 300ms ease-in-out 200ms,
+        height 300ms ease-in-out 200ms,
+        border-radius 300ms ease-in-out 0ms;
 }
 
-nav ul li a:hover::after {
+.nav-overlay {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background: #dcc140;
+    border-radius: 0 0 0 100%;
+    transition: width 300ms ease-in-out 230ms,
+        height 300ms ease-in-out 230ms,
+        border-radius 300ms ease-in-out 30ms;
+}
+
+body.activeNav .nav-overlay {
     width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    transition: width 500ms ease-in-out,
+        height 500ms ease-in-out,
+        border-radius 300ms ease-in-out 300ms;
+}
+
+body.activeNav .nav {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    transition: width 500ms ease-in-out 30ms,
+        height 500ms ease-in-out 30ms,
+        border-radius 300ms ease-in-out 330ms;
+}
+
+.nav .links .link {
+    position: relative;
+    margin: 20px;
+    font-size: 80px;
+    text-align: center;
+    left: -300%;
+}
+
+.nav .links .link a {
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: #aaa;
+    font-weight: 600;
+    transition: all 300ms ease-in-out;
+}
+
+body.activeNav .nav .links .link {
     left: 0;
 }
 
-.line {
-    width: 100%;
-    height: 2px;
-    background-color: white;
+body.activeNav .nav .links>div:nth-child(1) {
+    transition: left 300ms ease-in-out 650ms;
 }
+
+body.activeNav .nav .links>div:nth-child(2) {
+    transition: left 300ms ease-in-out 680ms;
+}
+
+body.activeNav .nav .links>div:nth-child(3) {
+    transition: left 300ms ease-in-out 710ms;
+}
+
+body.activeNav .nav .links>div:nth-child(4) {
+    transition: left 300ms ease-in-out 740ms;
+}
+
+body.activeNav .nav .links>div:nth-child(5) {
+    transition: left 300ms ease-in-out 770ms;
+}
+
+/* end navigation menu */
 
 .tittle-container {
     transform: translate(12%);
@@ -143,7 +223,6 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    z-index: 111;
 }
 
 .about-paragraph {
@@ -157,7 +236,7 @@ p {
     color: var(--color);
     font-size: 50px;
     position: absolute;
-    bottom: 5em;
+    bottom: 8em;
 }
 
 /* ----------- MAKING PRICING SECTION ---------- */
@@ -533,7 +612,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 75px 0;
+    padding: 75px 0 20px;
 }
 
 .edu-exp-container {
@@ -562,7 +641,7 @@ footer {
 .edu-head {
     color: var(--color);
     position: absolute;
-    top: 12em;
+    top: 6em;
     font-size: 26px;
 }
 
@@ -581,6 +660,63 @@ footer {
 .edu-description h3 {
     position: absolute;
     transform: translate(-83%, -170%);
+    width: 255px;
+    text-align: center;
+    right: 0px;
+}
+
+.edu-exp-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 115px;
+}
+
+.edu-exp-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0 0;
+}
+
+.edu-exp-line3 {
+    height: 2px;
+    width: 255px;
+    background: var(--color);
+    position: relative;
+    bottom: 100px;
+}
+
+.edu-exp-line4 {
+    width: 2px;
+    height: 260px;
+    background: var(--color);
+    position: relative;
+    left: -127.5px;
+}
+
+.edu-head2 {
+    color: var(--color);
+    position: absolute;
+    top: 22em;
+    font-size: 26px;
+}
+
+.edu-date2 {
+    color: var(--color);
+    position: absolute;
+    font-size: 20px;
+    transform: translate(-230%, -350%);
+}
+
+.edu-description2 {
+    color: var(--color);
+    font-size: 20px;
+}
+
+.edu-description2 h3 {
+    position: absolute;
+    transform: translate(-83%, -150%);
     width: 255px;
     text-align: center;
     right: 0px;
