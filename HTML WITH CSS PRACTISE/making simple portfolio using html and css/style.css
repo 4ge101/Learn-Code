@@ -199,6 +199,7 @@ p {
     border-radius: 50%;
     position: relative;
     right: 70px;
+    height: 23em;
 }
 
 .curved-line-container {
@@ -728,6 +729,120 @@ footer {
     right: 0px;
 }
 
+/*------------- PROJECTS SECTION ------------*/
+
+.project-head {
+    margin: 118px 0 0;
+}
+
+.project-head h1 {
+    color: var(--color);
+    font-size: 90px;
+    text-align: center;
+}
+
+.project-img {
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.project-img img {
+    width: 22%;
+    box-shadow: 0px 0px 9px -4px white;
+}
+
+.project-content p {
+    color: var(--color);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.project-img2 {
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.project-img2 img {
+    width: 22%;
+    box-shadow: 0px 0px 9px 0px white;
+    height: 32em;
+}
+
+.project-content2 p {
+    color: var(--color);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.project-img3 {
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.project-img3 img {
+    width: 22%;
+    box-shadow: 0px 0px 9px -4px white;
+}
+
+.project-content3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-content3 p {
+    color: var(--color);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0;
+    width: 38%;
+}
+
+.project-img4 {
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.project-img4 img {
+    width: 22%;
+    box-shadow: 0px 0px 9px -4px white;
+}
+
+.project-content4 p {
+    color: var(--color);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.project-img5 {
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.project-img5 img {
+    width: 22%;
+    box-shadow: 0px 0px 9px -4px white;
+}
+
+.project-content5 p {
+    color: var(--color);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0 200px;
+}
+
+.project-img img:hover,
+.project-img2 img:hover,
+.project-img3 img:hover,
+.project-img4 img:hover,
+.project-img5 img:hover {
+    transition: 0.3s;
+    transform: rotate3d(1, 1, 0, 38deg);
+}
+
 @media screen and (max-width: 600px) {
     .circle-container {
         position: relative;
@@ -739,6 +854,7 @@ footer {
         position: relative;
         width: 90%;
         right: 20px;
+        height: 20em;
     }
 
     .about-paragraph {
@@ -885,5 +1001,30 @@ footer {
 
     .edu-exp-container2 {
         padding: 0 0 75px;
+    }
+
+    .project-img img {
+        width: 67%;
+    }
+
+    .project-img2 img {
+        width: 70%;
+        height: 28em;
+    }
+
+    .project-img3 img {
+        width: 67%;
+    }
+
+    .project-content3 p {
+        width: auto;
+    }
+
+    .project-img4 img {
+        width: 67%;
+    }
+
+    .project-img5 img {
+        width: 67%;
     }
 }
