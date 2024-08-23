@@ -260,156 +260,6 @@ p {
     bottom: 8em;
 }
 
-/* ----------- MAKING PRICING SECTION ---------- */
-
-.hire-me {
-    color: var(--color);
-    font-size: 50px;
-    text-align: center;
-}
-
-.pricing-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 70px 0 130px;
-}
-
-.pricing-box1 {
-    color: var(--color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 5px -1px var(--color);
-    width: 23em;
-    height: 32em;
-}
-
-.pricing-box1 ol {
-    text-align: center;
-    padding: 38px 0 30px;
-}
-
-.pricing-box1 ol li {
-    font-size: 20px;
-}
-
-.pricing-box1 h1 {
-    font-size: 50px;
-}
-
-.pricing-box1 h3 {
-    font-size: 42px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.pricing-box2 {
-    color: var(--color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 5px -1px var(--color);
-    width: 23em;
-    height: 32em;
-}
-
-.pricing-box2 ol {
-    text-align: center;
-    padding: 38px 0 30px;
-}
-
-.pricing-box2 ol li {
-    font-size: 20px;
-}
-
-.pricing-box2 h1 {
-    font-size: 50px;
-}
-
-.pricing-box2 h3 {
-    font-size: 42px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.pricing-box3 {
-    color: var(--color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 5px -1px var(--color);
-    width: 23em;
-    height: 32em;
-}
-
-.pricing-box3 ol {
-    text-align: center;
-    padding: 38px 0 30px;
-}
-
-.pricing-box3 ol li {
-    font-size: 20px;
-}
-
-.pricing-box3 h1 {
-    font-size: 50px;
-}
-
-.pricing-box3 h3 {
-    font-size: 42px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.buy-btn {
-    display: flex;
-    justify-content: center;
-    padding: 52px 0 0;
-}
-
-.buy-btn button {
-    padding: 14px 29px;
-    color: var(--color);
-    background-color: peru;
-    border: 1px solid peru;
-    border-radius: 40px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.buy-btn2 {
-    padding: 17px 0 15px;
-}
-
-.buy-btn:hover {
-    padding: 4px 0;
-    transition: 0.3s;
-}
-
-.pricing-box1,
-.pricing-box2,
-.pricing-box3 {
-    filter: blur(20px);
-}
-
-.pricing-box1:hover,
-.pricing-box2:hover,
-.pricing-box3:hover {
-    filter: blur(0px);
-    transition: 0.3s;
-    transform: rotate3d(1, 1, 0, 38deg);
-}
-
 /* ------------- FOOTER -------------- */
 
 footer {
@@ -861,6 +711,32 @@ footer {
     transition: 0.3s;
     transform: rotate3d(1, 1, 0, 38deg);
 }
+
+.login-button {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 22px;
+    border: 2px solid #2f2d2d;
+    padding: 2px 25px;
+    position: fixed;
+    top: 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    left: 15px;
+    z-index: 99;
+    transition: .5s;
+    background-color: var(--black);
+}
+
+.login-button:hover {
+    color: var(--black);
+    background-color: var(--color);
+    border: 2px solid var(--black);
+    transform: rotate3d(1, 1, 0, 30deg);
+    transition: .3s;
+}
+/*-------------- MAKING LOGIN FORM --------------*/
+
 
 @media screen and (max-width: 600px) {
     .circle-container {
