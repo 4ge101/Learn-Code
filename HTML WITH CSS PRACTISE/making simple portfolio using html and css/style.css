@@ -726,6 +726,7 @@ footer {
     z-index: 99;
     transition: .5s;
     background-color: var(--black);
+    box-shadow: 0px 0px 6px -3px white;
 }
 
 .login-button:hover {
