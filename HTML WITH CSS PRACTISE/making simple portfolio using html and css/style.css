@@ -615,6 +615,20 @@ footer {
     margin: 50px 0 0;
 }
 
+.project-content,
+.project-content2,
+.project-content3,
+.project-content4,
+.project-content5 {
+    text-align: center;
+}
+
+.project-content3 button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 250%);
+}
+
 .project-img img {
     width: 22%;
     box-shadow: 0px 0px 9px -4px white;
@@ -659,6 +673,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 0 55px;
 }
 
 .project-content3 p {
@@ -666,7 +681,7 @@ footer {
     font-size: 40px;
     text-align: center;
     padding: 30px 0;
-    width: 38%;
+    width: 54%;
 }
 
 .project-img4 {
@@ -700,7 +715,7 @@ footer {
     color: var(--color);
     font-size: 40px;
     text-align: center;
-    padding: 30px 0 200px;
+    padding: 30px 0 45px;
 }
 
 .project-img img:hover,
@@ -710,6 +725,20 @@ footer {
 .project-img5 img:hover {
     transition: 0.3s;
     transform: rotate3d(1, 1, 0, 38deg);
+}
+
+.last-project {
+    padding: 0 0 200px;
+}
+
+.visit-site {
+    padding: 7px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #cccc;
+    border: 1px solid #cccc;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .login-button {
@@ -730,14 +759,9 @@ footer {
 }
 
 .login-button:hover {
-    color: var(--black);
-    background-color: var(--color);
-    border: 2px solid var(--black);
     transform: rotate3d(1, 1, 0, 30deg);
     transition: .3s;
 }
-/*-------------- MAKING LOGIN FORM --------------*/
-
 
 @media screen and (max-width: 600px) {
     .circle-container {
@@ -880,7 +904,7 @@ footer {
 
     .edu-description2 h3 {
         position: absolute;
-        transform: translate(-95%, -50%);
+        transform: translate(-100%, -50%);
         width: 160px;
         text-align: center;
         left: 18em;
