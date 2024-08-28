@@ -41,6 +41,20 @@ body {
     top: 42px;
 }
 
+.number2 {
+    position: absolute;
+    left: 362px;
+    font-size: 19px;
+    top: 42px;
+}
+
+.number3 {
+    position: absolute;
+    left: 510px;
+    font-size: 19px;
+    top: 42px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -60,7 +74,12 @@ nav ul li a {
     text-decoration: none;
     color: var(--black);
     font-size: 27px;
-    padding: 0 12px;
+    font-size: 27px;
+    padding: 10px 40px 35px 25px;
+    border-right: 2px solid black;
+    position: relative;
+    bottom: 13px;
+    right: 32px;
 }
 
 .logo {
@@ -83,7 +102,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 32em;
+    left: 36em;
 }
 
 .social-links {
@@ -181,7 +200,6 @@ main {
 .box9 {
     width: 200px;
     height: 200px;
-    background: rebeccapurple;
     position: absolute;
     top: 100px;
     border-radius: 20px;
@@ -255,7 +273,7 @@ main {
 .box91 {
     width: 170px;
     height: 170px;
-    background: red;
+    background: white;
     border-radius: 20px;
     border: 1px solid black;
 }
@@ -483,30 +501,28 @@ main {
 
 .fa-bitcoin {
     position: absolute;
-    top: 10px;
-    right: 67px;
+    top: 34px;
+    right: 101px;
     font-size: 50px;
-    transform: rotateX(38deg) rotateY(-12deg);
+    transform: rotateX(57deg) rotateY(13deg);
 }
 
 .bitcoin2 {
-    color: #dbca0a;
     font-size: 35px;
     position: absolute;
-    right: -20px;
-    top: 45px;
+    right: -15px;
+    top: 62px;
     z-index: 1;
-    transform: rotateX(21deg) rotateY(-33deg);
+    transform: rotateX(40deg) rotateY(-22deg);
 }
 
 .bitcoin3 {
-    color: #dbca0a;
     font-size: 42px;
     position: absolute;
-    right: 0px;
-    top: 81px;
+    right: 11px;
+    top: 95px;
     z-index: 1;
-    transform: rotateX(35deg) rotateY(-4deg);
+    transform: rotateX(-42deg) rotateY(-9deg);
 }
 
 .line {
@@ -538,64 +554,64 @@ main {
 .emoji1 {
     position: absolute;
     color: white;
-    font-size: 30px;
-    bottom: 0;
+    font-size: 35px;
+    top: 162px;
     z-index: 2;
-    left: 30px;
+    left: 36px;
 }
 
 .emoji2 {
     position: absolute;
     color: white;
-    font-size: 30px;
-    bottom: 30px;
+    font-size: 35px;
+    bottom: 38px;
     z-index: 2;
-    right: 133px;
+    right: 192px;
 }
 
 .emoji3 {
     position: absolute;
     color: white;
-    font-size: 30px;
-    bottom: 40px;
+    font-size: 35px;
+    bottom: 48px;
     z-index: 2;
-    right: 54px;
+    right: 71px;
 }
 
 .emoji4 {
     position: absolute;
     color: white;
-    font-size: 30px;
-    bottom: 47px;
+    font-size: 35px;
+    bottom: -57px;
     z-index: 15;
-    right: 347px;
+    right: 381px;
 }
 
 .emoji5 {
     position: absolute;
     color: #000;
-    font-size: 30px;
-    bottom: 19px;
+    font-size: 35px;
+    bottom: -105px;
     z-index: 19;
-    right: 389px;
+    right: 445px;
 }
 
 .emoji6 {
     position: absolute;
     color: #000;
-    font-size: 30px;
-    bottom: -20px;
+    font-size: 35px;
+    bottom: -157px;
     z-index: 19;
-    right: 426px;
+    right: 490px;
 }
 
 .emoji7 {
     position: absolute;
     color: #fff;
-    font-size: 30px;
-    bottom: -67px;
+    font-size: 35px;
+    bottom: -234px;
     z-index: 19;
-    right: 442px;
+    right: 527px;
 }
 
 .tooltip-icon1 img {
@@ -617,4 +633,234 @@ main {
     bottom: 33px;
     font-size: 30px;
     right: 30px;
+}
+
+.small-card-container {
+    position: relative;
+    top: 56px;
+}
+
+.small-card1 {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.small-card2 {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 20px;
+    left: 265px;
+}
+
+.small-card-icon {
+    position: absolute;
+    left: 40px;
+    top: 63px;
+}
+
+.small-card-icon {
+    font-size: 70px;
+}
+
+.fa-fingerprint {
+    position: relative;
+    left: 23px;
+}
+
+.fa-circle {
+    position: relative;
+    right: 23px;
+}
+
+.small-card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+}
+
+.arrow-icon1 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 16px;
+    right: 15px;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 0 4px;
+}
+
+.small-card2 h1 {
+    width: 98%;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+.small-card-content2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+}
+
+.arrow-icon2 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 16px;
+    right: 15px;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 0 4px;
+    background: black;
+    color: white;
+}
+
+.sepration-line1 {
+    width: 95%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 55em;
+    left: 30px;
+}
+
+.sepration-line2 {
+    width: 95%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 58.5em;
+    left: 30px;
+}
+
+.middel-container h2 {
+    position: absolute;
+    top: 37.2em;
+    left: 30px;
+}
+
+.middel-container h1 {
+    font-size: 23px;
+    position: absolute;
+    top: 38.7em;
+    right: 37px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+
+.fa-1 {
+    position: absolute;
+    font-size: 24px;
+    top: 37em;
+    left: 400px;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 4px 9px;
+    background: black;
+    color: white;
+}
+
+.bottom-header {
+    position: absolute;
+    top: 60em;
+    width: 53%;
+    left: 29px;
+}
+
+.bottom-line {
+    width: 38%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 61.9em;
+    right: 115px;
+}
+
+.flower-icon {
+    font-size: 40px;
+    position: absolute;
+    top: 24.2em;
+    right: 36px;
+}
+
+.option-container {
+    position: relative;
+    top: 41em;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    padding: 0 0 35px;
+}
+
+.option1,
+.option2,
+.option3,
+.option4,
+.option5,
+.option6,
+.option7 {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 13px;
+}
+
+.option1 {
+    position: relative;
+    left: 10px;
+    background: black;
+    color: white;
+    transform: rotate(5deg);
+}
+
+.option2 {
+    position: relative;
+    right: 15px;
+    transform: rotate(-6deg);
+    bottom: 5px;
+    background-color: white;
+}
+
+.option3 {
+    position: relative;
+    right: 40px;
+    transform: rotate(10deg);
+    background: white;
+    bottom: 4px;
+}
+
+.option4 {
+    position: relative;
+    right: 68px;
+    transform: rotate(-6deg);
+    bottom: 2px;
+    background-color: white;
+}
+
+.option5 {
+    position: relative;
+    right: 94px;
+    transform: rotate(10deg);
+    background: white;
+}
+
+.option6 {
+    position: relative;
+    right: 120px;
+    transform: rotate(-6deg);
+    top: 8px;
+    background-color: white;
+}
+
+.option7 {
+    position: relative;
+    right: 145px;
+    transform: rotate(10deg);
+    background: white;
+    top: 12px;
 }
