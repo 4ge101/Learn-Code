@@ -82,6 +82,38 @@ nav ul li a {
     right: 32px;
 }
 
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar-menu li {
+    width: 100%;
+}
+
+.sidebar-menu li a {
+    border: none;
+    width: 100%;
+}
+
+.menu-btn i,
+.menu-btn i {
+    font-size: 38px;
+    position: absolute;
+    z-index: 999;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -187,6 +219,11 @@ main {
     transform: rotate(-130deg);
     bottom: 0px;
     left: 7.6em;
+    transition: .5s;
+}
+
+.circle-arrow i:hover {
+    transform: rotate(-30deg);
 }
 
 .box1,
@@ -794,7 +831,7 @@ main {
     top: 41em;
     display: flex;
     justify-content: space-evenly;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .option1,
@@ -803,7 +840,8 @@ main {
 .option4,
 .option5,
 .option6,
-.option7 {
+.option7,
+.option8 {
     border: 1px solid black;
     border-radius: 20px;
     padding: 5px 13px;
@@ -811,10 +849,10 @@ main {
 
 .option1 {
     position: relative;
-    left: 10px;
+    left: 2px;
     background: black;
     color: white;
-    transform: rotate(5deg);
+    transform: rotate(14deg);
 }
 
 .option2 {
@@ -827,7 +865,7 @@ main {
 
 .option3 {
     position: relative;
-    right: 40px;
+    right: 32px;
     transform: rotate(10deg);
     background: white;
     bottom: 4px;
@@ -835,22 +873,22 @@ main {
 
 .option4 {
     position: relative;
-    right: 68px;
+    right: 50px;
     transform: rotate(-6deg);
-    bottom: 2px;
+    bottom: 4px;
     background-color: white;
 }
 
 .option5 {
     position: relative;
-    right: 94px;
+    right: 66px;
     transform: rotate(10deg);
     background: white;
 }
 
 .option6 {
     position: relative;
-    right: 120px;
+    right: 82px;
     transform: rotate(-6deg);
     top: 8px;
     background-color: white;
@@ -858,10 +896,18 @@ main {
 
 .option7 {
     position: relative;
-    right: 145px;
+    right: 98px;
     transform: rotate(10deg);
     background: white;
     top: 12px;
+}
+
+.option8 {
+    position: relative;
+    right: 115px;
+    transform: rotate(-10deg);
+    background: white;
+    top: 14px;
 }
 
 .card-container {
@@ -1118,4 +1164,248 @@ footer {
     background: #3017e1;
     border-radius: 100%;
     padding: 8px 5px;
+}
+
+/*------------ RESPONSIVE DESGIN --------------*/
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .head {
+        padding: 65px 0 40px;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    .nav-container {
+        left: 15px;
+    }
+
+    .fa-bars-staggered {
+        position: absolute;
+        right: 100px;
+        top: 15px;
+    }
+
+    .head h1 {
+        width: auto;
+        z-index: 1;
+        position: relative;
+    }
+
+    .content {
+        width: 70%;
+        z-index: 1;
+        position: relative;
+    }
+
+    .circle-arrow i {
+        left: 3.6em;
+        bottom: 30px;
+    }
+
+    .box-container {
+        position: relative;
+        padding: 410px 0;
+        z-index: 99;
+        top: 445px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9 {
+        width: 125px;
+        height: 125px;
+    }
+
+    .box1 {
+        right: 271px;
+    }
+
+    .box2 {
+        right: 145px;
+    }
+
+    .box3 {
+        right: 19px;
+    }
+
+    .box4 {
+        top: 226px;
+        right: 271px;
+    }
+
+    .box5 {
+        top: 226px;
+        right: 145px;
+    }
+
+    .box6 {
+        top: 226px;
+        right: 19px;
+    }
+
+    .box7 {
+        top: 352px;
+        right: 272px;
+    }
+
+    .box8 {
+        top: 352px;
+        right: 146px;
+    }
+
+    .box9 {
+        top: 352px;
+        right: 20px;
+    }
+
+    .box91 {
+        width: 108px;
+        height: 108px;
+    }
+
+    .half-circle {
+        width: 162px;
+        height: 162px;
+        left: 30px;
+        top: 11px;
+    }
+
+    .second-half-circle {
+        width: 95px;
+        height: 115px;
+    }
+
+    .half-circle i {
+        font-size: 60px;
+        top: 42px;
+        left: 40px;
+    }
+
+    .left-eye {
+        width: 30px;
+        height: 70px;
+        left: 30px;
+        top: 25px;
+    }
+
+    .right-eye {
+        width: 30px;
+        height: 70px;
+        left: 72px;
+        top: 25px;
+    }
+
+    .eye-ball-left {
+        width: 18px;
+        height: 30px;
+        bottom: 12px;
+        left: 12px;
+    }
+
+    .eye-ball-right {
+        width: 18px;
+        height: 30px;
+        bottom: 12px;
+        left: 12px;
+    }
+
+    .time-circle {
+        top: -42px;
+        left: -42px;
+    }
+
+    .fa-clock {
+        font-size: 80px;
+    }
+
+    .d3-box {
+        width: 140px;
+        height: 140px;
+        right: 165px;
+        top: 30%;
+    }
+
+    .d3-box2 {
+        width: 132px;
+        height: 132px;
+        right: 171px;
+        top: 251px;
+    }
+
+    .second-half-circle i {
+        font-size: 60px;
+        top: 10px;
+        left: 15px;
+    }
+
+    .small-card-container {
+        position: absolute;
+        top: 30em;
+        z-index: 1;
+    }
+
+    .small-card1 {
+        width: 380px;
+        height: 235px;
+        left: -42px;
+    }
+
+    .small-card2 {
+        width: 380px;
+        height: 235px;
+        left: -42px;
+        top: 16em;
+    }
+
+    .option-container {
+        top: 98em;
+    }
+
+    .sepration-line1 {
+        top: 70em;
+    }
+
+    .sepration-line2 {
+        top: 74em;
+    }
+
+    .middel-container h2 {
+        top: 47.2em;
+    }
+
+    .middel-container h1 {
+        top: 49.7em;
+    }
+
+    .middel-container span {
+        position: absolute;
+        top: 16em;
+    }
+
+    .bottom {
+        position: absolute;
+        top: 20em;
+    }
+
+    .small-card-icon {
+        position: absolute;
+        left: 85px;
+        top: 38px;
+        font-size: 90px;
+    }
+
+    .small-card2 h1 {
+        width: 60%;
+    }
 }

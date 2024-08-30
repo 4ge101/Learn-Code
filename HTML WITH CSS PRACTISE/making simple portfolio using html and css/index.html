@@ -16,16 +16,23 @@
         <div class="nav-menu">
             <nav>
                 <div class="logo"><i class="fa-solid fa-infinity"></i></div>
+                <ul class="sidebar-menu">
+                    <li class="menu-btn" onclick=hideSidebar()><i class="fa-solid fa-xmark"></i></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Portfolio</a></li>
+                </ul>
                 <ul>
-                    <li><a href="">Home</a>
+                    <li class="hideOnMobile"><a href="">Home</a>
                         <p class="number1">01</p>
                     </li>
-                    <li><a href="">About us</a>
+                    <li class="hideOnMobile"><a href="">About us</a>
                         <p class="number2">02</p>
                     </li>
-                    <li><a href="">Portfolio</a>
+                    <li class="hideOnMobile"><a href="">Portfolio</a>
                         <p class="number3">03</p>
                     </li>
+                    <li class="menu-btn" onclick=showSidebar()><i class="fa-solid fa-bars-staggered"></i></li>
                 </ul>
             </nav>
         </div>
@@ -178,6 +185,7 @@
             <div class="option5">Content Startegy</div>
             <div class="option6">Event Marketing</div>
             <div class="option7">Email Marketing</div>
+            <div class="option8">PROJECTS</div>
         </div>
     </section>
 
@@ -231,7 +239,8 @@
             </ul>
         </div>
         <div class="footer-col">
-            <p>Hello iam a webdeveloper from Nepal and iam a class 8 student there is no our team but i can provide you the best features</p>
+            <p>Hello iam a webdeveloper from Nepal and iam a class 8 student there is no our team but i can provide you
+                the best features</p>
             <ul>
                 <li><a href="">ABOUT US</a></li>
                 <li><a href="">PROJECTS</a></li>
