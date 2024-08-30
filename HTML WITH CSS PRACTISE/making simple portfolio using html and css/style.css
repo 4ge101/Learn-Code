@@ -795,7 +795,6 @@ main {
     display: flex;
     justify-content: space-evenly;
     font-size: 25px;
-    padding: 0 0 35px;
 }
 
 .option1,
@@ -863,4 +862,260 @@ main {
     transform: rotate(10deg);
     background: white;
     top: 12px;
+}
+
+.card-container {
+    position: relative;
+    top: 68em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card1 {
+    width: 400px;
+    height: 400px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-top {
+    display: flex;
+    padding: 15px 15px;
+}
+
+.card-name1 {
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 6px 16px;
+    z-index: 1;
+}
+
+.card-icon1 {
+    position: relative;
+    left: 45%;
+    font-size: 25px;
+    background: black;
+    color: white;
+    border-radius: 100%;
+    padding: 3px 8px;
+}
+
+.card-decsription {
+    position: relative;
+    bottom: 6px;
+    padding: 0 6px;
+    font-size: 18px;
+}
+
+.card-img img {
+    width: 300px;
+    position: relative;
+    bottom: 20%;
+    left: 40px;
+}
+
+.card2 {
+    width: 400px;
+    height: 400px;
+    background: #f2ff41;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-top2 {
+    display: flex;
+    padding: 15px 15px;
+}
+
+.card-name2 {
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 6px 16px;
+    z-index: 1;
+}
+
+.card-icon2 {
+    position: relative;
+    left: 35%;
+    font-size: 25px;
+    background: black;
+    color: white;
+    border-radius: 100%;
+    padding: 3px 8px;
+}
+
+.card-decsription2 {
+    position: relative;
+    bottom: 50px;
+    padding: 0 6px;
+    font-size: 18px;
+}
+
+.card-img2 {
+    position: relative;
+    bottom: 10%;
+    left: 100px;
+}
+
+.card-img2 img {
+    width: 200px;
+}
+
+.card3 {
+    width: 400px;
+    height: 400px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-top3 {
+    display: flex;
+    padding: 15px 15px;
+}
+
+.card-name3 {
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 6px 16px;
+    z-index: 1;
+    background: white;
+    color: black;
+}
+
+.card-icon3 {
+    position: relative;
+    left: 34%;
+    font-size: 25px;
+    background: white;
+    color: black;
+    border-radius: 100%;
+    padding: 3px 8px;
+    border: 1px solid black;
+    transform: rotate(-30deg);
+}
+
+.card-decsription3 {
+    position: relative;
+    top: 234px;
+    padding: 0 6px;
+    font-size: 18px;
+}
+
+.card-img3 {
+    position: absolute;
+    top: 24%;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img3 i {
+    position: absolute;
+    font-size: 100px;
+}
+
+.card-img3 img {
+    width: 300px;
+}
+
+footer {
+    position: relative;
+    top: 75em;
+    background-color: black;
+    color: white;
+}
+
+.footer-row {
+    padding: 22px 0;
+}
+
+.footer-row ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.footer-row ul li {
+    list-style: none;
+}
+
+.footer-logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: -15px;
+    padding: 22px 0;
+}
+
+.footer-logo i {
+    font-size: 50px;
+    padding: 0 45px;
+    z-index: 1;
+    position: relative;
+}
+
+.footer-col {
+    background-color: black;
+}
+
+.footer-col p {
+    width: 25%;
+}
+
+.footer-col {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    padding: 34px 192px 135px;
+}
+
+.footer-col ul {
+    position: relative;
+    right: 54px;
+}
+
+.footer-col ul li {
+    list-style: none;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contact {
+    position: relative;
+    left: 55px;
+}
+
+.social-media-link {
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    font-size: 35px;
+    top: 5em;
+    right: 204px;
+}
+
+.facebook-footer-icon i {
+    color: #2283ce;
+    background: white;
+    border-radius: 100%;
+}
+
+.discord-footer-icon i {
+    color: #fff;
+    background: #3017e1;
+    border-radius: 100%;
+    padding: 8px 5px;
 }
