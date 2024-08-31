@@ -1074,98 +1074,6 @@ main {
     width: 300px;
 }
 
-footer {
-    position: relative;
-    top: 75em;
-    background-color: black;
-    color: white;
-}
-
-.footer-row {
-    padding: 22px 0;
-}
-
-.footer-row ul {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 18px;
-}
-
-.footer-row ul li {
-    list-style: none;
-}
-
-.footer-logo {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: -15px;
-    padding: 22px 0;
-}
-
-.footer-logo i {
-    font-size: 50px;
-    padding: 0 45px;
-    z-index: 1;
-    position: relative;
-}
-
-.footer-col {
-    background-color: black;
-}
-
-.footer-col p {
-    width: 25%;
-}
-
-.footer-col {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    padding: 34px 192px 135px;
-}
-
-.footer-col ul {
-    position: relative;
-    right: 54px;
-}
-
-.footer-col ul li {
-    list-style: none;
-}
-
-.footer-col ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer-contact {
-    position: relative;
-    left: 55px;
-}
-
-.social-media-link {
-    position: absolute;
-    display: flex;
-    gap: 15px;
-    font-size: 35px;
-    top: 5em;
-    right: 204px;
-}
-
-.facebook-footer-icon i {
-    color: #2283ce;
-    background: white;
-    border-radius: 100%;
-}
-
-.discord-footer-icon i {
-    color: #fff;
-    background: #3017e1;
-    border-radius: 100%;
-    padding: 8px 5px;
-}
-
 /*------------ RESPONSIVE DESGIN --------------*/
 @media (max-width: 800px) {
     .hideOnMobile {
@@ -1194,24 +1102,25 @@ footer {
         width: auto;
         z-index: 1;
         position: relative;
+        font-size: 50px;
     }
 
     .content {
-        width: 70%;
+        width: 85%;
         z-index: 1;
         position: relative;
     }
 
     .circle-arrow i {
-        left: 3.6em;
-        bottom: 30px;
+        left: 202px;
+        top: 165px;
     }
 
     .box-container {
-        position: relative;
-        padding: 410px 0;
+        position: absolute;
         z-index: 99;
-        top: 445px;
+        top: 888px;
+        right: -22px;
     }
 
     .box1,
@@ -1223,8 +1132,8 @@ footer {
     .box7,
     .box8,
     .box9 {
-        width: 125px;
-        height: 125px;
+        width: 115px;
+        height: 115px;
     }
 
     .box1 {
@@ -1232,46 +1141,81 @@ footer {
     }
 
     .box2 {
-        right: 145px;
+        right: 155px;
     }
 
     .box3 {
-        right: 19px;
+        right: 39px;
     }
 
     .box4 {
-        top: 226px;
+        top: 216px;
         right: 271px;
     }
 
     .box5 {
-        top: 226px;
-        right: 145px;
+        top: 216px;
+        right: 155px;
     }
 
     .box6 {
-        top: 226px;
-        right: 19px;
+        top: 216px;
+        right: 39px;
     }
 
     .box7 {
-        top: 352px;
+        top: 332px;
         right: 272px;
     }
 
     .box8 {
-        top: 352px;
-        right: 146px;
+        top: 332px;
+        right: 156px;
     }
 
     .box9 {
-        top: 352px;
-        right: 20px;
+        top: 333px;
+        right: 40px;
     }
 
     .box91 {
         width: 108px;
         height: 108px;
+    }
+
+    .box6 h3 {
+        font-size: 30px;
+        line-height: 24px;
+        top: 7px;
+        left: 15px;
+    }
+
+    .dot-91 {
+        width: 10px;
+        height: 10px;
+        top: 20px;
+        left: 15px;
+    }
+
+    .d3-circle3 {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        right: 288px;
+        top: 357px;
+    }
+
+    .d3-circle4 {
+        width: 80px;
+        height: 80px;
+        right: 288px;
+        top: 354px;
+    }
+
+    .logo-2 {
+        font-size: 61px;
+        top: 15px;
+        left: 5px;
     }
 
     .half-circle {
@@ -1295,15 +1239,15 @@ footer {
     .left-eye {
         width: 30px;
         height: 70px;
-        left: 30px;
-        top: 25px;
+        left: 22px;
+        top: 22px;
     }
 
     .right-eye {
         width: 30px;
         height: 70px;
-        left: 72px;
-        top: 25px;
+        left: 65px;
+        top: 22px;
     }
 
     .eye-ball-left {
@@ -1329,18 +1273,122 @@ footer {
         font-size: 80px;
     }
 
+    .bitcoin1 {
+        top: 17px;
+        right: 47px;
+        font-size: 40px;
+    }
+
+    .bitcoin2 {
+        font-size: 28px;
+        right: -15px;
+        top: 36px;
+    }
+
+    .bitcoin3 {
+        font-size: 32px;
+        right: 20px;
+        top: 77px;
+    }
+
+    .emoji1 {
+        font-size: 26px;
+        top: 86px;
+    }
+
+    .emoji2 {
+        font-size: 26px;
+        bottom: 17px;
+        right: 96px;
+    }
+
+    .emoji3 {
+        font-size: 26px;
+        bottom: 25px;
+        right: 31px;
+    }
+
+    .emoji4 {
+        font-size: 28px;
+        top: 284px;
+        right: 235px;
+    }
+
+    .emoji5 {
+        font-size: 28px;
+        top: 305px;
+        right: 272px;
+    }
+
+    .emoji6 {
+        color: #000;
+        font-size: 28px;
+        top: 336px;
+        right: 302px;
+    }
+
+    .emoji7 {
+        font-size: 28px;
+        top: 378px;
+        right: 324px;
+    }
+
+    .line {
+        width: 30px;
+        bottom: 13px;
+    }
+
+    .line2 {
+        width: 30px;
+    }
+
     .d3-box {
         width: 140px;
         height: 140px;
-        right: 165px;
-        top: 30%;
+        right: 164px;
+        top: 234px;
     }
 
     .d3-box2 {
         width: 132px;
         height: 132px;
         right: 171px;
-        top: 251px;
+        top: 238px;
+    }
+
+    .d3-circle {
+        width: 85px;
+        height: 85px;
+        position: absolute;
+        top: 260px;
+        right: 195px;
+        transform: rotateX(16deg) rotateY(60deg);
+    }
+
+    .d3-circle2 {
+        width: 85px;
+        height: 85px;
+        position: absolute;
+        top: 260px;
+        right: 200px;
+        transform: rotateX(16deg) rotateY(60deg);
+    }
+
+    .tooltip-icon2 img {
+        top: 68px;
+        width: 59%;
+        left: 48px;
+    }
+
+    .tooltip-icon1 img {
+        bottom: 9px;
+        right: 58px;
+    }
+
+    .tooltip-text {
+        bottom: 17px;
+        font-size: 20px;
+        right: 11px;
     }
 
     .second-half-circle i {
@@ -1356,16 +1404,21 @@ footer {
     }
 
     .small-card1 {
-        width: 380px;
+        width: 336px;
         height: 235px;
         left: -42px;
     }
 
     .small-card2 {
-        width: 380px;
+        width: 336px;
         height: 235px;
         left: -42px;
         top: 16em;
+    }
+
+    .card-container {
+        position: relative;
+        top: 95em;
     }
 
     .option-container {
@@ -1373,7 +1426,9 @@ footer {
     }
 
     .sepration-line1 {
-        top: 70em;
+        top: 90em;
+        width: 95%;
+        left: 8px;
     }
 
     .sepration-line2 {
@@ -1381,17 +1436,20 @@ footer {
     }
 
     .middel-container h2 {
-        top: 47.2em;
+        top: 61em;
+        left: 7px;
     }
 
     .middel-container h1 {
         top: 49.7em;
     }
 
-    .middel-container span {
+    .fa-1 {
         position: absolute;
-        top: 16em;
-    }
+        font-size: 20px;
+        top: 73.2em;
+        left: 147px;
+      }
 
     .bottom {
         position: absolute;
@@ -1400,7 +1458,7 @@ footer {
 
     .small-card-icon {
         position: absolute;
-        left: 85px;
+        left: 65px;
         top: 38px;
         font-size: 90px;
     }
