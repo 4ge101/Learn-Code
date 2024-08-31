@@ -68,3 +68,42 @@ for (const key in obj) {
         console.log(key, element)
     }
 }
+
+for (const iterator of d) {
+    console.log(iterator)
+}
+
+// map loop 
+let f = [1, 13, 5, 7, 11];
+
+// let newArr = []
+// for (let index = 0; index < f.length; index++) {
+//     const element = f[index];
+//     newArr.push(element**2)
+// }
+
+// if we want a array wich is multiple of 2 we use this way but we can make it more simple for example 
+let newArr = f.map((e, index, array) => {
+    return e ** 2
+})
+
+console.log(newArr);
+
+// to filter
+const greaterThanSeven = (e) => {
+    if (e > 7) {
+        return true
+    }
+    return false
+}
+console.log(f.filter(greaterThanSeven));
+
+// to reduse 
+let arr2 = [1, 2, 3, 4, 5, 6]
+const red = (a, b) => {
+    return a + b
+}
+console.log(arr2.reduce(red))
+
+// to make array 
+console.log(Array.from("Sami"))
