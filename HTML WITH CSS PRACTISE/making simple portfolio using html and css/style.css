@@ -85,7 +85,7 @@ nav ul li a {
 .sidebar-menu {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100vh;
     width: 250px;
     z-index: 999;
@@ -111,7 +111,6 @@ nav ul li a {
 .menu-btn i {
     font-size: 38px;
     position: absolute;
-    z-index: 999;
 }
 
 .logo {
@@ -1416,13 +1415,60 @@ main {
         top: 16em;
     }
 
-    .card-container {
-        position: relative;
-        top: 95em;
+    .option-container {
+        top: 90em;
+        left: 20px;
+        font-size: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .option-container {
-        top: 98em;
+    .option1 {
+        transform: rotate(0);
+        bottom: 15px;
+        left: 3px;
+    }
+
+    .option2 {
+        transform: rotate(0);
+        bottom: 15px;
+        left: 8px;
+    }
+
+    .option3 {
+        transform: rotate(0);
+        bottom: 8px;
+        left: 5px;
+    }
+
+    .option4 {
+        transform: rotate(0);
+        bottom: 8px;
+        left: 8px;
+    }
+
+    .option5 {
+        transform: rotate(0);
+        bottom: 2px;
+        left: 5px;
+    }
+
+    .option6 {
+        transform: rotate(0);
+        top: -2px;
+        left: 8px;
+    }
+
+    .option7 {
+        transform: rotate(0);
+        top: 4px;
+        right: -5px;
+    }
+
+    .option8 {
+        transform: rotate(0);
+        top: 5px;
+        right: -8px;
     }
 
     .sepration-line1 {
@@ -1432,7 +1478,14 @@ main {
     }
 
     .sepration-line2 {
-        top: 74em;
+        top: 95em;
+        left: 8px;
+    }
+
+    .middel-container h1 {
+        top: 73.2em;
+        font-size: 20px;
+        right: 12px;
     }
 
     .middel-container h2 {
@@ -1440,20 +1493,38 @@ main {
         left: 7px;
     }
 
-    .middel-container h1 {
-        top: 49.7em;
-    }
-
     .fa-1 {
         position: absolute;
         font-size: 20px;
         top: 73.2em;
-        left: 147px;
-      }
+        left: 130px;
+    }
+
+    .flower-icon {
+        top: 30.5em;
+        left: 15px;
+    }
+
+    .bottom-line {
+        display: none;
+    }
+
+    .bottom-header {
+        top: 76em;
+        width: 70%;
+        left: 100px;
+    }
 
     .bottom {
         position: absolute;
         top: 20em;
+    }
+
+    .card-container {
+        top: 116em;
+        left: 12px;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .small-card-icon {
@@ -1465,5 +1536,66 @@ main {
 
     .small-card2 h1 {
         width: 60%;
+    }
+
+    .card1 {
+        width: 350px;
+        height: 350px;
+        position: relative;
+    }
+
+    .card2 {
+        width: 350px;
+        height: 350px;
+        position: relative;
+    }
+
+    .card3 {
+        width: 350px;
+        height: 350px;
+        position: relative;
+    }
+
+    .card-name1 {
+        font-size: 16px;
+    }
+
+    .card-name2 {
+        font-size: 16px;
+    }
+
+    .card-name3 {
+        font-size: 16px;
+    }
+
+    .card-img img {
+        width: 215px;
+        position: relative;
+        bottom: 5%;
+        left: 66px;
+    }
+
+    .card-img2 {
+        bottom: 6%;
+    }
+
+    .card-img2 img {
+        width: 134px;
+    }
+
+    .card-img3 img {
+        width: 234px;
+    }
+
+    .card-img3 {
+        top: 30%;
+    }
+
+    .card-img3 i {
+        font-size: 76px;
+    }
+
+    .card-decsription2 {
+        bottom: 15px;
     }
 }
