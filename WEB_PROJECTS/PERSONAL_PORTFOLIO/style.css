@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Bhaina+2:wght@600&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Matemasie&family=Plus+Jakarta+Sans:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stylish&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Stylish", serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    width: 80%;
+    position: absolute;
+    top: 17px;
+    left: 120px;
+    border-radius: 20px;
+    height: 12%;
+  overflow: hidden;
+}
+
+nav {
+    position: relative;
+    right: 190px;
+    bottom: 3px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    border-right: 1px solid black;
+    padding: 10px 24px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 27px;
+}
+
+.logo {
+    position: relative;
+    right: 65px;
+    display: flex;
+    background: #f2ff41;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    height: 80px;
+    border-right: 1px solid black;
+}
+
+.logo i {
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    right: 40px;
+}
+
+.icons i {
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+    width: 41px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-icon {
+    position: absolute;
+}
+
+.text {
+    font-size: 20px;
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    right: 20px;
+}
+
+.text span:nth-child(2) {
+    width: 25px;
+    border: 2px solid black;
+    border-radius: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.number1 {
+    position: relative;
+    left: 56px;
+    font-size: 20px;
+}
+
+.number2 {
+    position: relative;
+    left: 90px;
+    font-size: 20px;
+}
+
+.number3 {
+    position: relative;
+    left: 48px;
+    font-size: 20px;
+}
