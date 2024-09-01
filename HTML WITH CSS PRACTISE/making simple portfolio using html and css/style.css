@@ -98,6 +98,15 @@ nav ul li a {
     justify-content: flex-start;
 }
 
+.responsive-wrapper {
+    position: relative;
+    top: 70px;
+    left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 .sidebar-menu li {
     width: 100%;
 }
@@ -105,12 +114,20 @@ nav ul li a {
 .sidebar-menu li a {
     border: none;
     width: 100%;
+    font-weight: bold;
 }
 
-.menu-btn i,
-.menu-btn i {
-    font-size: 38px;
+.menu-btn1 i {
+    font-size: 30px;
     position: absolute;
+    top: 18px;
+    display: none;
+}
+
+.menu-btn2 i {
+    font-size: 30px;
+    position: absolute;
+    top: 18px;
 }
 
 .logo {
@@ -1079,6 +1096,14 @@ main {
         display: none;
     }
 
+    main {
+        position: relative;
+    }
+
+    .menu-btn1 i {
+        display: block;
+    }
+
     .head {
         padding: 65px 0 40px;
     }
@@ -1116,9 +1141,9 @@ main {
     }
 
     .box-container {
-        position: absolute;
+        position: relative;
         z-index: 99;
-        top: 888px;
+        top: 502px;
         right: -22px;
     }
 
@@ -1397,8 +1422,8 @@ main {
     }
 
     .small-card-container {
-        position: absolute;
-        top: 30em;
+        position: relative;
+        top: 1em;
         z-index: 1;
     }
 
@@ -1417,10 +1442,11 @@ main {
 
     .option-container {
         top: 90em;
-        left: 20px;
+        left: 15px;
         font-size: 16px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 88%;
     }
 
     .option1 {
@@ -1516,15 +1542,16 @@ main {
     }
 
     .bottom {
-        position: absolute;
-        top: 20em;
+        position: relative;
+        bottom: 12em;
     }
 
     .card-container {
-        top: 116em;
+        top: 82em;
         left: 12px;
         display: grid;
         grid-template-columns: 1fr;
+        gap: 2em;
     }
 
     .small-card-icon {
