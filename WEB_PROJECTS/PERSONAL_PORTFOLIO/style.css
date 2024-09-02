@@ -160,6 +160,7 @@ nav ul li a {
     left: 560px;
     overflow: hidden;
 }
+
 .box1,
 .box2,
 .box3,
@@ -180,6 +181,7 @@ nav ul li a {
 
 .box1 {
     right: 442px;
+    top: 165px;
     display: flex;
     align-items: end;
     justify-content: end;
@@ -188,12 +190,14 @@ nav ul li a {
 }
 
 .box2 {
+    top: 165px;
     right: 243px;
     background-color: white;
     overflow: hidden;
 }
 
 .box3 {
+    top: 165px;
     right: 44px;
     display: flex;
     align-items: center;
@@ -202,40 +206,40 @@ nav ul li a {
 }
 
 .box4 {
-    top: 299px;
+    top: 364px;
     right: 442px;
     background: #d5d0d0;
     overflow: hidden;
 }
 
 .box5 {
-    top: 299px;
+    top: 364px;
     right: 243px;
     background-color: black;
 }
 
 .box6 {
-    top: 299px;
+    top: 364px;
     right: 44px;
     background-color: black;
     overflow: hidden;
 }
 
 .box7 {
-    top: 498px;
+    top: 563px;
     right: 442px;
     overflow: hidden;
 }
 
 .box8 {
-    top: 498px;
+    top: 563px;
     right: 243px;
     background-color: #d5d0d0;
     overflow: hidden;
 }
 
 .box9 {
-    top: 498px;
+    top: 563px;
     right: 44px;
     background-color: #f2ff41;
     display: flex;
@@ -261,7 +265,7 @@ nav ul li a {
     left: 25px;
 }
 
-.logo2 i{
+.logo2 i {
     font-size: 85px;
     position: absolute;
     top: 60px;
@@ -384,7 +388,7 @@ nav ul li a {
     position: absolute;
     transform: rotateX(30deg) rotateY(60deg);
     right: 275px;
-    top: 53%;
+    top: 62%;
     border-radius: 27px 10px 25px 30px;
     border: 2px solid black;
     z-index: 9;
@@ -397,7 +401,7 @@ nav ul li a {
     position: absolute;
     transform: rotateX(30deg) rotateY(60deg);
     right: 280px;
-    top: 54%;
+    top: 63%;
     border-radius: 27px 10px 25px 30px;
     border: 2px solid black;
     z-index: 10;
@@ -409,7 +413,7 @@ nav ul li a {
     background: black;
     position: absolute;
     right: 332px;
-    top: 62%;
+    top: 70%;
     z-index: 15;
     transform: rotateX(16deg) rotateY(60deg);
     border: 1px solid black;
@@ -422,7 +426,7 @@ nav ul li a {
     background: #f2ff41;
     position: absolute;
     right: 336px;
-    top: 62%;
+    top: 70%;
     z-index: 14;
     transform: rotateX(16deg) rotateY(60deg);
     border: 1px solid black;
@@ -435,7 +439,7 @@ nav ul li a {
     background: black;
     position: absolute;
     right: 483px;
-    top: 92%;
+    top: 100%;
     z-index: 15;
     transform: rotateX(-130deg) rotateY(0deg);
     border: 1px solid black;
@@ -448,7 +452,7 @@ nav ul li a {
     background: #f2ff41;
     position: absolute;
     right: 483px;
-    top: 91%;
+    top: 99.5%;
     z-index: 14;
     transform: rotateX(-133deg) rotateY(0deg);
     border: 1px solid black;
@@ -471,6 +475,7 @@ nav ul li a {
     right: 101px;
     font-size: 50px;
     transform: rotateX(57deg) rotateY(13deg);
+    overflow: hidden;
 }
 
 .bitcoin2 {
@@ -492,11 +497,11 @@ nav ul li a {
     overflow: hidden;
 }
 
-.clock{
+.clock {
     position: absolute;
 }
 
-.clock i{
+.clock i {
     overflow: hidden;
 }
 
@@ -539,9 +544,9 @@ nav ul li a {
     position: absolute;
     color: white;
     font-size: 35px;
-    bottom: 38px;
+    bottom: 100px;
     z-index: 2;
-    right: 192px;
+    right: 226px;
 }
 
 .emoji3 {
@@ -557,36 +562,36 @@ nav ul li a {
     position: absolute;
     color: white;
     font-size: 35px;
-    bottom: -57px;
+    bottom: 90px;
     z-index: 15;
-    right: 381px;
+    right: 386px;
 }
 
 .emoji5 {
     position: absolute;
     color: #000;
     font-size: 35px;
-    bottom: -105px;
+    bottom: 43px;
     z-index: 19;
-    right: 445px;
+    right: 451px;
 }
 
 .emoji6 {
     position: absolute;
     color: #000;
     font-size: 35px;
-    bottom: -157px;
+    bottom: -10px;
     z-index: 19;
-    right: 490px;
+    right: 500px;
 }
 
 .emoji7 {
     position: absolute;
     color: #fff;
     font-size: 35px;
-    bottom: -234px;
+    bottom: -85px;
     z-index: 19;
-    right: 527px;
+    right: 537px;
 }
 
 .tooltip-icon1 img {
@@ -609,6 +614,64 @@ nav ul li a {
     font-size: 30px;
     right: 30px;
 }
+
+.small-card-container {
+    display: flex;
+}
+
+.small-card1 {
+    width: 235px;
+    height: 235px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.small-card2 {
+    width: 235px;
+    height: 235px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: rgb(194, 194, 194);
+    overflow: hidden;
+}
+
+.fa-fingerprint {
+    overflow: hidden;
+    position: relative;
+  left: 40px;
+}
+
+.fa-circle {
+    overflow: hidden;
+    position: relative;
+  right: 8px;
+}
+
+.small-card-icon {
+    position: relative;
+    font-size: 70px;
+    top: 65px;
+    left: 25px;
+}
+
+.small-card-content {
+    font-size: 18px;
+    position: relative;
+    top: 130px;
+    left: 20px;
+}
+
+.arrow-icon1 {
+    font-size: 20px;
+    position: relative;
+    top: 130px;
+    left: 85px;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 2px 4px;
+}
+
 @media (max-width: 700px) {
     header {
         left: 22px;
@@ -650,5 +713,77 @@ nav ul li a {
         position: absolute;
         bottom: 90px;
         left: 255px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9 {
+        width: 115px;
+        height: 115px;
+    }
+
+    .box1 {
+        right: 243px;
+    }
+
+    .box2 {
+        right: 129px;
+    }
+
+    .box3 {
+        right: 15px;
+    }
+
+    .box4 {
+        top: 278px;
+        right: 243px;
+    }
+
+    .box5 {
+        top: 278px;
+        right: 129px;
+    }
+
+    .box6 {
+        top: 278px;
+        right: 15px;
+    }
+
+    .box7 {
+        top: 392px;
+        right: 244px;
+    }
+
+    .box8 {
+        top: 392px;
+        right: 130px;
+    }
+
+    .box9 {
+        top: 392px;
+        right: 15px;
+    }
+
+    .box91 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .half-circle {
+        width: 162px;
+        height: 162px;
+        left: 30px;
+        top: 11px;
+    }
+
+    .second-half-circle {
+        width: 95px;
+        height: 115px;
     }
 }
