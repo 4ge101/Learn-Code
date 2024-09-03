@@ -305,7 +305,7 @@ nav ul li a {
     position: absolute;
     font-size: 90px;
     top: 48px;
-    left: 25px;
+    left: 60px;
     overflow: hidden;
 }
 
@@ -711,6 +711,75 @@ nav ul li a {
     margin: -2px 0;
 }
 
+.sepration-line {
+    width: 90%;
+    height: 2px;
+    background: black;
+    position: relative;
+    left: 55px;
+}
+
+.sepration-line2 {
+    width: 90%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 54em;
+    left: 55px;
+}
+
+.sepration-content1 {
+    position: absolute;
+    left: 55px;
+    top: 34em;
+}
+
+.sepration-content2 {
+    position: absolute;
+    right: 75px;
+    top: 34em;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+
+.sepration-icon i {
+    position: absolute;
+    font-size: 24px;
+    top: 34em;
+    left: 400px;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 2px 8px;
+    background: black;
+    color: white;
+}
+
+.bottom-content {
+    width: 53%;
+    position: absolute;
+    transform: translate(55px, 155%);
+}
+
+.bottom-line {
+    width: 35%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    transform: translate(730px, 123px);
+}
+
+.flower-icon {
+    font-size: 40px;
+    position: absolute;
+    right: 70px;
+    transform: translate(0, 195%);
+}
+
+.flower-icon i {
+    overflow: hidden;
+}
+
 @media (max-width: 700px) {
     header {
         left: 22px;
@@ -740,18 +809,19 @@ nav ul li a {
         font-size: 50px;
         width: 100%;
         font-weight: bold;
-        padding: 150px 0 0 58px;
+        padding: 130px 0 0 58px;
     }
 
     .content {
-        width: 100%;
-        padding: 30px 0 0 58px;
+        width: 80%;
+        padding: 30px 0px 16px 58px;
     }
 
     .circle-arrow i {
         position: absolute;
-        bottom: 90px;
-        left: 255px;
+        bottom: 225px;
+        left: 290px;
+        font-size: 55px;
     }
 
     .box1,
@@ -768,47 +838,47 @@ nav ul li a {
     }
 
     .box1 {
-        top: 148%;
+        top: 160%;
         right: 243px;
     }
 
     .box2 {
-        top: 148%;
+        top: 160%;
         right: 129px;
     }
 
     .box3 {
-        top: 148%;
+        top: 160%;
         right: 15px;
     }
 
     .box4 {
-        top: 165%;
+        top: 177%;
         right: 243px;
     }
 
     .box5 {
-        top: 165%;
+        top: 177%;
         right: 129px;
     }
 
     .box6 {
-        top: 165%;
+        top: 177%;
         right: 15px;
     }
 
     .box7 {
-        top: 182%;
+        top: 194%;
         right: 244px;
     }
 
     .box8 {
-        top: 182%;
+        top: 194%;
         right: 130px;
     }
 
     .box9 {
-        top: 182%;
+        top: 194%;
         right: 15px;
     }
 
@@ -816,14 +886,14 @@ nav ul li a {
         width: 140px;
         height: 140px;
         right: 139px;
-        top: 167%;
+        top: 179%;
     }
 
     .d3-circle {
         width: 85px;
         height: 85px;
         right: 168px;
-        top: 171%;
+        top: 183%;
         transform: rotateX(20deg) rotateY(60deg);
     }
 
@@ -831,7 +901,7 @@ nav ul li a {
         width: 85px;
         height: 85px;
         right: 172px;
-        top: 171%;
+        top: 183%;
         transform: rotateX(20deg) rotateY(60deg);
     }
 
@@ -839,21 +909,21 @@ nav ul li a {
         width: 132px;
         height: 132px;
         right: 145px;
-        top: 168%;
+        top: 180%;
     }
 
     .d3-circle3 {
         width: 80px;
         height: 80px;
         right: 260px;
-        top: 186%;
+        top: 198%;
     }
 
     .d3-circle4 {
         width: 80px;
         height: 80px;
         right: 260px;
-        top: 185.5%;
+        top: 197.5%;
     }
 
     .box91 {
@@ -928,5 +998,153 @@ nav ul li a {
 
     .arrow-icon2 i {
         margin: -4px 0;
+    }
+
+    .half-circle i {
+        font-size: 50px;
+        top: 43px;
+        left: 33px;
+    }
+
+    .second-half-circle i {
+        font-size: 50px;
+        top: 27px;
+    }
+
+    .logo2 i {
+        font-size: 50px;
+        top: 42px;
+        left: 25px;
+    }
+
+    .dot-91 {
+        width: 10px;
+        height: 10px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .left-eye {
+        width: 35px;
+        height: 65px;
+        left: 20px;
+        top: 25px;
+    }
+
+    .right-eye {
+        width: 35px;
+        height: 65px;
+        left: 64px;
+        top: 26px;
+    }
+
+    .eye-ball-left {
+        width: 20px;
+        height: 30px;
+        bottom: 7px;
+        left: 18px;
+    }
+
+    .eye-ball-right {
+        width: 20px;
+        height: 30px;
+        bottom: 8px;
+        left: 18px;
+    }
+
+    .fa-clock {
+        font-size: 70px
+    }
+
+    .box6 h3 {
+        font-size: 30px;
+    }
+
+    .line {
+        width: 25px;
+        right: 12px;
+        bottom: 16px;
+    }
+
+    .line2 {
+        width: 25px;
+        right: 70px;
+        bottom: 14px;
+    }
+
+    .fa-bitcoin {
+        top: 17px;
+        right: 46px;
+        font-size: 30px;
+        transform: rotateX(40deg) rotateY(13deg);
+    }
+
+    .bitcoin2 {
+        font-size: 25px;
+        right: 3px;
+        top: 23px;
+    }
+
+    .bitcoin3 {
+        font-size: 30px;
+        right: 10px;
+        top: 80px;
+    }
+
+    .emoji1 {
+        font-size: 25px;
+        top: 85px;
+    }
+
+    .emoji2 {
+        font-size: 25px;
+        bottom: -92%;
+        right: 111px;
+    }
+
+    .emoji3 {
+        font-size: 25px;
+        bottom: 25px;
+        right: 30px;
+    }
+
+    .emoji4 {
+        font-size: 25px;
+        bottom: -91.5%;
+        right: 202px;
+    }
+
+    .emoji5 {
+        font-size: 25px;
+        bottom: -95%;
+        right: 244px;
+    }
+
+    .emoji6 {
+        font-size: 25px;
+        bottom: -100%;
+        right: 274px;
+    }
+
+    .emoji7 {
+        font-size: 25px;
+        bottom: -106%;
+        right: 292px;
+    }
+
+    .tooltip-text {
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .tooltip-icon2 img {
+        top: 65px;
+        left: 40px;
+    }
+
+    .tooltip-icon1 img {
+        bottom: 22px;
+        right: 57px;
     }
 }
