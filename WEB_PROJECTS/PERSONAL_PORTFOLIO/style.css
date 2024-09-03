@@ -617,6 +617,9 @@ nav ul li a {
 
 .small-card-container {
     display: flex;
+    position: relative;
+    left: 70px;
+    top: -37px;
 }
 
 .small-card1 {
@@ -634,18 +637,27 @@ nav ul li a {
     border-radius: 20px;
     background: rgb(194, 194, 194);
     overflow: hidden;
+    position: relative;
+    left: 20px;
 }
 
 .fa-fingerprint {
     overflow: hidden;
     position: relative;
-  left: 40px;
+    left: 40px;
 }
 
 .fa-circle {
     overflow: hidden;
     position: relative;
-  right: 8px;
+    right: 8px;
+}
+
+.small-card2 h1 {
+    width: 98%;
+    position: relative;
+    left: 12px;
+    top: 40px;
 }
 
 .small-card-icon {
@@ -658,18 +670,45 @@ nav ul li a {
 .small-card-content {
     font-size: 18px;
     position: relative;
-    top: 130px;
+    top: 100px;
     left: 20px;
 }
 
 .arrow-icon1 {
     font-size: 20px;
     position: relative;
-    top: 130px;
+    top: 100px;
     left: 85px;
     border: 2px solid black;
     border-radius: 100%;
     padding: 2px 4px;
+}
+
+.arrow-icon1 i {
+    margin: -2px 0;
+}
+
+.small-card-content2 {
+    font-size: 18px;
+    position: relative;
+    top: 115px;
+    left: 20px;
+}
+
+.arrow-icon2 {
+    font-size: 20px;
+    position: relative;
+    top: 115px;
+    left: 85px;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 2px 4px;
+    background: black;
+    color: white;
+}
+
+.arrow-icon2 i {
+    margin: -2px 0;
 }
 
 @media (max-width: 700px) {
@@ -729,45 +768,92 @@ nav ul li a {
     }
 
     .box1 {
+        top: 148%;
         right: 243px;
     }
 
     .box2 {
+        top: 148%;
         right: 129px;
     }
 
     .box3 {
+        top: 148%;
         right: 15px;
     }
 
     .box4 {
-        top: 278px;
+        top: 165%;
         right: 243px;
     }
 
     .box5 {
-        top: 278px;
+        top: 165%;
         right: 129px;
     }
 
     .box6 {
-        top: 278px;
+        top: 165%;
         right: 15px;
     }
 
     .box7 {
-        top: 392px;
+        top: 182%;
         right: 244px;
     }
 
     .box8 {
-        top: 392px;
+        top: 182%;
         right: 130px;
     }
 
     .box9 {
-        top: 392px;
+        top: 182%;
         right: 15px;
+    }
+
+    .d3-box {
+        width: 140px;
+        height: 140px;
+        right: 139px;
+        top: 167%;
+    }
+
+    .d3-circle {
+        width: 85px;
+        height: 85px;
+        right: 168px;
+        top: 171%;
+        transform: rotateX(20deg) rotateY(60deg);
+    }
+
+    .d3-circle2 {
+        width: 85px;
+        height: 85px;
+        right: 172px;
+        top: 171%;
+        transform: rotateX(20deg) rotateY(60deg);
+    }
+
+    .d3-box2 {
+        width: 132px;
+        height: 132px;
+        right: 145px;
+        top: 168%;
+    }
+
+    .d3-circle3 {
+        width: 80px;
+        height: 80px;
+        right: 260px;
+        top: 186%;
+    }
+
+    .d3-circle4 {
+        width: 80px;
+        height: 80px;
+        right: 260px;
+        top: 185.5%;
     }
 
     .box91 {
@@ -785,5 +871,62 @@ nav ul li a {
     .second-half-circle {
         width: 95px;
         height: 115px;
+    }
+
+    .small-card-container {
+        display: grid;
+        position: relative;
+        left: 0px;
+        top: 10%;
+        gap: 20px;
+    }
+
+    .small-card1 {
+        width: 336px;
+        height: 235px;
+        position: relative;
+        left: 12px;
+    }
+
+    .small-card2 {
+        width: 336px;
+        height: 235px;
+        position: relative;
+        left: 12px;
+    }
+
+    .small-card2 h1 {
+        width: 64%;
+    }
+
+    .fa-fingerprint {
+        font-size: 90px;
+    }
+
+    .fa-circle {
+        font-size: 90px;
+    }
+
+    .small-card-icon {
+        position: relative;
+        top: 30px;
+        left: 30px;
+    }
+
+    .small-card-content {
+        top: 80px;
+    }
+
+    .arrow-icon1 {
+        top: 80px;
+        left: 175px;
+    }
+
+    .arrow-icon2 {
+        left: 195px;
+    }
+
+    .arrow-icon2 i {
+        margin: -4px 0;
     }
 }
