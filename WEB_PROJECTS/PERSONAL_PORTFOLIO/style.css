@@ -176,7 +176,6 @@ nav ul li a {
     top: 100px;
     border-radius: 20px;
     border: 1px solid black;
-    /* overflow: hidden; */
 }
 
 .box1 {
@@ -1551,4 +1550,126 @@ nav ul li a {
     .card-content3 {
         font-size: 16px;
     }
+}
+
+@media (min-width: 360px) and (max-width: 915px) {
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9 {
+        width: 115px;
+        height: 115px;
+    }
+
+    .box1 {
+        top: 160%;
+        right: 243px;
+    }
+
+    .box2 {
+        top: 160%;
+        right: 129px;
+    }
+
+    .box3 {
+        top: 160%;
+        right: 15px;
+    }
+
+    .box4 {
+        top: 177%;
+        right: 243px;
+    }
+
+    .box5 {
+        top: 177%;
+        right: 129px;
+    }
+
+    .box6 {
+        top: 177%;
+        right: 15px;
+    }
+
+    .box7 {
+        top: 194%;
+        right: 244px;
+    }
+
+    .box8 {
+        top: 194%;
+        right: 130px;
+    }
+
+    .box9 {
+        top: 194%;
+        right: 15px;
+    }
+
+    .d3-box {
+        width: 140px;
+        height: 140px;
+        right: 139px;
+        top: 179%;
+    }
+
+    .d3-circle {
+        width: 85px;
+        height: 85px;
+        right: 168px;
+        top: 183%;
+        transform: rotateX(20deg) rotateY(60deg);
+    }
+
+    .d3-circle2 {
+        width: 85px;
+        height: 85px;
+        right: 172px;
+        top: 183%;
+        transform: rotateX(20deg) rotateY(60deg);
+    }
+
+    .d3-box2 {
+        width: 132px;
+        height: 132px;
+        right: 145px;
+        top: 180%;
+    }
+
+    .d3-circle3 {
+        width: 80px;
+        height: 80px;
+        right: 260px;
+        top: 198%;
+    }
+
+    .d3-circle4 {
+        width: 80px;
+        height: 80px;
+        right: 260px;
+        top: 197.5%;
+    }
+
+    .box91 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .half-circle {
+        width: 162px;
+        height: 162px;
+        left: 30px;
+        top: 11px;
+    }
+
+    .second-half-circle {
+        width: 95px;
+        height: 115px;
+    }
+
 }
