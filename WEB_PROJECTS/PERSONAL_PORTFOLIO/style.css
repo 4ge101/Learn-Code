@@ -780,6 +780,90 @@ nav ul li a {
     overflow: hidden;
 }
 
+.option-container {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+.option1,
+.option2,
+.option3,
+.option4,
+.option5,
+.option6,
+.option7,
+.option8 {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 13px;
+}
+
+.option1 {
+    position: absolute;
+    left: 42px;
+    background: black;
+    color: white;
+    top: 42em;
+    transform: rotate(14deg);
+}
+
+.option2 {
+    position: absolute;
+    left: 88px;
+    transform: rotate(-6deg);
+    top: 42em;
+    background-color: white;
+}
+
+.option3 {
+    position: absolute;
+    left: 270px;
+    transform: rotate(10deg);
+    background: white;
+    top: 42em;
+}
+
+.option4 {
+    position: absolute;
+    left: 405px;
+    transform: rotate(-6deg);
+    top: 42em;
+    background-color: white;
+}
+
+.option5 {
+    position: absolute;
+    right: 520px;
+    transform: rotate(10deg);
+    background: white;
+    top: 42em;
+}
+
+.option6 {
+    position: absolute;
+    right: 350px;
+    transform: rotate(-6deg);
+    top: 42em;
+    background: white;
+}
+
+.option7 {
+    position: absolute;
+    right: 180px;
+    transform: rotate(10deg);
+    background: white;
+    top: 42em;
+}
+
+.option8 {
+    position: absolute;
+    right: 66px;
+    transform: rotate(-10deg);
+    background: white;
+    top: 42em;
+}
+
 @media (max-width: 700px) {
     header {
         left: 22px;
@@ -1146,5 +1230,77 @@ nav ul li a {
     .tooltip-icon1 img {
         bottom: 22px;
         right: 57px;
+    }
+
+    .sepration-line {
+        position: absolute;
+        left: 14px;
+        top: 90em;
+    }
+
+    .sepration-line2 {
+        width: 90%;
+        top: 94em;
+        left: 13px;
+    }
+
+    .sepration-content1 {
+        left: 14px;
+        top: 60.5em;
+    }
+
+    .sepration-icon i {
+        top: 60.5em;
+        left: 130px;
+    }
+
+    .sepration-content2 {
+        right: 20px;
+        top: 76.5em;
+        font-size: 19px;
+    }
+
+    .bottom-line {
+        display: none;
+    }
+
+    .bottom-content {
+        width: 65%;
+        transform: translate(127px, 380%);
+    }
+
+    .flower-icon {
+        left: 35px;
+        transform: translate(0, 13.5em);
+    }
+
+    .option4,
+    .option5,
+    .option6,
+    .option7,
+    .option8 {
+        display: none;
+    }
+
+    .option-container {
+        font-size: 20px;
+    }
+
+    .option1 {
+        top: 86em;
+        left: 20px;
+        transform: rotate(0);
+    }
+
+    .option2 {
+        top: 86em;
+        left: 65px;
+        transform: rotate(0);
+    }
+
+    .option3 {
+        top: 86em;
+        left: 222px;
+        transform: rotate(0);
     }
 }
