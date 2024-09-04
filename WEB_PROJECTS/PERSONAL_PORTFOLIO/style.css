@@ -864,6 +864,174 @@ nav ul li a {
     top: 42em;
 }
 
+.card-container {
+    position: absolute;
+    top: 70em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    left: 30px;
+}
+
+.card1 {
+    width: 400px;
+    height: 400px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-head {
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 16px;
+    position: relative;
+    top: 25px;
+    left: 30px;
+}
+
+.card-icon1 {
+    position: absolute;
+    left: 28%;
+    font-size: 25px;
+    background: black;
+    color: white;
+    border-radius: 100%;
+    padding: 6px 8px;
+    transform: translate(0, 50%);
+}
+
+.card-icon1 i {
+    display: flex;
+}
+
+.card-img1 img {
+    width: 300px;
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+
+.card-content1 {
+    font-size: 18px;
+    display: block;
+    position: relative;
+    top: 25px;
+    padding: 18px 20px;
+}
+
+.card2 {
+    width: 400px;
+    height: 400px;
+    background: #ebf751;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-head2 {
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 16px;
+    position: relative;
+    bottom: 206px;
+    left: 30px;
+}
+
+.card-icon2 {
+    position: absolute;
+    left: 60%;
+    font-size: 25px;
+    background: black;
+    color: white;
+    border-radius: 100%;
+    padding: 6px 8px;
+    transform: translate(0, 50%);
+}
+
+.card-icon2 i {
+    display: flex;
+}
+
+.card-img2 img {
+    width: 180px;
+    position: relative;
+    right: 95px;
+    top: 40px;
+}
+
+.card-content2 {
+    font-size: 18px;
+    display: block;
+    position: relative;
+    top: 30px;
+    padding: 18px 20px;
+}
+
+.card3 {
+    width: 400px;
+    height: 400px;
+    background: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-head3 {
+    font-size: 20px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 20px;
+    padding: 10px 16px;
+    position: relative;
+    top: 25px;
+    left: 30px;
+}
+
+.card-icon3 {
+    position: absolute;
+    left: 92%;
+    font-size: 25px;
+    background: white;
+    color: black;
+    border-radius: 100%;
+    padding: 6px 8px;
+    transform: translate(0, 50%);
+}
+
+.card-icon3 i {
+    display: flex;
+}
+
+.card-img3 img {
+    width: 300px;
+    position: relative;
+    left: 45px;
+    top: 60px;
+}
+
+.card-content3 {
+    font-size: 18px;
+    display: block;
+    position: relative;
+    top: 102px;
+    padding: 18px 20px;
+    color: white;
+}
+
+.fa-circle-play {
+    color: white;
+    font-size: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 102px;
+    z-index: 1;
+    right: 142px;
+}
+
 @media (max-width: 700px) {
     header {
         left: 22px;
@@ -1302,5 +1470,85 @@ nav ul li a {
         top: 86em;
         left: 222px;
         transform: rotate(0);
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 112em;
+        overflow: visible;
+        left: 25px;
+    }
+
+    .card1 {
+        width: 345px;
+        height: 345px;
+        position: relative;
+        right: 13px;
+    }
+
+    .card2 {
+        width: 345px;
+        height: 345px;
+        position: relative;
+        right: 13px;
+    }
+
+    .card3 {
+        width: 345px;
+        height: 345px;
+        position: relative;
+        right: 13px;
+    }
+
+    .card-icon1 {
+        left: 86%;
+    }
+
+    .card-icon2 {
+        left: 86%;
+    }
+
+    .card-icon3 {
+        left: 86%;
+    }
+
+    .card-img1 img {
+        width: 205px;
+        left: 70px;
+    }
+
+    .card-img2 img {
+        width: 150px;
+        left: 100px;
+    }
+
+    .card-img3 img {
+        width: 205px;
+        left: 70px;
+        top: 65px;
+    }
+
+    .card-head2 {
+        top: 26px;
+    }
+
+    .fa-circle-play {
+        top: 90px;
+        right: 114px;
+    }
+
+    .card-content1 {
+        font-size: 16px;
+    }
+
+    .card-content2 {
+        font-size: 16px;
+        bottom: 4px;
+    }
+
+    .card-content3 {
+        font-size: 16px;
     }
 }
