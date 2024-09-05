@@ -1552,7 +1552,36 @@ nav ul li a {
     }
 }
 
-@media (min-width: 360px) and (max-width: 915px) {
+@media (min-width: 701px) and (max-width: 915px) {
+    .main h1 {
+        width: 83%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    header {
+        left: 55px;
+        height: 17%;
+    }
+
+    .logo {
+        right: 54px;
+    }
+
+    .single-icon {
+        left: 150px;
+    }
+
+    .content {
+        width: 66%;
+    }
+
+    .circle-arrow i {
+        bottom: 80px;
+        left: 535px;
+    }
 
     .box1,
     .box2,
@@ -1673,4 +1702,41 @@ nav ul li a {
         height: 115px;
     }
 
+    .small-card1,
+    .small-card2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .small-card-container {
+        left: 38px;
+    }
+
+    .small-card-icon {
+        top: 75px;
+        left: 60px;
+    }
+
+    .small-card-content {
+        top: 155px;
+    }
+
+    .arrow-icon1 {
+        top: 157px;
+        left: 145px;
+    }
+
+    .small-card2 h1 {
+        width: 70%;
+        left: 30px;
+    }
+
+    .small-card-content2 {
+        top: 170px;
+    }
+
+    .arrow-icon2 {
+        top: 170px;
+        left: 170px;
+    }
 }
