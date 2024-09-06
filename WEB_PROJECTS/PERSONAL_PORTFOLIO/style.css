@@ -114,6 +114,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     background-color: yellow;
+    overflow: hidden;
 }
 
 .number1 {
@@ -782,7 +783,7 @@ nav ul li a {
 .option-container {
     display: flex;
     justify-content: space-evenly;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .option1,
@@ -803,7 +804,7 @@ nav ul li a {
     left: 42px;
     background: black;
     color: white;
-    top: 42em;
+    top: 50em;
     transform: rotate(14deg);
 }
 
@@ -811,7 +812,7 @@ nav ul li a {
     position: absolute;
     left: 88px;
     transform: rotate(-6deg);
-    top: 42em;
+    top: 50em;
     background-color: white;
 }
 
@@ -820,14 +821,14 @@ nav ul li a {
     left: 270px;
     transform: rotate(10deg);
     background: white;
-    top: 42em;
+    top: 50em;
 }
 
 .option4 {
     position: absolute;
     left: 405px;
     transform: rotate(-6deg);
-    top: 42em;
+    top: 50em;
     background-color: white;
 }
 
@@ -836,14 +837,14 @@ nav ul li a {
     right: 520px;
     transform: rotate(10deg);
     background: white;
-    top: 42em;
+    top: 50em;
 }
 
 .option6 {
     position: absolute;
     right: 350px;
     transform: rotate(-6deg);
-    top: 42em;
+    top: 50em;
     background: white;
 }
 
@@ -852,15 +853,15 @@ nav ul li a {
     right: 180px;
     transform: rotate(10deg);
     background: white;
-    top: 42em;
+    top: 50em;
 }
 
 .option8 {
     position: absolute;
-    right: 66px;
+    right: 80px;
     transform: rotate(-10deg);
     background: white;
-    top: 42em;
+    top: 50em;
 }
 
 .card-container {
@@ -1552,7 +1553,7 @@ nav ul li a {
     }
 }
 
-@media (min-width: 701px) and (max-width: 915px) {
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
     .main h1 {
         width: 83%;
     }
@@ -1597,62 +1598,62 @@ nav ul li a {
     }
 
     .box1 {
-        top: 160%;
+        top: 235%;
         right: 243px;
     }
 
     .box2 {
-        top: 160%;
+        top: 235%;
         right: 129px;
     }
 
     .box3 {
-        top: 160%;
+        top: 235%;
         right: 15px;
     }
 
     .box4 {
-        top: 177%;
+        top: 265%;
         right: 243px;
     }
 
     .box5 {
-        top: 177%;
+        top: 265%;
         right: 129px;
     }
 
     .box6 {
-        top: 177%;
+        top: 265%;
         right: 15px;
     }
 
     .box7 {
-        top: 194%;
+        top: 296%;
         right: 244px;
     }
 
     .box8 {
-        top: 194%;
+        top: 296%;
         right: 130px;
     }
 
     .box9 {
-        top: 194%;
-        right: 15px;
+        top: 296%;
+        right: 16px;
     }
 
     .d3-box {
         width: 140px;
         height: 140px;
         right: 139px;
-        top: 179%;
+        top: 269%;
     }
 
     .d3-circle {
         width: 85px;
         height: 85px;
         right: 168px;
-        top: 183%;
+        top: 278%;
         transform: rotateX(20deg) rotateY(60deg);
     }
 
@@ -1660,7 +1661,7 @@ nav ul li a {
         width: 85px;
         height: 85px;
         right: 172px;
-        top: 183%;
+        top: 278%;
         transform: rotateX(20deg) rotateY(60deg);
     }
 
@@ -1668,21 +1669,21 @@ nav ul li a {
         width: 132px;
         height: 132px;
         right: 145px;
-        top: 180%;
+        top: 271%;
     }
 
     .d3-circle3 {
         width: 80px;
         height: 80px;
         right: 260px;
-        top: 198%;
+        top: 305%;
     }
 
     .d3-circle4 {
         width: 80px;
         height: 80px;
         right: 260px;
-        top: 197.5%;
+        top: 304%;
     }
 
     .box91 {
@@ -1697,9 +1698,61 @@ nav ul li a {
         top: 11px;
     }
 
+    .half-circle i {
+        font-size: 45px;
+        top: 43px;
+    }
+
     .second-half-circle {
         width: 95px;
         height: 115px;
+    }
+
+    .second-half-circle i {
+        font-size: 43px;
+        top: 27px;
+        left: 33px;
+    }
+
+    .left-eye {
+        width: 30px;
+        height: 60px;
+        left: 20px;
+        top: 26px;
+    }
+
+    .right-eye {
+        width: 30px;
+        height: 60px;
+        left: 58px;
+        top: 26px;
+    }
+
+    .eye-ball-left {
+        width: 20px;
+        height: 28px;
+        bottom: 6px;
+        left: 14px;
+    }
+
+    .eye-ball-right {
+        width: 20px;
+        height: 28px;
+        bottom: 6px;
+        left: 14px;
+    }
+
+    .dot-91 {
+        width: 10px;
+        height: 10px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .logo2 i {
+        font-size: 60px;
+        top: 33px;
+        left: 20px;
     }
 
     .small-card1,
@@ -1738,5 +1791,112 @@ nav ul li a {
     .arrow-icon2 {
         top: 170px;
         left: 170px;
+    }
+
+    .option5,
+    .option6,
+    .option7,
+    .option8 {
+        display: none;
+    }
+
+    .sepration-line {
+        position: absolute;
+        top: 78em;
+    }
+
+    .sepration-content1 {
+        top: 53em;
+    }
+
+    .sepration-icon i {
+        top: 53em;
+        left: 250px;
+    }
+
+    .sepration-content2 {
+        right: 20px;
+        top: 53em;
+    }
+
+    .sepration-line2 {
+        top: 83em;
+    }
+
+    .bottom-content {
+        transform: translate(55px, 495%);
+    }
+
+    .bottom-line {
+        width: 25%;
+        transform: translate(434px, 545px);
+    }
+
+    .flower-icon {
+        transform: translate(45px, 1006%);
+    }
+
+    .option1,
+    .option2,
+    .option3,
+    .option4 {
+        top: 63em;
+    }
+
+    .card-container {
+        top: 100em;
+        display: grid;
+        grid-template-columns: 1fr;
+        left: 170px;
+    }
+
+    .card-icon1,
+    .card-icon2,
+    .card-icon3 {
+        left: 86%;
+    }
+
+    .card-img1 img {
+        left: 55px;
+    }
+
+    .card-img2 img {
+        top: 50px;
+    }
+
+    .card-img3 img {
+        top: 70px;
+    }
+
+    .fa-circle-play {
+        top: 970px;
+    }
+
+    .tooltip-text {
+        bottom: 25px;
+        font-size: 20px;
+        right: 16px;
+    }
+
+    .tooltip-icon2 img {
+        top: 56px;
+        left: 38px;
+    }
+
+    .tooltip-icon1 img {
+        bottom: 20px;
+        right: 60px;
+    }
+
+    .emoji1 {
+        font-size: 26px;
+        top: 85px;
+        left: 35px;
+    }
+
+    .emoji2 {
+        font-size: 26px;
+        top: 283%;
+        right: 114px;
     }
 }
