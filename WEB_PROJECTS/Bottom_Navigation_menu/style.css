@@ -1,126 +1,88 @@
-body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+nav {
+    position: fixed;
+    inset: auto 0 0 0;
+    border-bottom: 20px solid black;
+    width: min(500px, 100%);
+    --w-h-item: 60px;
+    --position-x-active: 170px;
 }
 
-.navigation {
-    position: relative;
-    width: 400px;
-    height: 60px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, var(--w-h-item));
+    grid-template-rows: var(--w-h-item);
+    justify-content: space-between;
 }
 
-.navigation ul {
-    display: flex;
-    width: 350px;
-}
-
-.navigation ul li {
-    list-style: none;
-    position: relative;
-    width: 70px;
-    height: 60px;
-    z-index: 2;
-}
-
-.navigation ul li a {
-    position: relative;
+nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    font-size: 16px;
+    transition: .5s;
+    color: rgb(235, 42, 42);
 }
 
-.navigation ul li a .menu-icon {
-    position: relative;
-    display: block;
-    width: 55px;
-    height: 55px;
-    text-align: center;
-    line-height: 65px;
-    border-radius: 50%;
-    color: black;
-    font-size: 24px;
+nav ul li.active {
+    transform: translateY(-10px);
 }
 
-.navigation ul li.active a .menu-icon {
-    background-color: red;
-    color: black;
-    transform: translateY(-27px);
-}
-
-.navigation ul li a .menu-icon::before {
-    content: '';
+nav .effect {
     position: absolute;
-    top: 10px;
+    width: 100%;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    border-radius: 50%;
-    filter: blur(5px);
-    opacity: 0;
+    bottom: 0;
+    height: calc(var(--w-h-item) + 10px);
+    z-index: -1;
+    overflow: hidden;
 }
 
-.navigation ul li.active a .menu-icon::before {
-    opacity: 0.5;
-}
-
-.indicator {
+nav .effect::before{
     position: absolute;
-    top: -35px;
-    width: 70px;
-    height: 70px;
-    background-color: white;
-    border-radius: 50%;
-    z-index: 1;
+    left: 0;
+    bottom: 0;
+    height: var(--w-h-item);
+    width: calc(var(--position-x-active) - 10px);
+    background-color: rgb(0, 0, 0);
+    content: "";
+    border-top-right-radius: 30px;
     transition: .5s;
 }
 
-.indicator::before {
-    content: '';
+nav .effect::after{
     position: absolute;
-    top: 5px;
-    left: -28px;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border-radius: 50%;
-    box-shadow: 15px 18px white;
+    bottom: 0;
+    right: 0;
+    content: "";
+    height: var(--w-h-item);
+    width: calc(100% - var(--position-x-active) - var(--w-h-item) - 10px);
+    background-color: rgb(0, 0, 0);
+    border-top-left-radius: 30px;
+    transition: .5s;
 }
 
-.indicator::after {
-    content: '';
+nav .effect .circle{
     position: absolute;
-    top: 5px;
-    right: -28px;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
+    width: var(--w-h-item);
+    height: var(--w-h-item);
+    background-color: black;
+    left: var(--position-x-active);
     border-radius: 50%;
-    box-shadow: -15px 18px white;
+    box-shadow: 0 20px 20px gray;
+    transition: .5s;
 }
 
-.navigation ul li:nth-child(1).active ~ .indicator{
-    transform: translate(calc(70px * 0));
-}
-.navigation ul li:nth-child(2).active ~ .indicator{
-    transform: translate(calc(70px * 1));
-}
-.navigation ul li:nth-child(3).active ~ .indicator{
-    transform: translate(calc(70px * 2));
-}
-.navigation ul li:nth-child(4).active ~ .indicator{
-    transform: translate(calc(70px * 3));
-}
-.navigation ul li:nth-child(5).active ~ .indicator{
-    transform: translate(calc(70px * 4));
+nav .effect .circle::before{
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    content: '';
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 50px 0 30px black;
+    bottom: -10px;
+    transition: .5s;
 }
