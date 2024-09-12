@@ -101,7 +101,7 @@ body.activeNav .nav {
     left: -300%;
 }
 
-.nav .links .link a{
+.nav .links .link a {
     text-decoration: none;
     /* text-transform: uppercase; */
     color: #aaa;
@@ -113,22 +113,22 @@ body.activeNav .nav .links .link {
     left: 0;
 }
 
-body.activeNav .nav .links > div:nth-child(1){
+body.activeNav .nav .links>div:nth-child(1) {
     transition: left 300ms ease-in-out 650ms;
 }
 
-body.activeNav .nav .links > div:nth-child(2){
+body.activeNav .nav .links>div:nth-child(2) {
     transition: left 300ms ease-in-out 680ms;
 }
 
-body.activeNav .nav .links > div:nth-child(3){
+body.activeNav .nav .links>div:nth-child(3) {
     transition: left 300ms ease-in-out 710ms;
 }
 
-body.activeNav .nav .links > div:nth-child(4){
+body.activeNav .nav .links>div:nth-child(4) {
     transition: left 300ms ease-in-out 740ms;
 }
 
-body.activeNav .nav .links > div:nth-child(5){
+body.activeNav .nav .links>div:nth-child(5) {
     transition: left 300ms ease-in-out 770ms;
 }
