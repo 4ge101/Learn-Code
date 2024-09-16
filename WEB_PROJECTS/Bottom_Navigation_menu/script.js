@@ -1,13 +1,16 @@
-let nav = document.querySelector('nav');
-let items = document.querySelectorAll('li');
-items.forEach(item => {
-    item.onclick = () => {
-        let oldActive = nav.querySelector('li.active');
-        if (oldActive) oldActive.classList.remove('active')
-        item.classList.add('active');
-    nav.style.setProperty('--position-x-active', item.offsetLeft + 'px');
-    }
-})
+document.addEventListener('DOMContentLoaded', function() {
+    const navItems = document.querySelectorAll('.nav-item');
+    const currentPath = window.location.pathname;
 
-let itemAcitve = nav.querySelector('li.active')
-if (itemAcitve) nav.style.setProperty('--position-x-active', itemAcitve.offsetLeft + 'px')
+    navItems.forEach(item => {
+        const itemPath = new URL(item.getAttribute('href'), window.location.origin).pathname;
+        if (currentPath === itemPath) {
+            item.classList.add('active');
+        }
+
+        item.addEventListener('click', function(e) {
+            navItems.forEach(navItem => navItem.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+});

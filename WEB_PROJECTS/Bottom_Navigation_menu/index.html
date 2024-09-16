@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><i class="fa-solid fa-user"></i></li>
-            <li><i class="fa-solid fa-chalkboard-user"></i></li>
-            <li class="active"><i class="fa-solid fa-images"></i></li>
-            <li><i class="fa-solid fa-hand-holding-droplet"></i></li>
-            <li><i class="fa-solid fa-bars"></i></li>
-        </ul>
-        <div class="effect">
-            <div class="circle"></div>
+
+    <div id="page" class="site">
+        <div class="conainer">
+            <nav>
+                <ul>
+                    <li class="active"><a href="" id="home"><span>home</span><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="" id="about"><span>about</span><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="" id="price"><span>price</span><i class="fa-solid fa-money-bill"></i></a></li>
+                    <li><a href="" id="gallery"><span>gallery</span><i class="fa-solid fa-image"></i></a></li>
+                    <li><a href="" id="contact"><span>contact</span><i class="fa-solid fa-phone"></i></a></li>
+                </ul>
+            </nav>
+            <section>
+                <div id="home">
+                    <h2>home</h2>
+                </div>
+                <div id="about">
+                    <h2>about</h2>
+                </div>
+                <div id="price">
+                    <h2>price</h2>
+                </div>
+                <div id="gallery">
+                    <h2>gallery</h2>
+                </div>
+                <div id="contact">
+                    <h2>contact</h2>
+                </div>
+            </section>
         </div>
-    </nav>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
