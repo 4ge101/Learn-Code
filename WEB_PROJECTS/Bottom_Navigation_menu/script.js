@@ -1,16 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navItems = document.querySelectorAll('.nav-item');
-    const currentPath = window.location.pathname;
+const trigger = document.querySelectorAll('nav li');
 
-    navItems.forEach(item => {
-        const itemPath = new URL(item.getAttribute('href'), window.location.origin).pathname;
-        if (currentPath === itemPath) {
+// Add active class based on the current page URL
+function setActiveClass() {
+    const currentPage = window.location.pathname.split("/").pop(); // Get the current page name
+    trigger.forEach((item) => {
+        const link = item.querySelector('a');
+        const href = link.getAttribute('href');
+        if (href === currentPage) {
             item.classList.add('active');
+        } else {
+            item.classList.remove('active');
         }
-
-        item.addEventListener('click', function(e) {
-            navItems.forEach(navItem => navItem.classList.remove('active'));
-            this.classList.add('active');
-        });
     });
-});
+}
+
+// Set the active class when the page loads
+document.addEventListener('DOMContentLoaded', setActiveClass);
+
+// Add click event listener to toggle active class dynamically
+trigger.forEach((menu) => menu.addEventListener('click', function() {
+    trigger.forEach((item) => item != this ? item.classList.remove('active') : null);
+    if (!this.classList.contains('active')) {
+        this.classList.add('active');
+    }
+}));

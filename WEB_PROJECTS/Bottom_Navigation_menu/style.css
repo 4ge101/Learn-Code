@@ -13,16 +13,16 @@ nav ul li {
 }
 
 nav {
-    position: fixed;
-    bottom: 10%;
-    width: 456px;
-    background-color: rgb(207, 200, 200);
-    left: 50%;
-    margin-left: -228px;
-    padding: 0 32px;
-    border-radius: 40px;
-    box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%),
-        0 30px 60px -30px rgb(0 0 0 / 30%);
+position: fixed;
+  bottom: 10%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  border-radius: 0;
+  box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%);
+  overflow: hidden;
+  right: 0;
+  height: 9%;
 }
 
 nav ul {
@@ -41,17 +41,16 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     flex-direction: column-reverse;
-    padding: 8px;
     font-size: 20px;
     line-height: 1.4;
     width: 80px;
     height: 80px;
-    transition: .3s;
+    /* transition: .3s; */
 }
 
-nav ul li a:hover {
-    color: blue;
-}
+/* nav ul li a:hover {
+    color: rgb(0, 255, 179);
+} */
 
 nav ul li a span {
     font-size: 10px;
@@ -62,7 +61,6 @@ nav li::before,
 nav li::after {
     content: '';
     position: absolute;
-    top: 1px;
     height: 100%;
     width: 30px;
 }
@@ -78,16 +76,27 @@ nav li.active::after {
 }
 
 nav li.active::before, nav li.active::after{
-    background-color: #cfc8c8;
+    background-color: #ffffff;
+    top: 1px;
 }
 
-nav li.active a::before,
-nav li.active a::after {
+nav li a::before, nav li a::after{
     content: '';
     position: absolute;
     background-color: blue;
     z-index: -1;
+    border-radius: 10px 10px 0 0;
+    /* -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    -webkit-transition: transform 0.3s, border-radius .3s;
+    transition: transform 0.3s, border-radius .3s; */
 }
+
+/* nav li.active a::before,
+nav li.active a::after {
+-webkit-transform: translateY(0);
+transform: translateY(0);
+} */
 
 nav li.active a::before {
     top: 10px;
@@ -106,4 +115,28 @@ nav li.active a::after {
 
 nav li.active a {
     color: white;
+}
+
+/* additional */
+section div{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-size: 40px;
+}
+
+section div:nth-child(1){
+    background-color: purple;
+}
+section div:nth-child(2){
+    background-color: rgb(255, 166, 0);
+}
+section div:nth-child(3){
+    background-color: rgb(128, 0, 0);
+}
+section div:nth-child(4){
+    background-color: rgb(56, 53, 56);
+}
+section div:nth-child(5){
+    background-color: rgb(136, 255, 0);
 }
