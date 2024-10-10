@@ -14,16 +14,42 @@
 <body>
 
     <!-- navigation menu -->
-    <nav>
-        <div class="logo">
-            <img src="assets/logo/CONSTRUCTION-PSD.png" alt="nirman-logo">
+    <header>
+        <nav class="hide-on-mobile">
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo/CONSTRUCTION-PSD.png" alt="nirman-logo"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+        <!-- responsive nav bar -->
+        <div class="nav-toggle" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact us</a></li>
-        </ul>
-    </nav>
+        <div class="nav-overlay"></div>
+        <div class="nav hide-on-bigscreen">
+            <div class="links">
+                <div class="link">
+                    <a href="">Home</a>
+                </div>
+                <div class="link">
+                    <a href="">About Us</a>
+                </div>
+                <div class="link">
+                    <a href="">Projects</a>
+                </div>
+                <div class="link">
+                    <a href="">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main>
         <div class="contant">
@@ -50,54 +76,10 @@
                 </div>
             </div>
         </div>
-        <div class="about">
-            <div class="about-img">
-                <div class="about-img-divison1">
-                    <span><img style="width: 15%;" src="assets/images/images-construction.jpeg"
-                            alt="construction-img"></span>
-                    <span><img style="width: 14%;" src="assets/images/images-construction2.jpeg"
-                            alt="construction-img"></span>
-                </div>
-                <div class="about-img-divison2">
-                    <span><img style="width: 17%;" src="assets/images/images-construction3.jpeg"
-                            alt="construction-img"></span>
-                    <span><img style="width: 15%;" src="assets/images/images-construction4.jpeg"
-                            alt="construction-img"></span>
-                </div>
-                <div class="about-title">
-                    <div class="title">
-                        <h1>Why You Should Choose Us</h1>
-                    </div>
-                    <span>
-                        By offering expert and productive consulting solutions, as well as efficient construction
-                        services
-                        to clients, we have established ourselves among the leading architecture, engineering, and
-                        construction companies in Biratnagar.
-                    </span>
-                    <div class="title-icon">
-                        <div class="icon1">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="44" height="44"
-                                color="#ffffff" fill="none">
-                                <path
-                                    d="M16 10L18.1494 10.6448C19.5226 11.0568 20.2092 11.2628 20.6046 11.7942C21 12.3256 21 13.0425 21 14.4761V22"
-                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                                <path d="M8 9L11 9M8 13L11 13" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M12 22V19C12 18.0572 12 17.5858 11.7071 17.2929C11.4142 17 10.9428 17 10 17H9C8.05719 17 7.58579 17 7.29289 17.2929C7 17.5858 7 18.0572 7 19V22"
-                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                                <path d="M2 22L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                                <path
-                                    d="M3 22V6.71724C3 4.20649 3 2.95111 3.79118 2.32824C4.58237 1.70537 5.74742 2.04355 8.07752 2.7199L13.0775 4.17122C14.4836 4.57937 15.1867 4.78344 15.5933 5.33965C16 5.89587 16 6.65344 16 8.16857V22"
-                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <h3>Architecture</h3>
-                            <span>A short description to prove that you are the best.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="btn-container">
+            <button class="btn"><a href="">Contact Us</a></button>
+            <button class="btn btn2"><a style="color: white;" href="">Free Consultation</a></button>
+            <li>All our projects build by Exports.</li>
         </div>
     </main>
 
