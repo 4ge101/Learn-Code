@@ -7,6 +7,11 @@
     overflow-x: hidden;
 }
 
+::selection {
+    background-color: var(--primary-color);
+    color: var(--default-color);
+}
+
 :root {
     --primary-color: #d6d843;
     --secondary-color: #be1d2d;
@@ -14,6 +19,7 @@
     --default-color: white;
     --black-color: black;
     --body-color: #24212c;
+    --img-border-color: #37343d;
 }
 
 body {
@@ -198,7 +204,7 @@ nav ul li a {
 
 .head {
     padding: 80px 50px;
-    width: 38%;
+    width: 50%;
     display: grid;
     gap: 40px;
     color: var(--default-color);
@@ -276,4 +282,266 @@ nav ul li a {
     padding: 20px 0;
     overflow: visible;
     list-style-type: circle;
+}
+
+.image-container {
+    padding: 50px 50px;
+}
+
+.image-container img {
+    border-radius: 15px;
+    padding: 8px 8px;
+}
+
+.image-title {
+    color: var(--default-color);
+    width: 45%;
+    position: absolute;
+    right: 80px;
+    display: grid;
+    gap: 15px;
+}
+
+.facilitie-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+}
+
+.facilitie-container h3 {
+    padding: 5px 0 10px;
+}
+
+.award-container {
+    color: var(--default-color);
+    display: flex;
+    gap: 30%;
+    padding: 15px 13px;
+    text-align: center;
+}
+
+.service-head {
+    color: var(--default-color);
+    padding: 40px 55px;
+}
+
+.service-head h1::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.btn3 {
+    background: transparent;
+    border: none;
+}
+
+.btn3 a {
+    color: var(--primary-color);
+}
+
+.service-content {
+    color: var(--default-color);
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 70px;
+    gap: 70px;
+    text-align: center;
+}
+
+.service-content p {
+    padding: 15px 0;
+}
+
+.image-box1 img:nth-child(1) {
+    width: 20%
+}
+
+.image-box1 img:nth-child(2) {
+    width: 16%
+}
+
+.image-box2 img:nth-child(1) {
+    width: 25%;
+}
+
+.image-box2 img:nth-child(2) {
+    width: 18%;
+}
+
+.featured-head {
+    color: var(--default-color);
+    padding: 50px 50px;
+    display: grid;
+    gap: 16px;
+}
+
+.featured-head::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.featured-img {
+    text-align: center;
+}
+
+.featured-img img {
+    width: 35%;
+    margin: 20px 20px;
+    border: 2px solid var(--img-border-color);
+    padding: 3px;
+    border-radius: 12px;
+}
+
+.team-head {
+    color: var(--default-color);
+    padding: 50px 50px;
+    display: grid;
+    gap: 16px;
+}
+
+.team-head::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--default-color);
+}
+
+.team-members {
+    margin: 25px 25px;
+    text-align: center;
+}
+
+.team-members img {
+    border: 2px solid var(--img-border-color);
+    width: 40%;
+    border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+    main {
+        overflow: visible;
+    }
+
+    .content {
+        overflow: visible;
+    }
+
+    .card-head1 {
+        width: 300px;
+        height: 200px;
+    }
+
+    .card-head2 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .head-card {
+        padding: 15px 50px 80px;
+    }
+
+    .head {
+        padding: 66px 15px 20px;
+        width: 95%;
+        gap: 25px;
+        position: relative;
+        overflow: visible;
+    }
+
+    .head h1 {
+        font-size: 20px;
+    }
+
+    .head span {
+        font-size: 15px;
+        position: absolute;
+        top: 270%;
+        padding: 80px 25px;
+        text-align: center;
+    }
+
+    .btn-container {
+        padding: 40px 40px 140px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        position: relative;
+        top: 140px;
+    }
+
+    .btn {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+
+    .btn-container li {
+        padding: 35px 0 0;
+        margin: 0 -65px;
+        position: relative;
+        left: 70px;
+    }
+
+    .image-container {
+        padding: 50px 35px;
+    }
+
+    .image-box1 img:nth-child(1) {
+        width: 44%
+    }
+
+    .image-box1 img:nth-child(2) {
+        width: 39%
+    }
+
+    .image-box2 img:nth-child(1) {
+        width: 40%;
+    }
+
+    .image-box2 img:nth-child(2) {
+        width: 45%;
+    }
+
+    .image-title {
+        position: relative;
+        right: 0;
+        width: auto;
+    }
+
+    .facilitie-container {
+        padding: 50px 0;
+    }
+
+    .service-head h1::before {
+        width: 12%;
+    }
+
+    .service-head {
+        display: grid;
+        gap: 10px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
