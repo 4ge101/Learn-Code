@@ -36,6 +36,43 @@ let i;
 let v;
 v = 44;
 // Unknown
+/*
+In unknown we can use like can any but first we want to say it's type for example
+*/
 let u;
 u = 12;
 u = "sami";
+if (typeof u === "string")
+    u.toUpperCase();
+// Void 
+// If a function doesn't return anything then its type is void for example
+function abcd() {
+    console.log("Hey");
+}
+// Null 
+// If we say data base to find a person whos's name is sami and he is owner of a cafe then it find if he didnt find anything then its type is null for example
+let n = null;
+let m;
+m = "sami";
+m = null;
+// Undefined
+// if we dont give value to the variable then it's type is undefined for example
+let f;
+// Never 
+/*
+If a fuction never return anything like loop for it type is never for example
+*/
+function efg() {
+    while (true) { }
+}
+efg();
+console.log("Hey");
+/*
+   Type Inference
+   Understanding type inference
+   Type annotations
+*/
+// Inference if we dont give any type to the function or variable then it is Inference for example
+let k = 12;
+// Annotations if we add semicolon : and define its type then it is annotations for example
+let y;
