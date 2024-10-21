@@ -49,6 +49,26 @@ nav ul li a {
     text-decoration: none;
     color: var(--default-color);
     font-size: 16px;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .hide-on-bigscreen {
@@ -62,7 +82,7 @@ nav ul li a {
     }
 
     .nav-toggle {
-        position: fixed;
+        position: absolute;
         top: 20px;
         right: 20px;
         width: 35px;
@@ -170,6 +190,26 @@ nav ul li a {
         color: #aaa;
         font-weight: 600;
         transition: all 300ms ease-in-out;
+        position: relative;
+    }
+
+    .link a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: var(--primary-color);
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    .link a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
     }
 
     body.activeNav .nav .links .link {
@@ -276,6 +316,10 @@ nav ul li a {
 .btn a {
     text-decoration: none;
     color: var(--black-color);
+}
+
+.btn2 a {
+    color: var(--default-color);
 }
 
 .btn-container li {
@@ -401,9 +445,8 @@ nav ul li a {
     gap: 20px;
     max-width: 1200px;
     width: 100%;
-    padding: 0 100px;
+    padding: 50px 180px;
 }
-
 
 .main-bento {
     grid-area: main-bento;
@@ -525,6 +568,256 @@ nav ul li a {
     border-radius: 20px;
 }
 
+.construction-container {
+    padding: 70px 0;
+}
+
+.construction-head {
+    color: var(--default-color);
+    padding: 50px 50px;
+    display: grid;
+    gap: 10px;
+}
+
+.construction-head::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.construction-btn {
+    display: flex;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.construction-btn .btn2 a {
+    color: var(--default-color);
+}
+
+.footer {
+    background-color: var(--bento-color);
+    margin: 80px 0 0;
+    padding: 45px 0 0;
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    padding: 50px 50px;
+}
+
+.footer-col h4 {
+    position: relative;
+    left: 0;
+    font-size: 18px;
+    color: var(--default-color);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 700;
+    position: relative;
+    overflow: visible;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--secondary-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--default-color);
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--tertiary-color);
+    padding-left: 8px;
+}
+
+.footer-col .social-link a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--body-color);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--default-color);
+    transition: all 0.5s ease;
+    position: relative;
+    left: 3px;
+}
+
+.footer-col .social-link a:hover {
+    color: var(--tertiary-color);
+    background-color: var(--default-color);
+}
+
+.copy-right {
+    display: flex;
+    justify-content: end;
+    padding: 0 60px;
+    position: relative;
+    bottom: 15px;
+    color: var(--default-color);
+}
+
+.footer-logo {
+    padding: 0 0 10px;
+}
+
+.footer-logo img {
+    width: 50%;
+}
+
+.footer-col2 {
+    width: 34%;
+    color: var(--default-color);
+}
+
+/* responsive */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+        padding: 15px 50px 0;
+    }
+
+    .copy-right {
+        padding: 0 10px;
+        bottom: 0;
+        text-align: center;
+    }
+}
+
+.project-head {
+    color: var(--default-color);
+    padding: 100px 50px 50px;
+}
+
+.project-head::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.contact-head {
+    color: var(--default-color);
+    padding: 100px 50px 10px;
+}
+
+.contact-head::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.contact-info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 100px;
+    gap: 80px;
+}
+
+.call-info {
+    color: var(--default-color);
+}
+
+.call-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 20px;
+}
+
+.call-info ul {
+    padding: 0 40px;
+}
+
+.location-info {
+    color: var(--default-color);
+}
+
+.location-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 10px;
+}
+
+.location-info ul {
+    padding: 0 40px;
+}
+
+.email-info {
+    color: var(--default-color);
+}
+
+.email-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 10px;
+}
+
+.email-info ul {
+    padding: 0 40px;
+}
+
+.working-time-info {
+    color: var(--default-color);
+}
+
+.working-time-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 10px;
+}
+
+.working-time-info ul {
+    padding: 0 40px;
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
 @media (max-width: 700px) {
     main {
         overflow: visible;
@@ -631,5 +924,83 @@ nav ul li a {
     .service-container {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .featured-head {
+        padding: 50px 35px;
+    }
+
+    .featured-head::before {
+        width: 15%;
+    }
+
+    .main-bento {
+        width: 95%;
+    }
+
+    .bento-container {
+        padding: 40px 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .side-bento .bento-box {
+        position: relative;
+        width: 95%;
+        height: 250px;
+    }
+
+    .bottom-bento .bento-box {
+        background-color: var(--bento-color);
+        width: 95%;
+        height: 200px;
+    }
+
+    .bottom-bento {
+        flex-wrap: wrap;
+    }
+
+    .end-bento {
+        flex-wrap: wrap;
+    }
+
+    .end-bento .bento-box {
+        width: 95%;
+    }
+
+    .team-head::before {
+        width: 15%;
+    }
+
+    .construction-head::before {
+        width: 15%;
+    }
+
+    .featured-img6 {
+        width: 160%;
+    }
+
+    .project-head {
+        padding: 50px 30px;
+    }
+
+    .project-head::before {
+        width: 15%;
+    }
+
+    .contact-head::before {
+        width: 15%;
+    }
+
+    .contact-info-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 50px 50px;
+    }
+
+    .call-info ul {
+        text-align: start;
     }
 }
