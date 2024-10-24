@@ -10,8 +10,58 @@
     --body-color: #24212c;
     --primary-color: #4dcac4;
     --secondary-color: #047971;
+    --light-red: linear-gradient(#f55,#f33939);
 }
 
 body {
     background-color: var(--body-color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav {
+    padding: 25px 0;
+    background: var(--light-red);
+    width: 55%;
+    clip-path: polygon(103.6% 8.18%, 97.41% 94.15%, 3.95% 101.28%, -5.94% 9.37%);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--default-color);
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--default-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
