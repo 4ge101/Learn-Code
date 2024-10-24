@@ -10,30 +10,20 @@
     --body-color: #24212c;
     --primary-color: #4dcac4;
     --secondary-color: #047971;
-    --light-red: linear-gradient(#f55,#f33939);
 }
 
 body {
     background-color: var(--body-color);
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-}
-
 nav {
-    padding: 25px 0;
-    background: var(--light-red);
-    width: 55%;
-    clip-path: polygon(103.6% 8.18%, 97.41% 94.15%, 3.95% 101.28%, -5.94% 9.37%);
+    padding: 25px 40px;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-evenly;
-    gap: 25px;
+    justify-content: start;
+    gap: 50px;
 }
 
 nav ul li {
