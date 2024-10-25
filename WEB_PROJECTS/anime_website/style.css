@@ -8,12 +8,18 @@
     --default-color: white;
     --dark-color: black;
     --body-color: #24212c;
-    --primary-color: #4dcac4;
+    --primary-color: #4d4662;
     --secondary-color: #047971;
 }
 
 body {
     background-color: var(--body-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
@@ -37,7 +43,7 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a::before{
+nav ul li a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -54,4 +60,14 @@ nav ul li a::before{
 nav ul li a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 15%;
+    position: absolute;
 }
