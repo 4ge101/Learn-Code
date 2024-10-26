@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -72,7 +75,7 @@ nav ul li a:hover::before {
     position: absolute;
 }
 
-.logo a{
+.logo a {
     display: flex;
     align-items: center;
 }
@@ -368,4 +371,58 @@ nav ul li a:hover::before {
         font-size: 13px;
         color: var(--dark-colorcd);
     }
+}
+
+.trending-container {
+    padding: 60px 60px;
+    width: 60%;
+}
+
+.trending-head {
+    color: var(--default-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trending-head::before {
+    content: '';
+    background: var(--btn-color);
+    height: 40px;
+    width: 4px;
+    position: absolute;
+}
+
+.trending-head h1 {
+    padding: 0 15px;
+}
+
+.trending-head span a {
+    text-decoration: none;
+    color: var(--default-color);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trending-card {
+    height: 325px;
+    background: var(--primary-color);
+    width: 240px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.trending-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0;
+}
+
+.trending-card img {
+    width: 240px;
+    height: 365px;
+    object-fit: cover;
+    border-radius: 6px;
 }
