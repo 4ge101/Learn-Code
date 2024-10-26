@@ -9,7 +9,7 @@
     --dark-color: black;
     --body-color: #24212c;
     --primary-color: #4d4662;
-    --secondary-color: #047971;
+    --btn-color: #969bdb;
 }
 
 body {
@@ -134,7 +134,7 @@ nav ul li a:hover::before {
 
 .slider .list .item .button button {
     border: none;
-    background-color: #969bdb;
+    background-color: var(--btn-color);
     padding: 7px 15px;
     font-weight: 800;
     cursor: pointer;
@@ -196,15 +196,16 @@ nav ul li a:hover::before {
     height: 40px;
     border-radius: 50%;
     border: none;
-    background-color: #969BDB;
+    background-color: var(--btn-color);
     color: var(--dark-color);
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s;
+    display: flex;
 }
 
 .nextPrevArrows button:hover {
-    background-color: #7075B7;
+    background-color: var(--primary-color);
     color: var(--dark-color);
 }
 
