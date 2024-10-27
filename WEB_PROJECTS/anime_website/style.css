@@ -68,6 +68,7 @@ nav ul li a:hover::before {
 .logo {
     display: flex;
     align-items: center;
+    padding: 0px 230px 0 0;
 }
 
 .logo img {
@@ -78,6 +79,66 @@ nav ul li a:hover::before {
 .logo a {
     display: flex;
     align-items: center;
+}
+
+.search-box {
+    width: 540px;
+    background-color: var(--body-color);
+    color: var(--default-color);
+    border-radius: 10px;
+    height: 60px;
+    margin: auto;
+}
+
+.search-row {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.search-row input {
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: var(--default-color);
+}
+
+.search-row button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.search-icon {
+    width: 25px;
+    color: var(--default-color);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.search-row ::placeholder {
+    color: var(--default-color);
+}
+
+.search-result-box ul {
+    border-top: 1px solid var(--btn-color);
+    padding: 15px 10px;
+}
+
+.search-result-box ul li {
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-result-box ul li:hover {
+    background-color: var(--body-color);
+    color: var(--dark-color);
 }
 
 .slider {
@@ -111,7 +172,7 @@ nav ul li a:hover::before {
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
-    color: var(--dark-color);
+    color: var(--default-color);
     text-shadow: 0 5px 10px var(--body-color);
 }
 
@@ -122,7 +183,7 @@ nav ul li a:hover::before {
 }
 
 .slider .list .item .type {
-    color: var(--dark-color);
+    color: var(--default-color);
 }
 
 .description {
@@ -425,4 +486,48 @@ nav ul li a:hover::before {
     color: var(--default-color);
     font-size: 20px;
     padding: 20px 0;
+}
+
+.watch-time {
+    color: var(--default-color);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 30%;
+    padding: 5px 4px;
+    border-radius: 6px;
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+}
+
+.trending-box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.view-container{
+    width: 30%;
+}
+
+.view-head {
+    color: var(--default-color);
+}
+
+.view-head::before {
+    content: '';
+    background: var(--btn-color);
+    height: 40px;
+    width: 4px;
+    position: absolute;
+}
+
+.view-head h1 {
+    padding: 0 15px;
+}
+
+.main-container{
+    display: flex;
 }
