@@ -406,23 +406,23 @@ nav ul li a:hover::before {
     gap: 10px;
 }
 
-.trending-card {
+.trending-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.trending-img {
+    object-fit: cover;
     height: 325px;
-    background: var(--primary-color);
     width: 240px;
     border-radius: 6px;
     overflow: hidden;
 }
 
-.trending-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px 0;
-}
-
-.trending-card img {
-    width: 240px;
-    height: 365px;
-    object-fit: cover;
-    border-radius: 6px;
+.trending-title {
+    color: var(--default-color);
+    font-size: 20px;
+    padding: 20px 0;
 }
