@@ -508,8 +508,9 @@ nav ul li a:hover::before {
     align-items: end;
 }
 
-.view-container{
+.view-container {
     width: 30%;
+    padding: 60px 0;
 }
 
 .view-head {
@@ -526,8 +527,13 @@ nav ul li a:hover::before {
 
 .view-head h1 {
     padding: 0 15px;
+    font-size: 25px;
 }
 
-.main-container{
+.main-container {
     display: flex;
+}
+
+.view-content {
+    padding: 60px 0;
 }
