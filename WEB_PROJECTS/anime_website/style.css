@@ -85,7 +85,7 @@ nav ul li a:hover::before {
     width: 540px;
     background-color: var(--body-color);
     color: var(--default-color);
-    border-radius: 10px;
+    border-radius: 70px;
     height: 60px;
     margin: auto;
 }
@@ -485,7 +485,7 @@ nav ul li a:hover::before {
 .trending-title {
     color: var(--default-color);
     font-size: 20px;
-    padding: 20px 0;
+    padding: 20px 12px;
 }
 
 .watch-time {
@@ -515,6 +515,10 @@ nav ul li a:hover::before {
 
 .view-head {
     color: var(--default-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 45px;
 }
 
 .view-head::before {
@@ -534,6 +538,47 @@ nav ul li a:hover::before {
     display: flex;
 }
 
+.view-box {
+    width: 95%;
+    height: 240px;
+    overflow: hidden;
+}
+
 .view-content {
-    padding: 60px 0;
+    padding: 15px 0 0;
+}
+
+.view-img {
+    width: 95%;
+    height: 240px;
+    border-radius: 6px;
+}
+
+.watch-time2 {
+    width: 26%;
+    padding: 5px 0px;
+    bottom: 230px;
+    left: 260px;
+}
+
+.view-title {
+    color: var(--default-color);
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    margin: -75px 6px;
+    width: 27%;
+}
+
+.filter {
+    padding: 0 25px;
+}
+
+.filter-btn {
+    font-size: 14px;
+    border: transparent;
+    background: transparent;
+    color: var(--default-color);
+    padding: 0 5px;
+    cursor: pointer;
 }

@@ -1,3 +1,4 @@
+// slider which change background img 
 var nextBtn = document.querySelector('.next');
 var prevBtn = document.querySelector('.prev');
 var slider = document.querySelector('.slider');

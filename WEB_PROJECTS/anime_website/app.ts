@@ -1,3 +1,5 @@
+// slider which change background img 
+
 const nextBtn = document.querySelector('.next') as HTMLButtonElement;
 const prevBtn = document.querySelector('.prev') as HTMLButtonElement;
 
