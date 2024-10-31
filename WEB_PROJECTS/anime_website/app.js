@@ -34,3 +34,11 @@ function moveSlider(direction) {
         slider.classList.remove(direction);
     }, { once: true });
 }
+// making page up if the icon click then page go up automatically
+var pageUpButton = document.getElementById("pageUp");
+pageUpButton === null || pageUpButton === void 0 ? void 0 : pageUpButton.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

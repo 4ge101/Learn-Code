@@ -45,3 +45,14 @@ function moveSlider(direction: 'next' | 'prev'): void {
         { once: true }
     );
 }
+
+// making page up if the icon click then page go up automatically
+
+const pageUpButton = document.getElementById("pageUp");
+
+pageUpButton?.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
