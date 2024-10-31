@@ -42,3 +42,17 @@ pageUpButton === null || pageUpButton === void 0 ? void 0 : pageUpButton.addEven
         behavior: "smooth"
     });
 });
+// making search bar
+var searchButton = document.getElementById("search-toggle");
+var searchBox = document.querySelector(".search-box");
+var inputBox = document.getElementById("input-box");
+var cancelButton = document.getElementById("cancel-toggle");
+searchButton.addEventListener("click", function () {
+    searchBox.classList.add("open");
+    searchBox.classList.remove("closing");
+    inputBox.focus();
+});
+cancelButton.addEventListener("click", function () {
+    searchBox.classList.remove("open");
+    searchBox.classList.add("closing");
+});

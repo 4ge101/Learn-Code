@@ -56,3 +56,21 @@ pageUpButton?.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+// making search bar
+
+const searchButton = document.getElementById("search-toggle") as HTMLElement;
+const searchBox = document.querySelector(".search-box") as HTMLElement;
+const inputBox = document.getElementById("input-box") as HTMLInputElement;
+const cancelButton = document.getElementById("cancel-toggle") as HTMLElement;
+
+searchButton.addEventListener("click", () => {
+    searchBox.classList.add("open");
+    searchBox.classList.remove("closing");
+    inputBox.focus();
+});
+
+cancelButton.addEventListener("click", () => {
+    searchBox.classList.remove("open");
+    searchBox.classList.add("closing");
+});
