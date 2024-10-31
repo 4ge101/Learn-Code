@@ -74,3 +74,8 @@ cancelButton.addEventListener("click", () => {
     searchBox.classList.remove("open");
     searchBox.classList.add("closing");
 });
+
+// making responsive navbar
+function toggleNav(): void {
+    document.body.classList.toggle("activeNav");
+}
