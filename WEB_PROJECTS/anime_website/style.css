@@ -868,8 +868,49 @@ footer {
         width: 100%;
     }
 
+    .main-container {
+        flex-wrap: wrap;
+    }
+
+    .view-head {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        padding: 0 0 30px;
+    }
+
+    .view-head h1 {
+        font-size: 19px;
+    }
+
+    .view-head::before {
+        height: 35px;
+    }
+
     .view-container {
-        display: none;
+        width: 100%;
+        padding: 45px 20px 20px;
+    }
+
+    .view-img {
+        width: 100%;
+    }
+
+    .view-box {
+        width: 100%;
+    }
+
+    .filter {
+        padding: 0 4px;
+        display: flex;
+        position: absolute;
+        right: 10px;
+    }
+
+    .filter-btn {
+        padding: 0 4px;
+        overflow: visible;
+        font-size: 15px;
     }
 
     .trending-head {
