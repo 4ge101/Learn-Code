@@ -882,6 +882,95 @@ footer {
     color: var(--default-color);
 }
 
+.blog-container {
+    padding: 70px 90px;
+    display: flex;
+    gap: 10px;
+}
+
+.blog-head {
+    height: 355px;
+    overflow: hidden;
+}
+
+.blog-head img {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    opacity: 0.5;
+}
+
+.blog-title {
+    color: var(--default-color);
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 200px;
+    margin: 0 auto;
+}
+
+.blog-row-wrapper {
+    display: grid;
+    gap: 10px;
+}
+
+.blog-column-wrapper {
+    display: grid;
+    gap: 10px;
+}
+
+.blog-title h1 {
+    font-size: 48px;
+}
+
+.blog-title span {
+    font-size: 24px;
+}
+
+.blog-row {
+    display: grid;
+    gap: 10px;
+    width: 580px;
+}
+
+.small-blog-img {
+    width: 285px;
+    height: 285px;
+    overflow: hidden;
+}
+
+.small-blog-img img {
+    width: 285px;
+    height: 285px;
+    object-fit: cover;
+}
+
+.small-blog-img-wrapper {
+    width: 600px;
+    display: flex;
+    gap: 10px;
+}
+
+.blog-column {
+    display: flex;
+    gap: 10px;
+    width: 580px;
+    flex-direction: column-reverse;
+}
+
+.big-blog-img {
+    width: 580px;
+    height: 580px;
+    overflow: hidden;
+}
+
+.big-blog-img img {
+    width: 580px;
+    height: 580px;
+    object-fit: cover;
+}
+
 @media (max-width: 700px) {
     .trending-container {
         padding: 60px 20px 0px;
