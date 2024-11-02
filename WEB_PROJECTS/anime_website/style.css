@@ -23,19 +23,17 @@ body {
 header {
     background-color: var(--primary-color);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 nav {
     padding: 25px 40px;
     display: flex;
-    overflow: visible;
+    align-items: center;
+    margin: auto;
 }
 
 nav ul {
     display: flex;
-    justify-content: start;
     gap: 50px;
 }
 
@@ -72,7 +70,6 @@ nav ul li a:hover::before {
 .logo {
     display: flex;
     align-items: center;
-    padding: 0px 230px 0 0;
 }
 
 .logo img {
@@ -88,6 +85,7 @@ nav ul li a:hover::before {
 .search-container {
     position: relative;
     right: 50px;
+    display: flex;
 }
 
 .search-box {
