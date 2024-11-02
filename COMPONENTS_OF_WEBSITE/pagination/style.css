@@ -1,0 +1,18 @@
+.pagination{
+ text-align: center;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px; /*change the size of pagination accourding to you*/
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.pagination a.active{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}

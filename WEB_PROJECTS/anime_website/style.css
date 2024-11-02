@@ -14,6 +14,7 @@
     --primary-color: #4d4662;
     --btn-color: #969bdb;
     --login-btn-color: #e53637;
+    --btn-hover: #d94748;
 }
 
 body {
@@ -375,17 +376,18 @@ nav ul li a:hover::before {
 
 .slider .list .item .button button {
     border: none;
-    background-color: var(--btn-color);
-    padding: 7px 15px;
+    background-color: var(--login-btn-color);
+    padding: 15px 20px;
     font-weight: 800;
     cursor: pointer;
     letter-spacing: 2px;
     border-radius: 4px;
     transition: 0.4s;
+    color: var(--default-color);
 }
 
 .slider .list .item .button button:hover {
-    background-color: #7379d5;
+    background-color: var(--btn-hover);
     color: var(--default-color);
 }
 
@@ -662,7 +664,7 @@ nav ul li a:hover::before {
 .trending-title {
     color: var(--default-color);
     font-size: 20px;
-    padding: 20px 12px;
+    padding: 20px 0;
 }
 
 .watch-time {
@@ -680,9 +682,10 @@ nav ul li a:hover::before {
 }
 
 .trending-box {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+    display: grid;
+    height: 325px;
+    width: 240px;
+    overflow: hidden;
 }
 
 .view-container {
@@ -811,13 +814,14 @@ nav ul li a:hover::before {
 .latest-title {
     color: var(--default-color);
     font-size: 20px;
-    padding: 20px 12px;
+    padding: 20px 0;
 }
 
 .latest-box {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+    display: grid;
+    height: 325px;
+    width: 240px;
+    overflow: hidden;
 }
 
 footer {
@@ -881,9 +885,11 @@ footer {
 }
 
 .blog-container {
-    padding: 70px 90px;
+    padding: 70px 0;
     display: flex;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .blog-head {
