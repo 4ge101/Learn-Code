@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagination</title>
+    <title>Pagination</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+    <div id="content">Page 1 content goes here</div> <!-- Content to display -->
+
     <div class="pagination">
-        <a href="#"><<</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">>></a>
+        <a href="#" id="prev"><<</a>
+        <a href="#" class="page-num active" data-page="1">1</a>
+        <a href="#" class="page-num" data-page="2">2</a>
+        <a href="#" class="page-num" data-page="3">3</a>
+        <a href="#" class="page-num" data-page="4">4</a>
+        <a href="#" class="page-num" data-page="5">5</a>
+        <a href="#" id="next">>></a>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>

@@ -1,18 +1,24 @@
-.pagination{
- text-align: center;
+.pagination {
+    text-align: center;
 }
 
-.pagination a{
+.pagination a {
     text-decoration: none;
     color: black;
-    font-size: 30px; /*change the size of pagination accourding to you*/
+    font-size: 20px;
     padding: 8px 15px;
     display: inline-block;
 }
 
-.pagination a.active{
-    background-color: blue;
-    color: white;
+.pagination a.active {
     font-weight: bold;
     border-radius: 50%;
+    border: 2px solid black;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: blue;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: 0.3s;
 }
