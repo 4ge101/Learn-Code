@@ -76,3 +76,5 @@ console.log("Hey");
 let k = 12;
 // Annotations if we add semicolon : and define its type then it is annotations for example
 let y;
+function hij(obj) { }
+hij({ name: "sami", email: "sami@gmail.com", password: "abcd123" });

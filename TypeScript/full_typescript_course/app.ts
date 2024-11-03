@@ -97,3 +97,23 @@ let k = 12;
 // Annotations if we add semicolon : and define its type then it is annotations for example
 
 let y: number;
+
+/*
+   //Interfaces and Type Aliases
+   //Definin interfaces
+   //Using interfaces to define objects shapes
+   //Extending Interfaces
+   //Type Aliases
+   //Intersection
+*/
+// it is help to define structure or shape of an object
+interface User {
+    name: string,
+    email: string,
+    password: string,
+    gender?: string //if we dont want to give some details like gender we used question mark
+}
+
+function hij(obj: User) { }
+
+hij({ name: "sami", email: "sami@gmail.com", password: "abcd123" });
