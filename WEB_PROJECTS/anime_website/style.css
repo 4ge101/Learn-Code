@@ -85,7 +85,7 @@ nav ul li a:hover::before {
 
 .search-container {
     position: relative;
-    right: 50px;
+    right: 60px;
     display: flex;
 }
 
@@ -151,7 +151,8 @@ nav ul li a:hover::before {
 /* responsive nav bar */
 @media (max-width: 700px) {
     .responsive-nav {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     .hide-in-mobile {
@@ -160,8 +161,7 @@ nav ul li a:hover::before {
 
     .nav-toggle {
         position: absolute;
-        top: 20px;
-        right: 30px;
+        right: 0;
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -627,7 +627,7 @@ nav ul li a:hover::before {
 
 .trending-head::before {
     content: '';
-    background: var(--btn-color);
+    background-color: var(--btn-color);
     height: 40px;
     width: 4px;
     position: absolute;
@@ -677,12 +677,11 @@ nav ul li a:hover::before {
     padding: 5px 4px;
     border-radius: 6px;
     position: relative;
-    bottom: 40px;
-    right: 20px;
+    bottom: 50px;
+    left: 60%;
 }
 
 .trending-box {
-    display: grid;
     height: 325px;
     width: 240px;
     overflow: hidden;
@@ -738,7 +737,7 @@ nav ul li a:hover::before {
     width: 26%;
     padding: 5px 0px;
     bottom: 230px;
-    left: 260px;
+    left: 245px;
 }
 
 .view-title {
@@ -975,6 +974,93 @@ footer {
     object-fit: cover;
 }
 
+.pagination {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: var(--default-color);
+    font-size: 30px;
+    padding: 4px 15px;
+    display: flex;
+}
+
+.pagination a.active {
+    color: var(--default-color);
+    border: 2px solid var(--default-color);
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.categorie-container {
+    padding: 60px 60px 0;
+    width: 60%;
+}
+
+.categorie-head {
+    color: var(--default-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 0 0 20px;
+}
+
+.categorie-head::before {
+    content: '';
+    background-color: var(--btn-color);
+    height: 40px;
+    width: 4px;
+    position: absolute;
+}
+
+.categorie-head h1 {
+    padding: 0 15px;
+}
+
+.categorie-head span a {
+    text-decoration: none;
+    color: var(--default-color);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.categorie-head span a img {
+    transform: rotate(180deg);
+}
+
+.categorie-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.categorie-img {
+    object-fit: cover;
+    height: 325px;
+    width: 240px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.categorie-title {
+    color: var(--default-color);
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.categorie-box {
+    height: 325px;
+    width: 240px;
+    overflow: hidden;
+}
+
 @media (max-width: 700px) {
     .trending-container {
         padding: 60px 20px 0px;
@@ -1045,16 +1131,16 @@ footer {
         padding: 25px 0;
     }
 
-    .trending-img {
-        width: auto;
+    .trending-box {
+        width: 320px;
     }
 
-    .trending-box {
-        align-items: normal;
+    .trending-img {
+        width: 320px;
     }
 
     .trending-title {
-        padding: 0 0 10px;
+        padding: 10px 0 10px;
         font-size: 17px;
     }
 
@@ -1068,8 +1154,7 @@ footer {
     }
 
     .latest-head {
-        display: grid;
-        align-items: normal;
+        display: block;
     }
 
     .latest-head span a {
@@ -1082,16 +1167,16 @@ footer {
         padding: 25px 0;
     }
 
-    .latest-img {
-        width: auto;
+    .latest-box {
+        width: 320px;
     }
 
-    .latest-box {
-        align-items: normal;
+    .latest-img {
+        width: 320px;
     }
 
     .latest-title {
-        padding: 0 0 10px;
+        padding: 10px 0 10px;
         font-size: 17px;
     }
 
@@ -1134,5 +1219,41 @@ footer {
     .blog-head img {
         height: 100%;
         object-fit: cover;
+    }
+
+    .categorie-container {
+        padding: 60px 20px 0px;
+        width: 100%;
+    }
+
+    .categorie-head {
+        display: flex;
+    }
+
+    .categorie-head span a {
+        font-size: 16px;
+    }
+
+    .categorie-container {
+        padding: 60px 20px 0px;
+        width: 100%;
+    }
+
+    .categorie-content {
+        grid-template-columns: 1fr;
+        padding: 25px 0;
+    }
+
+    .categorie-img {
+        width: 320px;
+    }
+
+    .categorie-box {
+        width: 320px;
+    }
+
+    .categorie-title {
+        padding: 10px 0 10px;
+        font-size: 17px;
     }
 }
