@@ -117,3 +117,31 @@ interface User {
 function hij(obj: User) { }
 
 hij({ name: "sami", email: "sami@gmail.com", password: "abcd123" });
+
+// Extending Interfaces
+interface User {
+    name: string,
+    email: string,
+    password: string,
+}
+
+interface Admin extends User {
+    admin: boolean,
+    // It means that the same face also has like use but admin has extra property that is admin
+}
+
+//Type Aliases
+
+// If we want to descripe a function type that is big then we use "type" it can define a short type name to any type for example
+type argument = null | string | number;
+
+function uij(obj: argument) {
+
+};
+
+uij("Sami");
+
+//Intersection Types
+
+let s: string | null; //This (|) is called Union
+

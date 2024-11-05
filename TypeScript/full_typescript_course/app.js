@@ -78,3 +78,9 @@ let k = 12;
 let y;
 function hij(obj) { }
 hij({ name: "sami", email: "sami@gmail.com", password: "abcd123" });
+function uij(obj) {
+}
+;
+uij("Sami");
+//Intersection Types
+let s; //This (|) is called Union
