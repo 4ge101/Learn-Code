@@ -84,3 +84,25 @@ function uij(obj) {
 uij("Sami");
 //Intersection Types
 let s; //This (|) is called Union
+/*
+  // Classes and Objects
+  // Class defination
+  // Constructors
+  // Access modifiers (public, private, protected)
+  // Readonly properties
+  // Optional properties
+  // Parameter properties
+  // Getter and setters
+  // Static members
+  // Abstract classes and methods
+*/
+// To make classes we used (class) and it's name for example
+class Device {
+    constructor() {
+        this.name = "lg";
+        this.price = 4000;
+        this.category = "digital";
+    }
+}
+let d1 = new Device();
+let d2 = new Device();

@@ -145,3 +145,26 @@ uij("Sami");
 
 let s: string | null; //This (|) is called Union
 
+/*
+  // Classes and Objects
+  // Class defination
+  // Constructors
+  // Access modifiers (public, private, protected)
+  // Readonly properties
+  // Optional properties
+  // Parameter properties
+  // Getter and setters
+  // Static members
+  // Abstract classes and methods
+*/
+
+// To make classes we used (class) and it's name for example
+
+class Device {
+    name = "lg";
+    price = 4000;
+    category = "digital";
+}
+
+let d1 = new Device();
+let d2 = new Device();
