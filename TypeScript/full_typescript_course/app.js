@@ -106,3 +106,21 @@ class Device {
 }
 let d1 = new Device();
 let d2 = new Device();
+// Constructors
+class BottelMaker {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+}
+let b1 = new BottelMaker("Milton", 1400);
+class Music {
+    constructor(name, artist, thumbnail = "anything.png", length, free) {
+        this.name = name;
+        this.artist = artist;
+        this.thumbnail = thumbnail;
+        this.length = length;
+        this.free = free;
+    }
+}
+new Music("HELLO WORLD", "Sami", "", 1200, true);

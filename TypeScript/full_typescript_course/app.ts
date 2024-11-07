@@ -168,3 +168,17 @@ class Device {
 
 let d1 = new Device();
 let d2 = new Device();
+
+// Constructors
+
+class BottelMaker {
+    constructor(public name: string, public price: number) { }
+}
+
+let b1 = new BottelMaker("Milton", 1400);
+
+class Music {
+    constructor(public name: string, public artist: string, public thumbnail: string = "anything.png", public length: number, public free: boolean) { }
+}
+
+new Music ("HELLO WORLD", "Sami", "", 1200, true)
