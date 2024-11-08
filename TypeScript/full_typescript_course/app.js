@@ -121,6 +121,9 @@ class Music {
         this.thumbnail = thumbnail;
         this.length = length;
         this.free = free;
+        if (!thumbnail) {
+            this.thumbnail = "anything.png";
+        }
     }
 }
-new Music("HELLO WORLD", "Sami", "", 1200, true);
+let m1 = new Music("HELLO WORLD", "Sami", "", 1200, true);
