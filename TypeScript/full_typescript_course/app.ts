@@ -186,3 +186,23 @@ class Music {
 }
 
 let m1 = new Music("HELLO WORLD", "Sami", "", 1200, true)
+
+// Access modifiers
+
+class ShoesMaker {
+    constructor(private name: string) { }
+
+    changing() {
+        this.name = "sami";
+    }
+}
+
+let s1 = new ShoesMaker("Nike")
+
+/* 
+   Public
+   .We can access anywhere without any restrictions.
+
+   Private
+   .We can access class members but we can't access outside the containing class
+*/
