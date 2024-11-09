@@ -190,7 +190,9 @@ let m1 = new Music("HELLO WORLD", "Sami", "", 1200, true)
 // Access modifiers
 
 class ShoesMaker {
-    constructor(private name: string) { }
+    constructor(private name: string) {
+        this.name = name;
+    }
 
     changing() {
         this.name = "sami";
@@ -206,3 +208,20 @@ let s1 = new ShoesMaker("Nike")
    Private
    .We can access class members but we can't access outside the containing class
 */
+
+class GlassMaker {
+    constructor(public name: string) { }
+}
+
+class MetalGlassMaker extends GlassMaker {
+    constructor(name: string) {
+        super(name);
+    }
+
+    getValue() {
+        console.log(this.name);
+    }
+}
+
+let g1 = new MetalGlassMaker("Milton");
+g1.getValue();
