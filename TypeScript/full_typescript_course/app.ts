@@ -207,21 +207,22 @@ let s1 = new ShoesMaker("Nike")
 
    Private
    .We can access class members but we can't access outside the containing class
+   
+   Protected
+   .We can access class members in other extend classes but not outside
 */
 
 class GlassMaker {
-    constructor(public name: string) { }
+    protected name = "milton";
 }
 
 class MetalGlassMaker extends GlassMaker {
-    constructor(name: string) {
-        super(name);
-    }
+    public material = "glass";
 
-    getValue() {
-        console.log(this.name);
+    changeName() {
+        this.name = "some other name"
     }
 }
 
-let g1 = new MetalGlassMaker("Milton");
-g1.getValue();
+let g1 = new MetalGlassMaker();
+g1.changeName();
