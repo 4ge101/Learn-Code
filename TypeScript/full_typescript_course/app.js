@@ -172,3 +172,12 @@ class Member {
     }
 }
 let u1 = new Member("sami");
+// Optional properties
+// If we make a function and ask for his any one detail and user is not want to give it then we used optional properties to use optional properties make a question mark before the detail which is optional for example
+class Optional {
+    constructor(name, age, gender) {
+        this.name = name;
+        this.gender = gender;
+    }
+}
+let o1 = new Optional("sami", 4);
