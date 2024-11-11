@@ -164,3 +164,11 @@ class MetalGlassMaker extends GlassMaker {
 }
 let g1 = new MetalGlassMaker();
 g1.changeName();
+// Readonly properties
+// If we dont want to change the name we used "readonly" propertie it give error if we try to change the name
+class Member {
+    constructor(name) {
+        this.name = name;
+    }
+}
+let u1 = new Member("sami");
