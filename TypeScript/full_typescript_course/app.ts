@@ -244,3 +244,10 @@ class Optional {
 }
 
 let o1 = new Optional("sami", 4);
+
+// Parameter properties
+// If we add variable and it's value in consructor then it is calles Parameter properties for example 
+
+class Use {
+    constructor(public name: string, public age: number) { }
+}
