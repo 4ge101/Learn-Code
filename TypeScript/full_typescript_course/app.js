@@ -189,3 +189,21 @@ class Use {
         this.age = age;
     }
 }
+let ue1 = new Use("sami", 14);
+// Getter and setters
+// If we make a function which is return a name it is known as getter to make getter we used "get"
+// If we want to give value to function we used setters it take value form the user and set the value to make setters we used "set"
+//For example 
+class Used {
+    constructor(_name, age) {
+        this._name = _name;
+        this.age = age;
+    }
+    get name() {
+        return this._name;
+    }
+    set name(value) {
+        this.name = value;
+    }
+}
+let ud1 = new Use("sami", 14);

@@ -251,3 +251,27 @@ let o1 = new Optional("sami", 4);
 class Use {
     constructor(public name: string, public age: number) { }
 }
+
+let ue1 = new Use("sami", 14);
+
+// Getter and setters
+
+// If we make a function which is return a name it is known as getter to make getter we used "get"
+
+// If we want to give value to function we used setters it take value form the user and set the value to make setters we used "set"
+
+//For example 
+
+class Used {
+    constructor(public _name: string, public age: number) { }
+
+    get name() {
+        return this._name;
+    }
+
+    set name(value: string) {
+        this.name = value
+    }
+}
+
+let ud1 = new Use("sami", 14);
