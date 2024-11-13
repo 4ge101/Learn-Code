@@ -207,3 +207,11 @@ class Used {
     }
 }
 let ud1 = new Use("sami", 14);
+// Static members
+// If we want to accessed without classes we used static for example
+class Hero {
+    static getRandomNumber() {
+        return Math.random();
+    }
+}
+Hero.version = 1.0;
