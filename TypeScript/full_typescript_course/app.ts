@@ -280,10 +280,23 @@ let ud1 = new Use("sami", 14);
 
 // If we want to accessed without classes we used static for example
 
-class Hero{
+class Hero {
     static version = 1.0;
 
-    static getRandomNumber(){
+    static getRandomNumber() {
         return Math.random();
     }
+}
+
+// Abstract classes and methods
+
+class Payment {
+    constructor(protected amount: number, protected account: number) { }
+    isPaymentValid(amount: Number) {
+        return this.amount > 0;
+    }
+}
+
+class Paytm extends Payment {
+
 }

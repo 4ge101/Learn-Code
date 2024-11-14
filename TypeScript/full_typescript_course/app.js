@@ -215,3 +215,15 @@ class Hero {
     }
 }
 Hero.version = 1.0;
+// Abstract classes and methods
+class Payment {
+    constructor(amount, account) {
+        this.amount = amount;
+        this.account = account;
+    }
+    isPaymentValid(amount) {
+        return this.amount > 0;
+    }
+}
+class Paytm extends Payment {
+}
