@@ -1,4 +1,3 @@
-"use strict";
 /*
 BASIC TYPES
 1) Primitive types (number, string, boolean)
@@ -8,20 +7,35 @@ BASIC TYPES
 5) Any, Unknown, Void, Null, Undefined, Never
 
 */
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 /* () {} []
     if we used any of thes brackets then it's value is reference
     if there is not any bracket is used then it is primitive
 */
 // NUMBER STRING AND BOOLEAN
-let a = 12; //numbers
-let b = 'Sami'; //string
-let c = true; //boolean
+var a = 12; //numbers
+var b = 'Sami'; //string
+var c = true; //boolean
 // Arrays
-let arr = [1, 2, 3, 4, 5];
+var arr = [1, 2, 3, 4, 5];
 //Tuples
 // it is used to define the values of array or anything in same positipn also if we try to change the position then it show the error for example
-let array = ["Sami", 43];
-let array2 = [100, "Sami"];
+var array = ["Sami", 43];
+var array2 = [100, "Sami"];
 //Enums also known as "Enumerations" it is used to hold the set of values for example 
 var UserRoles;
 (function (UserRoles) {
@@ -31,15 +45,15 @@ var UserRoles;
 })(UserRoles || (UserRoles = {}));
 // Any, Unknown, Void, Null, Undefined, Never
 // any if we dont define the type of variable it is "any" for example
-let i;
+var i;
 // how to define the type of any variable 
-let v;
+var v;
 v = 44;
 // Unknown
 /*
 In unknown we can use like can any but first we want to say it's type for example
 */
-let u;
+var u;
 u = 12;
 u = "sami";
 if (typeof u === "string")
@@ -51,13 +65,13 @@ function abcd() {
 }
 // Null 
 // If we say data base to find a person whos's name is sami and he is owner of a cafe then it find if he didnt find anything then its type is null for example
-let n = null;
-let m;
+var n = null;
+var m;
 m = "sami";
 m = null;
 // Undefined
 // if we dont give value to the variable then it's type is undefined for example
-let f;
+var f;
 // Never 
 /*
 If a fuction never return anything like loop for it type is never for example
@@ -73,9 +87,9 @@ console.log("Hey");
    Type annotations
 */
 // Inference if we dont give any type to the function or variable then it is Inference for example
-let k = 12;
+var k = 12;
 // Annotations if we add semicolon : and define its type then it is annotations for example
-let y;
+var y;
 function hij(obj) { }
 hij({ name: "sami", email: "sami@gmail.com", password: "abcd123" });
 function uij(obj) {
@@ -83,7 +97,7 @@ function uij(obj) {
 ;
 uij("Sami");
 //Intersection Types
-let s; //This (|) is called Union
+var s; //This (|) is called Union
 /*
   // Classes and Objects
   // Class defination
@@ -97,25 +111,28 @@ let s; //This (|) is called Union
   // Abstract classes and methods
 */
 // To make classes we used (class) and it's name for example
-class Device {
-    constructor() {
+var Device = /** @class */ (function () {
+    function Device() {
         this.name = "lg";
         this.price = 4000;
         this.category = "digital";
     }
-}
-let d1 = new Device();
-let d2 = new Device();
+    return Device;
+}());
+var d1 = new Device();
+var d2 = new Device();
 // Constructors
-class BottelMaker {
-    constructor(name, price) {
+var BottelMaker = /** @class */ (function () {
+    function BottelMaker(name, price) {
         this.name = name;
         this.price = price;
     }
-}
-let b1 = new BottelMaker("Milton", 1400);
-class Music {
-    constructor(name, artist, thumbnail = "anything.png", length, free) {
+    return BottelMaker;
+}());
+var b1 = new BottelMaker("Milton", 1400);
+var Music = /** @class */ (function () {
+    function Music(name, artist, thumbnail, length, free) {
+        if (thumbnail === void 0) { thumbnail = "anything.png"; }
         this.name = name;
         this.artist = artist;
         this.thumbnail = thumbnail;
@@ -125,19 +142,21 @@ class Music {
             this.thumbnail = "anything.png";
         }
     }
-}
-let m1 = new Music("HELLO WORLD", "Sami", "", 1200, true);
+    return Music;
+}());
+var m1 = new Music("HELLO WORLD", "Sami", "", 1200, true);
 // Access modifiers
-class ShoesMaker {
-    constructor(name) {
+var ShoesMaker = /** @class */ (function () {
+    function ShoesMaker(name) {
         this.name = name;
         this.name = name;
     }
-    changing() {
+    ShoesMaker.prototype.changing = function () {
         this.name = "sami";
-    }
-}
-let s1 = new ShoesMaker("Nike");
+    };
+    return ShoesMaker;
+}());
+var s1 = new ShoesMaker("Nike");
 /*
    Public
    .We can access anywhere without any restrictions.
@@ -148,82 +167,117 @@ let s1 = new ShoesMaker("Nike");
    Protected
    .We can access class members in other extend classes but not outside
 */
-class GlassMaker {
-    constructor() {
+var GlassMaker = /** @class */ (function () {
+    function GlassMaker() {
         this.name = "milton";
     }
-}
-class MetalGlassMaker extends GlassMaker {
-    constructor() {
-        super(...arguments);
-        this.material = "glass";
+    return GlassMaker;
+}());
+var MetalGlassMaker = /** @class */ (function (_super) {
+    __extends(MetalGlassMaker, _super);
+    function MetalGlassMaker() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.material = "glass";
+        return _this;
     }
-    changeName() {
+    MetalGlassMaker.prototype.changeName = function () {
         this.name = "some other name";
-    }
-}
-let g1 = new MetalGlassMaker();
+    };
+    return MetalGlassMaker;
+}(GlassMaker));
+var g1 = new MetalGlassMaker();
 g1.changeName();
 // Readonly properties
 // If we dont want to change the name we used "readonly" propertie it give error if we try to change the name
-class Member {
-    constructor(name) {
+var Member = /** @class */ (function () {
+    function Member(name) {
         this.name = name;
     }
-}
-let u1 = new Member("sami");
+    return Member;
+}());
+var u1 = new Member("sami");
 // Optional properties
 // If we make a function and ask for his any one detail and user is not want to give it then we used optional properties to use optional properties make a question mark before the detail which is optional for example
-class Optional {
-    constructor(name, age, gender) {
+var Optional = /** @class */ (function () {
+    function Optional(name, age, gender) {
         this.name = name;
         this.gender = gender;
     }
-}
-let o1 = new Optional("sami", 4);
+    return Optional;
+}());
+var o1 = new Optional("sami", 4);
 // Parameter properties
 // If we add variable and it's value in consructor then it is calles Parameter properties for example 
-class Use {
-    constructor(name, age) {
+var Use = /** @class */ (function () {
+    function Use(name, age) {
         this.name = name;
         this.age = age;
     }
-}
-let ue1 = new Use("sami", 14);
+    return Use;
+}());
+var ue1 = new Use("sami", 14);
 // Getter and setters
 // If we make a function which is return a name it is known as getter to make getter we used "get"
 // If we want to give value to function we used setters it take value form the user and set the value to make setters we used "set"
 //For example 
-class Used {
-    constructor(_name, age) {
+var Used = /** @class */ (function () {
+    function Used(_name, age) {
         this._name = _name;
         this.age = age;
     }
-    get name() {
-        return this._name;
-    }
-    set name(value) {
-        this.name = value;
-    }
-}
-let ud1 = new Use("sami", 14);
+    Object.defineProperty(Used.prototype, "name", {
+        get: function () {
+            return this._name;
+        },
+        set: function (value) {
+            this.name = value;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return Used;
+}());
+var ud1 = new Use("sami", 14);
 // Static members
 // If we want to accessed without classes we used static for example
-class Hero {
-    static getRandomNumber() {
-        return Math.random();
+var Hero = /** @class */ (function () {
+    function Hero() {
     }
-}
-Hero.version = 1.0;
+    Hero.getRandomNumber = function () {
+        return Math.random();
+    };
+    Hero.version = 1.0;
+    return Hero;
+}());
 // Abstract classes and methods
-class Payment {
-    constructor(amount, account) {
+var Payment = /** @class */ (function () {
+    function Payment(amount, account) {
         this.amount = amount;
         this.account = account;
     }
-    isPaymentValid(amount) {
+    Payment.prototype.isPaymentValid = function (amount) {
         return this.amount > 0;
+    };
+    return Payment;
+}());
+var Paytm = /** @class */ (function (_super) {
+    __extends(Paytm, _super);
+    function Paytm() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
+    return Paytm;
+}(Payment));
+/*
+  // Functions
+  // Function types
+  // Optional and default parameters
+  // Rest parameters
+  // Overloads
+*/
+// Function types
+function abcdef(name, age, cb) {
+    cb("hey");
 }
-class Paytm extends Payment {
-}
+abcdef("sami", 16, function (arg) {
+    console.log("abcd");
+});

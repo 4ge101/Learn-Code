@@ -297,6 +297,22 @@ class Payment {
     }
 }
 
-class Paytm extends Payment {
+class Paytm extends Payment { }
 
+/* 
+  // Functions
+  // Function types
+  // Optional and default parameters
+  // Rest parameters
+  // Overloads
+*/
+
+// Function types
+
+function abcdef(name: string, age: number, cb: (arg: string) => void) {
+    cb("hey");
 }
+
+abcdef("sami", 16, (arg: string) => {
+    console.log("abcd");
+})
