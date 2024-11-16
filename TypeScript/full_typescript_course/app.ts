@@ -314,5 +314,25 @@ function abcdef(name: string, age: number, cb: (arg: string) => void) {
 }
 
 abcdef("sami", 16, (arg: string) => {
-    console.log("abcd");
+    console.log(arg);
 })
+
+// Optional and default parameters
+
+// In optional parameters we used question mark (?) to make it optional for example
+
+function abcde(name: string, age: number, gender?: string) { }
+
+abcde("sami", 16, "male");
+abcde("nothing", 25)
+
+// Default parameters
+
+// In default parameters we already defined the value for example
+
+function abc(name: string, age: number, gender: string = "not to be disclosed") {
+    console.log(name, age, gender);
+}
+
+abc("sami", 16, "male");
+abc("not", 52);
