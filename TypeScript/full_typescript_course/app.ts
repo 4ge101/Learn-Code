@@ -346,3 +346,23 @@ function sum(...arr: number[]) {
 }
 
 sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+// Overloads
+
+// In typescript function overload is used to make a function that accepts different kinds of arguments
+
+function ab(a: string): void;
+function ab(a: string, b: number): number;
+
+function ab(a: any, b?: any) {
+    if (typeof a === "string" && typeof b === undefined) {
+        console.log("hey");
+    }
+    if (typeof a === "string" && typeof b === "number") {
+        return 123;
+    }
+    else throw new Error("Something is wrong please check it again");
+}
+
+ab("hey");
+ab("hey", 4);
