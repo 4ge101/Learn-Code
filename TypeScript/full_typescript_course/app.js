@@ -294,3 +294,13 @@ function abc(name, age, gender) {
 }
 abc("sami", 16, "male");
 abc("not", 52);
+// Rest parameters
+// In rest parameters we used (...) it means it make array of that function for example
+function sum() {
+    var arr = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        arr[_i] = arguments[_i];
+    }
+    console.log(arr);
+}
+sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);

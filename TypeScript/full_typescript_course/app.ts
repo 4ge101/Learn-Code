@@ -336,3 +336,13 @@ function abc(name: string, age: number, gender: string = "not to be disclosed") 
 
 abc("sami", 16, "male");
 abc("not", 52);
+
+// Rest parameters
+
+// In rest parameters we used (...) it means it make array of that function for example
+
+function sum(...arr: number[]) {
+    console.log(arr);
+}
+
+sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
