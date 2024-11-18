@@ -343,3 +343,8 @@ var CarMaker = /** @class */ (function () {
 var c1 = new CarMaker("hey");
 var c2 = new CarMaker(4);
 console.log(c1, c2);
+/*
+  // Modules
+  // Exporting and importing modules
+  // Default exports
+*/ 
