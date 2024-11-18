@@ -316,3 +316,15 @@ function ab(a, b) {
 }
 ab("hey");
 ab("hey", 4);
+/*
+  // Generics
+  // Generic functions
+  // Generic interfaces
+  // Generic classes
+*/
+// Generic functions
+// Generic function is type of function that can work with any data type to use generic function after function name we make html brackets and deffine a leter <T> for example
+function bcd(a) { }
+;
+bcd("sami");
+bcd(4);
