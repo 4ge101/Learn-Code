@@ -385,6 +385,8 @@ bcd<number>(4);
 
 // Generic interfaces
 
+// Generic interface is used to create an interface that can work with different types while maintaining type safety for example
+
 interface Halua<T> {
     name: string,
     age: number,
