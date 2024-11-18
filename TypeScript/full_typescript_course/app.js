@@ -332,3 +332,14 @@ bcd(4);
 function bcde(obj) { }
 ;
 bcde({ name: "sami", age: 25, key: "nothing" });
+// Generic classes
+// Generic classes is used to create an differnt types while maintaining type safety for example
+var CarMaker = /** @class */ (function () {
+    function CarMaker(key) {
+        this.key = key;
+    }
+    return CarMaker;
+}());
+var c1 = new CarMaker("hey");
+var c2 = new CarMaker(4);
+console.log(c1, c2);

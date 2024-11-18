@@ -396,3 +396,16 @@ interface Halua<T> {
 function bcde(obj: Halua<string>) { };
 
 bcde({ name: "sami", age: 25, key: "nothing" });
+
+// Generic classes
+
+// Generic classes is used to create an differnt types while maintaining type safety for example
+
+class CarMaker<T> {
+    constructor(public key: T) { }
+}
+
+let c1 = new CarMaker<string>("hey");
+let c2 = new CarMaker<number>(4);
+
+console.log(c1, c2);
