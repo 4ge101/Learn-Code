@@ -328,3 +328,7 @@ function bcd(a) { }
 ;
 bcd("sami");
 bcd(4);
+;
+function bcde(obj) { }
+;
+bcde({ name: "sami", age: 25, key: "nothing" });

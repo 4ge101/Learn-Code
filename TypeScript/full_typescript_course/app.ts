@@ -382,3 +382,15 @@ function bcd<T>(a: T) { };
 
 bcd<string>("sami");
 bcd<number>(4);
+
+// Generic interfaces
+
+interface Halua<T> {
+    name: string,
+    age: number,
+    key: T;
+};
+
+function bcde(obj: Halua<string>) { };
+
+bcde({ name: "sami", age: 25, key: "nothing" });
