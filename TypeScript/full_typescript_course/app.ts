@@ -415,3 +415,23 @@ console.log(c1, c2);
   // Exporting and importing modules
   // Default exports
 */
+
+// Modules means the separate files
+
+// Exporting and importing modules 
+
+// After making another separate files of code if we want to import the another file code in this code we use export and import for example
+
+import { getDetails, addPayment } from "./payment";
+
+addPayment(12);
+
+// Default exports
+
+// If we want to import class from another file code to current code we used default export for example 
+
+import Gpayment from "./payment";
+
+let gp1 = new Gpayment(100);
+let gp2 = new Gpayment(120);
+console.log(gp1, gp2);
