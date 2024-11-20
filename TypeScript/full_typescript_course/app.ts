@@ -435,3 +435,28 @@ import Gpayment from "./payment";
 let gp1 = new Gpayment(100);
 let gp2 = new Gpayment(120);
 console.log(gp1, gp2);
+
+/*
+  // Type Guards and TypeScript Utility Types
+  // Using typeof and instanceof
+  // Partial, Required, Readonly
+*/
+
+// Type Guards and TypeScript Utility Types
+
+// Type of guards it is used if we dont sure what is the type of the value to use we make if else statement for example
+
+function bcdef(arg: string | number) {
+    if (typeof arg === "number") {
+        return "number";
+    }
+    else if (typeof arg === "string") {
+        return "string";
+    }
+    else {
+        throw new Error("Something went worng");
+    }
+}
+
+console.log(bcdef(14));
+console.log(bcdef("Hello"));
