@@ -1,8 +1,11 @@
-import React from 'react'
-
 const App = () => {
+
+  const age = 16;
+  const user = "Sami";
   return (
-    <div>App</div>
+    <div>
+      <h1>Hello {user}, {age}</h1>
+    </div>
   )
 }
 
