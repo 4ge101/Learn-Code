@@ -1,14 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const App = () => {
 
-  const [num, setNum] = useState(0)
+  const submitHandler = (e) => {
+    e.preventDefault()
+    console.log("Submitted");
+  }
 
   return (
     <div>
-      <h1>Number is {num}</h1>
-      <button onClick={() => setNum(num + 10)}>Increment</button>
-      <button onClick={() => setNum(num - 10)}>Decrement</button>
+      <form onSubmit={(e) => {
+        submitHandler(e)
+      }}>
+        <input type="text" placeholder='Enter yor name' />
+        <button>Submit</button>
+      </form>
     </div>
   )
 }
