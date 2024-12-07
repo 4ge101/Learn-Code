@@ -13,4 +13,5 @@ button {
 .dark-mode {
     background-color: black;
     color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
