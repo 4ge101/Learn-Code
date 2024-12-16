@@ -5,13 +5,12 @@
 }
 
 button {
-    padding: 10px 20px;
-    font-weight: bold;
-    font-size: 16px;
+    background: none;
+    border: none;
 }
 
 .dark-mode {
-    background-color: black;
+    background-color: #0e0e11;
     color: white;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
