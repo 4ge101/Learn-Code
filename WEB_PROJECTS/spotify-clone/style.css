@@ -13,15 +13,40 @@
 
 body {
     font-family: "Nunito", sans-serif;
+    background-color: var(--black-color);
 }
 
 .logo img {
     width: 4%;
 }
 
-.home-icon{
+.home-icon {
     background-color: var(--primary-color);
     padding: 10px 10px;
     border-radius: 50%;
     border: none;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    padding: 0 10px;
+}
+
+.folder-icon {
+    margin: 0 0 0 -50px;
+}
+
+.search-container input {
+    font-size: 18px;
+    padding: 12px 40px;
+    font-weight: 600;
+    width: 30%;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
 }
