@@ -17,8 +17,12 @@ body {
     background-color: var(--black-color);
 }
 
-.logo img {
+.logo {
     width: 4%;
+}
+
+nav {
+    padding: 10px 20px;
 }
 
 nav ul {
@@ -27,13 +31,26 @@ nav ul {
     justify-content: space-between;
 }
 
-.search-container{
+.container-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.home-icon {
+    background-color: var(--primary-color);
+    padding: 10px 10px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.search-container {
     display: flex;
     align-items: center;
 }
 
 .search-container input {
-    padding: 15px 70px 15px 50px;
+    padding: 15px 200px 15px 50px;
     border-radius: 30px;
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
@@ -46,6 +63,28 @@ nav ul {
     padding: 0 12px;
 }
 
-.folder-icon{
-    margin: 0 -50px;
+.folder-icon {
+    margin: 0 -60px;
+    border-left: 1px solid var(--btn-color);
+    padding: 0 0px 0px 15px;
+}
+
+.signup-btn {
+    background-color: transparent;
+    color: var(--btn-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 18px 35px;
+    border: none;
+    border-radius: 30px;
+}
+
+.login-btn {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 18px 35px;
+    border: none;
+    border-radius: 30px;
 }
