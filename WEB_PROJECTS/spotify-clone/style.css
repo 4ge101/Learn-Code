@@ -9,6 +9,7 @@
     --primary-color: #1f1f1f;
     --white-color: white;
     --black-color: black;
+    --btn-color: #b3b3b3;
 }
 
 body {
@@ -20,33 +21,31 @@ body {
     width: 4%;
 }
 
-.home-icon {
-    background-color: var(--primary-color);
-    padding: 10px 10px;
-    border-radius: 50%;
-    border: none;
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.search-container {
+.search-container{
     display: flex;
     align-items: center;
 }
 
+.search-container input {
+    padding: 15px 70px 15px 50px;
+    border-radius: 30px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .search-icon {
     position: absolute;
-    padding: 0 10px;
+    padding: 0 12px;
 }
 
-.folder-icon {
-    margin: 0 0 0 -50px;
-}
-
-.search-container input {
-    font-size: 18px;
-    padding: 12px 40px;
-    font-weight: 600;
-    width: 30%;
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 100px;
+.folder-icon{
+    margin: 0 -50px;
 }
