@@ -117,6 +117,8 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 25vh;
+    overflow-y: scroll;
 }
 
 .scroll-side-card {
@@ -141,4 +143,88 @@ nav ul {
     padding: 6px 15px;
     font-weight: bold;
     border-radius: 20px;
+}
+
+
+.scroll-side-container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.scroll-side-container:hover::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 0;
+}
+
+.scroll-side-container:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 114, 114);
+    border-radius: 4px;
+}
+
+.side-footer {
+    padding: 40px 0 0;
+}
+
+.side-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    row-gap: 10px;
+}
+
+.side-footer ul li {
+    list-style: none;
+}
+
+.side-footer ul li a {
+    text-decoration: none;
+    color: var(--btn-color);
+    font-size: 12px;
+}
+
+.side-footer-cookie {
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--white-color);
+    padding: 15px 0 35px;
+}
+
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+}
+
+.signup-head {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.language-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 1px solid var(--btn-color);
+    color: var(--white-color);
+    padding: 5px 14px;
+    border-radius: 20px;
+}
+
+.signup-btn-container {
+    padding: 0 20px;
+}
+
+.signup-login-btn {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
 }
