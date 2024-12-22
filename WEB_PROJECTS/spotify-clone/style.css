@@ -10,11 +10,13 @@
     --white-color: white;
     --black-color: black;
     --btn-color: #b3b3b3;
+    --background-base-color: #121212;
 }
 
 body {
     font-family: "Nunito", sans-serif;
     background-color: var(--black-color);
+    color: var(--btn-color);
 }
 
 .logo {
@@ -87,4 +89,56 @@ nav ul {
     padding: 18px 35px;
     border: none;
     border-radius: 30px;
+}
+
+.side-container {
+    background-color: var(--background-base-color);
+    width: 25%;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.side-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.side-head p {
+    font-size: 18px;
+    font-weight: 800;
+    position: absolute;
+    left: 65px;
+}
+
+.scroll-side-container {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scroll-side-card {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.scroll-side-card-head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 0 15px;
+}
+
+.scroll-side-btn {
+    font-size: 15px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: none;
+    padding: 6px 15px;
+    font-weight: bold;
+    border-radius: 20px;
 }
