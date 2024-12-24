@@ -91,6 +91,11 @@ nav ul {
     border-radius: 30px;
 }
 
+.main-container {
+    display: flex;
+    gap: 16px;
+}
+
 .side-container {
     background-color: var(--background-base-color);
     width: 25%;
@@ -208,6 +213,7 @@ nav ul {
 .language-btn {
     display: flex;
     align-items: center;
+    gap: 5px;
     background: none;
     border: 1px solid var(--btn-color);
     color: var(--white-color);
@@ -227,4 +233,39 @@ nav ul {
     font-size: 16px;
     font-weight: bold;
     border-radius: 30px;
+}
+
+.big-container {
+    background-color: var(--background-base-color);
+    width: 75%;
+    border-radius: 10px;
+    padding: 15px 15px;
+}
+
+.big-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.head {
+    color: var(--white-color);
+    padding: 50px 0 0;
+}
+
+.card{
+    width: 85%;
+    /* background-color: var(--primary-color); */
+    padding: 15px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #d966a5;
+}
+
+.card-img-wrapper{
+    display: flex;
+    justify-content: end;
+}
+
+.card img{
+    width: 40%;
 }
