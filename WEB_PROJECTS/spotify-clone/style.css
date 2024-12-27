@@ -24,7 +24,7 @@ body {
 }
 
 nav {
-    padding: 10px 20px;
+    padding: 10px 20px 0;
 }
 
 nav ul {
@@ -99,7 +99,7 @@ nav ul {
 
 .side-container {
     background-color: var(--background-base-color);
-    width: 25%;
+    height: 71vh;
     padding: 15px 15px;
     border-radius: 10px;
 }
@@ -238,9 +238,9 @@ nav ul {
 .big-container {
     background-color: var(--background-base-color);
     width: 75%;
+    height: 71vh;
     border-radius: 10px;
     padding: 15px 15px;
-    height: 75vh;
     overflow-y: scroll;
 }
 
