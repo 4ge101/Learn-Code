@@ -292,11 +292,16 @@ nav ul {
     padding: 15px 30px;
 }
 
-.artist-head{
+.artist-head {
     color: var(--white-color);
 }
 
-.artist-card img{
+.artist-card img {
     width: 20%;
     border-radius: 50%;
+}
+
+.artist-name {
+    color: var(--white-color);
+    font-weight: 600;
 }
