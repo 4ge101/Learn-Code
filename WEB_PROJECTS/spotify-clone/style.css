@@ -208,7 +208,7 @@ nav ul {
     flex-direction: column;
     gap: 5px;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 5px 15px;
 }
 
 .language-btn {
@@ -292,20 +292,43 @@ nav ul {
     padding: 15px 30px;
 }
 
-.artist-container{
+.artist-container {
     display: flex;
 }
 
 .artist-head {
     color: var(--white-color);
+    padding: 10px 10px 30px;
 }
 
 .artist-card img {
-    width: 80%;
+    width: 100%;
     border-radius: 50%;
 }
 
 .artist-name {
     color: var(--white-color);
     font-weight: 600;
+    padding: 5px 0;
+}
+
+.artist-card {
+    padding: 0 10px;
+}
+
+.artist-title {
+    padding: 10px 0;
+}
+
+.artist-card:hover {
+    background-color: var(--language-container-bgcolor);
+    transition: 0.3s;
+}
+
+.play-btn{
+    width: 60px;
+    height: 60px;
+    background-color: #3be477;
+    border-radius: 50%;
+    border: none;
 }
