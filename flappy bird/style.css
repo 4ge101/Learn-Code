@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 :root {
@@ -12,6 +15,14 @@
     --white-color: white;
     --btn-color: maroon;
     --btn-color-hover: rgb(110, 6, 6);
+    --title-color: #3f3f8a;
+    --piller-color: #32a432;
+}
+
+/* Starting loading screen of game */
+
+.loading-screen-container {
+    display: none;
 }
 
 .sun {
@@ -70,16 +81,17 @@
 .loading-screen-title h1 {
     font-size: 45px;
     animation: title-animation 1s ease-in-out infinite alternate;
+    color: var(--title-color);
 }
 
-.start-btn {
+.start-btn-container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 35px 0 0;
 }
 
-.start-btn button {
+.start-btn-container button {
     border: 2px solid var(--black-color);
     padding: 15px 70px;
     background-color: var(--btn-color);
@@ -89,7 +101,7 @@
     cursor: pointer;
 }
 
-.start-btn button:hover {
+.start-btn-container button:hover {
     background-color: var(--btn-color-hover);
     transition: 0.3s;
 }
@@ -104,3 +116,99 @@
         transform: translateY(10px);
     }
 }
+
+/* Starting game from here */
+
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.flappy-bird {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.flappy-bird img {
+    width: 5vw;
+    height: auto;
+    border-radius: 50%;
+}
+
+.mountain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.mountain img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.piller1 {
+    width: 3vw;
+    height: 35vh;
+    background-color: var(--piller-color);
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    overflow: visible;
+    border: 2px solid var(--black-color);
+}
+
+.piller2 {
+    width: 3vw;
+    height: 40vh;
+    background-color: var(--piller-color);
+    z-index: 999;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    overflow: visible;
+    border: 2px solid var(--black-color);
+}
+
+.piller-top1,
+.piller-top2 {
+    width: 6vw;
+    height: 6vh;
+    background-color: var(--piller-color);
+    z-index: 999;
+    position: absolute;
+    left: -50%;
+    bottom: -2px;
+    border: 2px solid var(--black-color);
+}
+
+.piller-top2 {
+    top: -2px;
+}
+
+.game-screen-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #87ceeb;
+    position: relative;
+  }
+
+  /* Example game content */
+  .game-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+  }
