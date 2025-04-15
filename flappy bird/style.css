@@ -15,14 +15,18 @@
     --white-color: white;
     --btn-color: maroon;
     --btn-color-hover: rgb(110, 6, 6);
-    --title-color: #3f3f8a;
+    --title-color: #171753;
     --piller-color: #32a432;
+    --background-color: #519562;
+    --lose-background-color: #9b5b2bc9;
 }
 
 /* Starting loading screen of game */
 
 .loading-screen-container {
-    display: none;
+    display: block;
+    height: 100vh;
+    background-color: var(--background-color);
 }
 
 .sun {
@@ -69,6 +73,17 @@
 .sun-rays6 {
     margin: -110px 165px;
     transform: translate(4em, -4em) rotate(-23deg);
+}
+
+.title-bird-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px;
+}
+
+.title-bird-icon img {
+    width: 8%;
 }
 
 .loading-screen-title {
@@ -124,6 +139,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    display: none;
 }
 
 .flappy-bird {
@@ -135,8 +151,7 @@
 
 .flappy-bird img {
     width: 5vw;
-    height: auto;
-    border-radius: 50%;
+    object-fit: none;
 }
 
 .mountain {
@@ -159,7 +174,7 @@
     width: 3vw;
     height: 35vh;
     background-color: var(--piller-color);
-    z-index: 999;
+    z-index: 998;
     position: absolute;
     top: 0;
     left: 20%;
@@ -171,7 +186,7 @@
     width: 3vw;
     height: 40vh;
     background-color: var(--piller-color);
-    z-index: 999;
+    z-index: 998;
     position: absolute;
     bottom: 0;
     left: 20%;
@@ -184,7 +199,7 @@
     width: 6vw;
     height: 6vh;
     background-color: var(--piller-color);
-    z-index: 999;
+    z-index: 998;
     position: absolute;
     left: -50%;
     bottom: -2px;
@@ -195,20 +210,62 @@
     top: -2px;
 }
 
-.game-screen-container {
-    display: none;
-    width: 100%;
-    height: 100%;
-    background-color: #87ceeb;
+.bird-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    margin: 18px 0;
+    z-index: 999;
     position: relative;
-  }
+}
 
-  /* Example game content */
-  .game-content {
+.game-lose-container {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    color: #fff;
-  }
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 85vh;
+    background-color: var(--lose-background-color);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--black-color);
+    border-radius: 4px;
+    margin: 50px 50px;
+}
+
+.lose-title h1 {
+    font-size: 60px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.btn-container {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lose-bird-icon {
+    position: absolute;
+    left: 0;
+    right: 6%;
+    top: 0;
+    bottom: 20%;
+    transform: translate(50%, 50%);
+}
+
+#retry-btn,
+#menu-btn {
+    border: 2px solid var(--black-color);
+    padding: 12px 35px;
+    background-color: var(--btn-color);
+    color: var(--white-color);
+    border-radius: 2px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}

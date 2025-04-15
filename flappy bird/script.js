@@ -1,14 +1,31 @@
-// Making start button hover sound 
-var button = document.getElementById("soundBtn");
-var sound = document.getElementById("hoverSound");
-if (button && sound) {
+// making loading screen 
+var startButton = document.querySelector(".start-btn");
+var loadingScreen = document.querySelector(".loading-screen-container");
+var gameContainer = document.querySelector('.game-container');
+var gameStarted = false;
+startButton.addEventListener("click", function () {
+    loadingScreen.style.display = "none";
+    gameContainer.style.display = "block";
+    gameStarted = true;
+    startGame();
+});
+// Button hover sound
+var button = document.querySelector("#sound-btn");
+var btnHoverSound = document.querySelector("#btn-hover-sound");
+if (button && btnHoverSound) {
     button.addEventListener("mouseenter", function () {
-        sound.currentTime = 0; // Rewind to the beginning
-        sound.play();
+        btnHoverSound.currentTime = 0;
+        btnHoverSound.play();
     });
 }
-// Main game logic
-var gameContainer = document.querySelector('.game-container');
+// Audio elements
+var birdSound = document.querySelector("#bird-sound");
+var fallingSound = document.querySelector("#falling-sound");
+var scoreSound = document.querySelector("#score-sound");
+// Score display
+var scoreDisplay = document.querySelector(".bird-score");
+var score = 0;
+// Main game elements
 var mountain = document.querySelector('.mountain');
 var bird = document.querySelector('.flappy-bird');
 var mountainX = 0;
@@ -17,9 +34,21 @@ var velocity = 0;
 var gravity = 0.5;
 var jumpForce = -10;
 var gameOver = false;
+var pillarSpeed = 4;
+// Game starter
+function startGame() {
+    // Start background and game loop
+    moveBackground();
+    gameLoop();
+    // Generate pillars every second
+    setInterval(function () {
+        if (!gameOver)
+            createPillars();
+    }, 1000);
+}
 // Background movement
 function moveBackground() {
-    mountainX -= 2;
+    mountainX -= 4;
     if (Math.abs(mountainX) >= window.innerWidth) {
         mountainX = 0;
     }
@@ -27,8 +56,7 @@ function moveBackground() {
     if (!gameOver)
         requestAnimationFrame(moveBackground);
 }
-moveBackground();
-// Game loop - gravity and ground collision
+// Game loop
 function gameLoop() {
     if (gameOver)
         return;
@@ -40,16 +68,18 @@ function gameLoop() {
     }
     requestAnimationFrame(gameLoop);
 }
-gameLoop();
 // Click to jump
 document.addEventListener('click', function () {
-    if (gameOver)
+    if (!gameStarted || gameOver)
         return;
     velocity = jumpForce;
+    // play bird jump sound
+    birdSound.currentTime = 0;
+    birdSound.play();
 });
 // Piller dublicate
 function createPillars() {
-    var gapHeight = 30; // vh
+    var gapHeight = 35;
     var minTopHeight = 10;
     var maxTopHeight = 40;
     var topHeight = Math.floor(Math.random() * (maxTopHeight - minTopHeight + 1)) + minTopHeight;
@@ -76,13 +106,14 @@ function createPillars() {
     gameContainer.appendChild(piller2);
     movePillars(piller1, piller2);
 }
-// Pillar animation + collision if bird touch in piller then game over
+// Move pillars + score + making if bird touch piller or ground game will end
 function movePillars(p1, p2) {
     var position = window.innerWidth;
+    var scored = false;
     function animate() {
         if (gameOver)
             return;
-        position -= 2;
+        position -= pillarSpeed;
         p1.style.left = "".concat(position, "px");
         p2.style.left = "".concat(position, "px");
         var birdRect = bird.getBoundingClientRect();
@@ -90,6 +121,16 @@ function movePillars(p1, p2) {
         var p2Rect = p2.getBoundingClientRect();
         if (checkCollision(birdRect, p1Rect) || checkCollision(birdRect, p2Rect)) {
             endGame();
+        }
+        if (!scored && position + p1.offsetWidth < birdRect.left) {
+            scored = true;
+            score++;
+            scoreDisplay.textContent = score.toString();
+            scoreSound.currentTime = 0;
+            scoreSound.play();
+            if (score % 5 === 0) {
+                pillarSpeed += 0.15;
+            }
         }
         if (position + p1.offsetWidth > 0) {
             requestAnimationFrame(animate);
@@ -101,21 +142,22 @@ function movePillars(p1, p2) {
     }
     animate();
 }
-// Collision check
+// making game over if bird touch the piller
 function checkCollision(birdRect, pillarRect) {
     return !(birdRect.top > pillarRect.bottom ||
         birdRect.bottom < pillarRect.top ||
         birdRect.right < pillarRect.left ||
         birdRect.left > pillarRect.right);
 }
-// Game over function if it touch ground or piller
+// Game over
 function endGame() {
+    if (gameOver)
+        return;
     gameOver = true;
-    alert("Game Over! Click OK to restart.");
-    window.location.reload();
+    fallingSound.currentTime = 0;
+    fallingSound.play();
+    setTimeout(function () {
+        alert("Game Over! Click OK to restart.");
+        window.location.reload();
+    }, 100);
 }
-// Create pillars in every 2s
-setInterval(function () {
-    if (!gameOver)
-        createPillars();
-}, 2000);
