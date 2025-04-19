@@ -35,13 +35,16 @@ var gravity = 0.5;
 var jumpForce = -10;
 var gameOver = false;
 var pillarSpeed = 4;
+var pillarInterval;
 // Game starter
 function startGame() {
     // Start background and game loop
+    if (pillarInterval)
+        clearInterval(pillarInterval);
     moveBackground();
     gameLoop();
-    // Generate pillars every second
-    setInterval(function () {
+    // creating pillers every second
+    pillarInterval = setInterval(function () {
         if (!gameOver)
             createPillars();
     }, 1000);
@@ -106,7 +109,7 @@ function createPillars() {
     gameContainer.appendChild(piller2);
     movePillars(piller1, piller2);
 }
-// Move pillars + score + making if bird touch piller or ground game will end
+// move pillars + score + making if bird touch piller or ground game will end
 function movePillars(p1, p2) {
     var position = window.innerWidth;
     var scored = false;
@@ -122,6 +125,7 @@ function movePillars(p1, p2) {
         if (checkCollision(birdRect, p1Rect) || checkCollision(birdRect, p2Rect)) {
             endGame();
         }
+        // adding score and every 5 point piller speed increase
         if (!scored && position + p1.offsetWidth < birdRect.left) {
             scored = true;
             score++;
@@ -156,8 +160,47 @@ function endGame() {
     gameOver = true;
     fallingSound.currentTime = 0;
     fallingSound.play();
-    setTimeout(function () {
-        alert("Game Over! Click OK to restart.");
-        window.location.reload();
-    }, 100);
+    // show lose container after game end
+    gameLoseContainer.style.display = "flex";
 }
+// making lose container
+var gameLoseContainer = document.querySelector(".game-lose-container");
+var retryBtn = document.querySelector("#retry-btn");
+var menuBtn = document.querySelector("#menu-btn");
+// making retry for game
+retryBtn.addEventListener("click", function () {
+    // reset game state
+    score = 0;
+    scoreDisplay.textContent = "0";
+    pillarSpeed = 4;
+    velocity = 0;
+    birdY = window.innerHeight / 2;
+    bird.style.top = "".concat(birdY, "px");
+    gameOver = false;
+    var pillars = gameContainer.querySelectorAll('.piller1, .piller2');
+    pillars.forEach(function (pillar) { return pillar.remove(); });
+    // Hide lose screen
+    gameLoseContainer.style.display = "none";
+    startGame();
+});
+// going back to loading screen
+menuBtn.addEventListener("click", function () {
+    // reset game state
+    gameLoseContainer.style.display = "none";
+    gameContainer.style.display = "none";
+    loadingScreen.style.display = "block";
+    // reset variables to satrt game from start
+    gameStarted = false;
+    gameOver = false;
+    score = 0;
+    scoreDisplay.textContent = "0";
+    pillarSpeed = 4;
+    velocity = 0;
+    birdY = window.innerHeight / 2;
+    bird.style.top = "".concat(birdY, "px");
+    // Clear interval if it exists to prevent dublicating pillers
+    if (pillarInterval)
+        clearInterval(pillarInterval);
+    var pillars = gameContainer.querySelectorAll('.piller1, .piller2');
+    pillars.forEach(function (pillar) { return pillar.remove(); });
+});

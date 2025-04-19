@@ -180,6 +180,9 @@
     left: 20%;
     overflow: visible;
     border: 2px solid var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .piller2 {
@@ -192,6 +195,9 @@
     left: 20%;
     overflow: visible;
     border: 2px solid var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .piller-top1,
@@ -201,7 +207,6 @@
     background-color: var(--piller-color);
     z-index: 998;
     position: absolute;
-    left: -50%;
     bottom: -2px;
     border: 2px solid var(--black-color);
 }
@@ -221,11 +226,9 @@
 }
 
 .game-lose-container {
-    display: flex;
+    display: none;
     justify-content: center;
     position: absolute;
-    left: 0;
-    right: 0;
     top: 0;
     height: 85vh;
     background-color: var(--lose-background-color);
@@ -233,6 +236,7 @@
     border: 2px solid var(--black-color);
     border-radius: 4px;
     margin: 50px 50px;
+    z-index: 999;
 }
 
 .lose-title h1 {
@@ -268,4 +272,55 @@
     font-size: 18px;
     cursor: pointer;
     font-weight: bold;
+}
+
+/* responsive desgin for mobile */
+
+@media screen and (max-width: 600px) {
+    .loading-screen-title {
+        padding: 50px 0 35px;
+    }
+
+    .loading-screen-title h1 {
+        font-size: 40px;
+    }
+
+    .title-bird-icon {
+        margin: 0;
+    }
+
+    .title-bird-icon img {
+        width: 25%;
+        padding: 100px 0 0;
+    }
+
+    .start-btn-container {
+        padding: 10px 0 0;
+    }
+
+    .game-lose-container {
+        height: 60vh;
+        margin: 20px 20px;
+    }
+
+    .lose-title h1 {
+        font-size: 50px;
+        padding: 20px 45px;
+    }
+
+    .lose-bird-icon {
+        right: 15%;
+        bottom: 35%;
+    }
+
+    .flappy-bird img {
+        width: 18vw;
+    }
+
+    .piller1,
+    .piller2 {
+        width: 10vw;
+    }.piller-top1, .piller-top2{
+        width: 20vw;
+    }
 }
