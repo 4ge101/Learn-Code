@@ -1,27 +1,34 @@
-import { Hands, HAND_CONNECTIONS } from "@mediapipe/hands";
-import { drawConnectors, drawLandmarks } from "@mediapipe/drawing_utils";
-import { Camera } from "@mediapipe/camera_utils";
+let isGestureControlActive = false;  // Start with control off
 
-// 📦 Create and inject video and canvas elements
-const videoElement = document.createElement("video");
-videoElement.style.display = "none";
+// Add a listener to receive messages from popup.ts to toggle gesture control
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.action === 'toggleGestureControl') {
+    isGestureControlActive = message.isActive;
+  }
+});
+
+
+// Your existing MediaPipe and hand gesture control logic
+import { Hands, HAND_CONNECTIONS } from '@mediapipe/hands';
+import { drawConnectors, drawLandmarks } from '@mediapipe/drawing_utils';
+import { Camera } from '@mediapipe/camera_utils';
+
+// Set up video and canvas elements
+const videoElement = document.createElement('video');
+videoElement.style.display = 'none';
 document.body.appendChild(videoElement);
 
-const canvasElement = document.createElement("canvas");
-canvasElement.style.position = "fixed";
-canvasElement.style.top = "0";
-canvasElement.style.left = "0";
-canvasElement.style.zIndex = "9999";
-canvasElement.style.pointerEvents = "none";
+const canvasElement = document.createElement('canvas');
+canvasElement.style.position = 'fixed';
+canvasElement.style.top = '0';
+canvasElement.style.left = '0';
+canvasElement.style.zIndex = '9999';
+canvasElement.style.pointerEvents = 'none';
 document.body.appendChild(canvasElement);
 
-const canvasCtx = canvasElement.getContext("2d")!;
+const canvasCtx = canvasElement.getContext('2d')!;
 
-// 🔁 Scroll tracking
-let previousX: number | null = null;
-let previousY: number | null = null;
-let lastScrollTime = Date.now();
-
+// Set up hand gesture tracking
 const hands = new Hands({
   locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`,
 });
@@ -33,7 +40,13 @@ hands.setOptions({
   minTrackingConfidence: 0.7,
 });
 
+let previousX: number | null = null;
+let previousY: number | null = null;
+let lastScrollTime = Date.now();
+
 hands.onResults((results) => {
+  if (!isGestureControlActive) return;  // Skip gesture processing if control is off
+
   canvasElement.width = videoElement.videoWidth;
   canvasElement.height = videoElement.videoHeight;
 
@@ -45,18 +58,17 @@ hands.onResults((results) => {
     const landmarks = results.multiHandLandmarks[0];
 
     drawConnectors(canvasCtx, landmarks, HAND_CONNECTIONS, {
-      color: "#00FF00",
+      color: '#00FF00',
       lineWidth: 4,
     });
     drawLandmarks(canvasCtx, landmarks, {
-      color: "#FF0000",
+      color: '#FF0000',
       lineWidth: 2,
     });
 
-    const indexTip = landmarks[8]; // ☝️ Index finger tip
+    const indexTip = landmarks[8]; // Index finger tip
     const now = Date.now();
 
-    // 📜 Scroll with finger movement
     if (previousX !== null && previousY !== null && now - lastScrollTime > 80) {
       const deltaX = indexTip.x - previousX;
       const deltaY = indexTip.y - previousY;
@@ -76,7 +88,7 @@ hands.onResults((results) => {
   canvasCtx.restore();
 });
 
-// 📷 Setup webcam stream
+// Set up webcam
 const camera = new Camera(videoElement, {
   onFrame: async () => {
     await hands.send({ image: videoElement });
