@@ -2,22 +2,11 @@ import { Hands, HAND_CONNECTIONS } from "@mediapipe/hands";
 import { drawConnectors, drawLandmarks } from "@mediapipe/drawing_utils";
 import { Camera } from "@mediapipe/camera_utils";
 
-// 📦 Create and inject video and canvas elements
-const videoElement = document.createElement("video");
-videoElement.style.display = "none";
-document.body.appendChild(videoElement);
-
-const canvasElement = document.createElement("canvas");
-canvasElement.style.position = "fixed";
-canvasElement.style.top = "0";
-canvasElement.style.left = "0";
-canvasElement.style.zIndex = "9999";
-canvasElement.style.pointerEvents = "none";
-document.body.appendChild(canvasElement);
-
+// Get elements
+const videoElement = document.getElementById("video") as HTMLVideoElement;
+const canvasElement = document.getElementById("canvas") as HTMLCanvasElement;
 const canvasCtx = canvasElement.getContext("2d")!;
 
-// 🔁 Scroll tracking
 let previousX: number | null = null;
 let previousY: number | null = null;
 let lastScrollTime = Date.now();
@@ -39,7 +28,13 @@ hands.onResults((results) => {
 
   canvasCtx.save();
   canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
-  canvasCtx.drawImage(results.image, 0, 0, canvasElement.width, canvasElement.height);
+  canvasCtx.drawImage(
+    results.image,
+    0,
+    0,
+    canvasElement.width,
+    canvasElement.height
+  );
 
   if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
     const landmarks = results.multiHandLandmarks[0];
@@ -53,30 +48,32 @@ hands.onResults((results) => {
       lineWidth: 2,
     });
 
-    const indexTip = landmarks[8]; // ☝️ Index finger tip
+    const indexTip = landmarks[8]; // Index finger tip
     const now = Date.now();
 
-    // 📜 Scroll with finger movement
-    if (previousX !== null && previousY !== null && now - lastScrollTime > 80) {
-      const deltaX = indexTip.x - previousX;
+    if (previousY !== null && previousX !== null && now - lastScrollTime > 80) {
       const deltaY = indexTip.y - previousY;
+      const deltaX = indexTip.x - previousX;
 
-      if (Math.abs(deltaX) > 0.01 || Math.abs(deltaY) > 0.01) {
-        const scrollX = deltaX * 1500;
-        const scrollY = deltaY * 1500;
+      // Only scroll if movement is significant
+      if (Math.abs(deltaY) > 0.01 || Math.abs(deltaX) > 0.01) {
+        const scrollY = deltaY * 1000;
+        const scrollX = deltaX * 1000;
+
         window.scrollBy(scrollX, scrollY);
+        // console.log("Scrolling X:", deltaX, "Y:", deltaY);
         lastScrollTime = now;
       }
     }
 
-    previousX = indexTip.x;
     previousY = indexTip.y;
+    previousX = indexTip.x;
   }
 
   canvasCtx.restore();
 });
 
-// 📷 Setup webcam stream
+// Set up webcam
 const camera = new Camera(videoElement, {
   onFrame: async () => {
     await hands.send({ image: videoElement });
