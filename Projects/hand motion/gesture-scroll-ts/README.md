@@ -1,0 +1,1 @@
+It is motion gesture that dectats our hand motion and help to control the screen

@@ -1,0 +1,21 @@
+{
+  "name": "hologram_viwer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mediapipe/hands": "^0.4.1675469240",
+    "three": "^0.176.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.175.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3"
+  }
+}
