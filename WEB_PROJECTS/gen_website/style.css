@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
     --body-background: #101028;
     --white-color: white;
+    --nav-border: #28284f;
+    --btn-border-color: rgba(255, 255, 255, 0.2);
+    --small-title-color: #c1bcb1;
 }
 
 body {
@@ -24,12 +30,130 @@ body {
 nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
-    background: red;
+    background: transparent;
     width: 80%;
+    border-radius: 15px;
+    border: 2px solid var(--nav-border);
 }
 
 nav ul {
     display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 5px;
+}
+
+.logo p {
+    font-weight: 600;
+}
+
+.nav-btn button {
+    color: var(--white-color);
+    padding: 6px 10px;
+    margin: 0 20px;
+    border-radius: 10px;
+    border: 1px solid var(--btn-border-color);
+    font-size: 14px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.update-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.update-btn button {
+    color: var(--white-color);
+    padding: 4px 12px;
+    margin: 0 10px 0 4px;
+    border-radius: 6px;
+    border: 1px solid var(--btn-border-color);
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+}
+
+.update-btn {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    border: 1px solid var(--btn-border-color);
+    background: rgba(255, 255, 255, 0.04);
+    width: 22%;
+    padding: 4px 0px;
+    border-radius: 5px;
+}
+
+.update-btn li {
+    list-style: none;
+}
+
+.update-btn li a {
+    text-decoration: none;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.title h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.small-title p {
+    color: var(--small-title-color);
+    padding: 15px 0;
+}
+
+.title-btn-container{
+    padding: 20px 0;
+}
+
+.try-btn,
+.demo-btn {
+    color: var(--white-color);
+    padding: 6px 20px;
+    margin: 0 2px;
+    border-radius: 10px;
+    border: 1px solid var(--btn-border-color);
+    font-size: 14px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
 }
