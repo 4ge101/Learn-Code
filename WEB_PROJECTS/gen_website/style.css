@@ -53,14 +53,14 @@ nav ul li a {
     color: var(--white-color);
 }
 
-.logo {
+.nav-logo {
     display: flex;
     align-items: center;
     padding: 10px 10px;
     gap: 5px;
 }
 
-.logo p {
+.nav-logo p {
     font-weight: 600;
 }
 
@@ -142,7 +142,7 @@ nav ul li a {
     padding: 15px 0;
 }
 
-.title-btn-container{
+.title-btn-container {
     padding: 20px 0;
 }
 
@@ -156,4 +156,43 @@ nav ul li a {
     font-size: 14px;
     font-weight: 600;
     background: rgba(255, 255, 255, 0.1);
+}
+
+.demo-btn {
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.title-img img {
+    width: 80em;
+    padding: 50px 0;
+}
+
+.logo {
+    padding: 50px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo:hover .logo-slide {
+    animation-play-state: paused;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 10s logo-slider infinite linear;
+}
+
+.logo-slide img {
+    height: 70px;
+    margin: 0 40px;
+}
+
+@keyframes logo-slider {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
